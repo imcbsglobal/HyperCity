@@ -16,10 +16,24 @@ import greenShade from "../assets/green-shade.png"
 import MartBg2 from "../assets/mart-bg2.jpeg"
 import wave from "../assets/wave.png"
 import bottomPart from "../assets/bottom-part.png"
+import Footer from './Footer';
+import whatsapp from "../assets/whatsapp.png"
+import { IoClose } from "react-icons/io5";
+import messageBox from "../assets/message-box.png"
+import chatBg from "../assets/chatting-bg.png"
+import { FaWhatsapp } from "react-icons/fa";
+import { MdWavingHand } from "react-icons/md";
+import logo from "../assets/single-logo.png"
+import { FaFacebook } from "react-icons/fa";
+import { BiLogoInstagramAlt } from "react-icons/bi";
+import { MdEmail } from "react-icons/md";
+import homeBanner from "../assets/home-banner.png"
 
 const Home = () => {
     const [rotate, setRotate] = useState(0);
     const [active, setActive] = useState(0);
+    const [openChat, setOPenChat] = useState(false)
+
     const ImageArray = [cart1, cart2, cart3,cart4,cart5,cart6];
     const countItem = ImageArray.length; // Number of images
     const rotateAdd = 360 / countItem;
@@ -44,8 +58,56 @@ const Home = () => {
         return () => clearInterval(autoNext);
     }, []);
 
+    const handleOpenChatc = () => {
+        setOPenChat(!openChat)
+    }
     return (
         <div>
+            <div className='fixed z-[100] bottom-5 right-2'>
+                <img src={whatsapp} onClick={handleOpenChatc} className='w-auto h-[70px] object-contain  drop-shadow-2xl cursor-pointer' alt="" />
+            </div>
+            
+            {openChat && (
+                <div>
+                <div className='fixed w-[300px] h-[300px] bg-[#fff] z-[100] rounded-3xl right-2 bottom-28 overflow-hidden chatBox'>
+                    <div className=' flex justify-center items-center gap-10 px-2 py-2 bg-[#095E54] rounded-t-3xl'>
+                        <div>
+                            <img src={logo} alt="" className='w-auto h-[50px] object-contain drop-shadow-2xl bg-white rounded-full p-1 WhatsappDp' />
+                        </div>
+                        <div>
+                            <div className='text-xl titleText2 text-[#fff]'>
+                                Hyper City
+                            </div>
+                            <div className=' text-[10px] text-[#aa9c9c]'>Typically replies within an hour</div>
+                        </div>
+                        <div>
+                            <IoClose onClick={() => setOPenChat(!openChat)} className=' text-[#aa9c9c] cursor-pointer'/>
+                        </div>
+                    </div>
+
+                <div className='relative'>
+                    <img src={chatBg} alt="" />
+                    <div className=' absolute top-0 drop-shadow-md left-0 h-[190px] w-[68%]'>
+                        <img src={messageBox} className='w-full h-full object-contain' alt="" />
+                        <div className=' absolute top-12 font-bold titleText text-[#999393] pl-10 drop-shadow-sm'>
+                            <div className=' text-[13px]'>Hyper city</div>
+                            <div className=' flex items-center gap-3 text-[#554f4f]'>Hi there <span><MdWavingHand className='text-[#ffb909] drop-shadow-md'/></span></div>
+                            <div className=' text-[#554f4f] text-[15px] leading-tight mt-2'>How can I help you?</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className=' absolute bottom-0 w-full h-[60px] bg-[#fff]'>
+                    <div className=' flex justify-center mt-3'>
+                        
+                        <button className='bg-[#00ff15] px-8 py-1 text-[#fff] font-bold titleText2 rounded-3xl shadow-md flex justify-center items-center gap-2'><span className='text-xl'><FaWhatsapp/></span>Start Now</button>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            )}
+
             <div>
                 <Carousel/>
             </div>
@@ -261,12 +323,12 @@ const Home = () => {
             <section>
                 <div className='flex justify-center items-center relative'>
                     <div className=' absolute top-0 left-0 right-0 bottom-0 -z-20'>
-                       <img src={MartBg} className=' w-full h-full object-cover' alt="" />
+                       <img src={MartBg} className=' w-full h-full object-cover md:opacity-80 md:blur-[2px]' alt="" />
                     </div>
                     <div className=' absolute top-0 left-0 right-0 bottom-0 -z-10'>
                         <img src={blackShade} className=' w-full h-full object-cover' alt="" />
                     </div>
-                    <div className='md:flex justify-center items-center w-full px-6 lg:max-w-[1200px] lg:mx-auto py-10'>
+                    <div className='md:flex justify-center items-center w-full px-6 lg:max-w-[1200px] lg:mx-auto py-10 md:gap-10'>
                         <div className='w-full mb-10'>
                             <div className='text-center mb-5 text-[42px] titleText2 leading-tight text-[#ffffff]'>Get In Touch</div>
                             <form action="" className=' flex flex-col justify-center items-center gap-5 w-full'>
@@ -298,6 +360,10 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section>
+                <Footer/>
             </section>
         </div>
     );

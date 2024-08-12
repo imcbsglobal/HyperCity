@@ -5,6 +5,9 @@ import cart3 from "../assets/cart3.png";
 import cart4 from "../assets/cart4.png"
 import cart5 from "../assets/cart5.png"
 import cart6 from "../assets/cart6.png"
+import homeBanner from "../assets/home-banner.png"
+import homeBanner2 from "../assets/home-banner2.png"
+
 
 const Carousel = () => {
     const [rotate, setRotate] = useState(0);
@@ -39,7 +42,7 @@ const Carousel = () => {
                 <div className='absolute px-2 font-black'>Unwavering Commitment to Quality</div>
             </div> */}
             <div className=' flex justify-center items-center'>
-                <div className='absolute top-10 text-center'>
+                <div className='absolute top-10 text-center z-10'>
                     <div className=' grid grid-cols-2 px-4'>
                         <div className='homeTitle -rotate-[10deg]'>Your</div>
                         <div className='homeTitle rotate-[10deg]'>Trustworthy</div>
@@ -47,6 +50,11 @@ const Carousel = () => {
                         <div className='homeTitle rotate-[10deg] pt-5'>Source</div>
                     </div>
                 </div>
+                <div className=' flex justify-center'>
+                        <div className=' absolute -z-0 top-10'>
+                            <img src={homeBanner} className='w-auto h-[260px] homeBannerAnimation' alt="" />
+                        </div>
+                    </div>
             </div>
             <div className="title">
                 {/* Hyper City! */}

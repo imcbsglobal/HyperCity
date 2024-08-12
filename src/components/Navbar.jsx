@@ -33,7 +33,7 @@ const Navbar = () => {
                 <li><Link to='/contact'>Contact</Link></li>
               </ul>
             </div>
-            <div>
+            <div className=' md:hidden'>
               <CgMenuGridO onClick={handleMenu} className='text-3xl text-[#059328] font-bold cursor-pointer drop-shadow-lg' />
             </div>
           </nav>
