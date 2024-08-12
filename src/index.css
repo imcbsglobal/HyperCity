@@ -261,6 +261,7 @@
     height: 250px;
     border-radius: 50%;
     position: relative;
+    background-color: #0cd50f;
 }
 .aboutImg::before{
     content: '';
@@ -283,7 +284,8 @@
     right: 0;
     border-radius: 50%;
     /* border: 1px solid black; */
-    background-color: #0cd50f;
+    /* background-color: #0cd50f; */
+    background-color: #FF6C00;
     -webkit-box-shadow: -1px 1px 8px 0px rgba(0,0,0,0.37);
     -moz-box-shadow: -1px 1px 8px 0px rgba(0,0,0,0.37);
     box-shadow: -1px 1px 8px 0px rgba(0,0,0,0.37);
@@ -372,3 +374,33 @@
     -moz-box-shadow: -2px 5px 16px -2px rgba(0,0,0,0.45);
     box-shadow: -2px 5px 16px -2px rgba(0,0,0,0.45);
 }
+.main-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mask-image: url('https://res.cloudinary.com/dqydgc2ky/image/upload/v1723465831/brush-frame_bjnhjr.png');
+    -webkit-mask-image: url('https://res.cloudinary.com/dqydgc2ky/image/upload/v1723465831/brush-frame_bjnhjr.png'); /* For WebKit browsers */
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.brush-frame {
+    z-index: 10; /* Ensures the brush frame stays on top */
+}
+.DarkBox{
+    -webkit-box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
+    box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
+    backdrop-filter: blur(25px);
+    background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.1));
+    border: 1px solid white;
+    transition: all .3s linear;
+  }
+  .DarkBox:hover img{
+    mix-blend-mode: normal;
+  }

@@ -24,7 +24,7 @@ const Navbar = () => {
               <img src={logo} className=' w-full h-full object-contain drop-shadow-sm' alt="" />
             </div>
             <div className='hidden md:flex md:justify-center md:items-center'>
-              <ul className=' flex justify-center items-center gap-5'>
+              <ul className=' flex justify-center items-center gap-5 titleText font-bold text-[#494343]'>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/about'>About</Link></li>
                 <li><Link to='/branch'>Branch</Link></li>

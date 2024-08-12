@@ -28,6 +28,9 @@ import { FaFacebook } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
 import homeBanner from "../assets/home-banner.png"
+import brushFrame from "../assets/brush-frame.png"
+import missionVision from "../assets/mission-vision.jpg"
+import OfferSection from './OfferSection';
 
 const Home = () => {
     const [rotate, setRotate] = useState(0);
@@ -114,9 +117,7 @@ const Home = () => {
 
             {/* Offer Section */}
             <section>
-                <div>
-                    <div></div>
-                </div>
+                <OfferSection/>
             </section>
 
             {/* About Section */}
@@ -180,17 +181,18 @@ const Home = () => {
                     </div>
 
                     {/* Mission & Vision */}
-                    <div className=' px-6 lg:max-w-[1200px] lg:mx-auto pt-10 pb-20 z-10'>
+                    <div className=' px-6 lg:max-w-[1200px] lg:mx-auto pt-10 pb-20 z-10 md:flex md:flex-row-reverse md:gap-10 md:pt-20 md:pb-40'>
                         {/* Left */}
                         <div>
-                            <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#fff] drop-shadow-sm'>Our Mission & Vision</div>
-                            <div>
-                                <img src="" alt="" />
+                            <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#fff] drop-shadow-sm md:text-center'>Our Mission & Vision</div>
+                            <div className=' w-full h-[200px] relative overflow-hidden mb-10 hidden md:flex'>
+                                <img src={missionVision} className='main-image absolute top-0 left-0 w-full h-full object-cover shadow-2xl drop-shadow-2xl' alt="" />
+                                {/* <img src={brushFrame} className=' brush-frame absolute top-0 left-0 w-full h-full object-cover ' alt="" /> */}
                             </div>
                         </div>
 
                         {/* Right */}
-                        <div>
+                        <div className='md:w-[50%]'>
                             {/* Mission */}
                             <div className=' mb-10'>
                                 <div className='titleText font-bold text-[32px] mb-5 leading-tight text-[#fff] drop-shadow-sm'>Our Mission</div>

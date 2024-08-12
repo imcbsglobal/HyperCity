@@ -50,11 +50,11 @@ const Carousel = () => {
                         <div className='homeTitle rotate-[10deg] pt-5'>Source</div>
                     </div>
                 </div>
-                <div className=' flex justify-center'>
+                {/* <div className=' flex justify-center'>
                         <div className=' absolute -z-0 top-10'>
                             <img src={homeBanner} className='w-auto h-[260px] homeBannerAnimation' alt="" />
                         </div>
-                    </div>
+                    </div> */}
             </div>
             <div className="title">
                 {/* Hyper City! */}
