@@ -14,17 +14,21 @@ const OfferSection = () => {
                 <div className=' titleText2 text-center font-bold text-[36px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm'>Offer Section</div>
                 {/* Offer Image-Cards */}
                 <div className=' grid grid-cols-2 w-full gap-2 lg:grid-cols-4 lg:max-w-[1200px] lg:mx-auto'>
-                    <div className='w-full h-[300px] rounded-lg DarkBox'>
-                        <img src={offerPoster1} className='w-full h-full object-cover rounded-lg mix-blend-multiply' alt="" />
+                    <div className='w-full h-[300px] lg:h-[400px] rounded-lg DarkBox'>
+                        <img src={offerPoster1} className='w-full h-full object-cover rounded-lg transition-all duration-300 ease-linear mix-blend-multiply hover:mix-blend-normal' alt="" />
                     </div>
-                    <div className='w-full h-[300px] rounded-lg DarkBox'>
-                        <img src={offerPoster2} className='w-full h-full object-cover rounded-lg mix-blend-multiply' alt="" />
+                    <div className='w-full h-[300px] lg:h-[400px] rounded-lg DarkBox'>
+                        <img src={offerPoster2} className='w-full h-full object-cover transition-all duration-300 ease-linear rounded-lg mix-blend-multiply' alt="" />
                     </div>
-                    <div className='w-full h-[300px] rounded-lg DarkBox'>
-                        <img src={offerPoster4} className='w-full h-full object-cover rounded-lg mix-blend-multiply' alt="" />
+                    <div className='w-full h-[300px] lg:h-[400px] rounded-lg DarkBox'>
+                        <img src={offerPoster4} className='w-full h-full object-cover transition-all duration-300 ease-linear rounded-lg mix-blend-multiply' alt="" />
                     </div>
-                    <div className='w-full h-[300px] rounded-lg DarkBox'>
-                        <img src={offerPoster3} className='w-full h-full object-cover rounded-lg mix-blend-multiply' alt="" />
+                    <div className="w-full h-[300px] lg:h-[400px] rounded-lg DarkBox">
+                      <img
+                        src={offerPoster3}
+                        className="w-full h-full object-cover rounded-lg transition-all duration-300 ease-linear mix-blend-multiply hover:mix-blend-normal"
+                        alt=""
+                      />
                     </div>
                 </div>
                 <div className='mt-10 flex justify-center'>

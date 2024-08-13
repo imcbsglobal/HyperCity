@@ -42,7 +42,7 @@ const Carousel = () => {
                 <div className='absolute px-2 font-black'>Unwavering Commitment to Quality</div>
             </div> */}
             <div className=' flex justify-center items-center'>
-                <div className='absolute top-10 text-center z-10'>
+                <div className='absolute top-10 text-center z-10 lg:left-0'>
                     <div className=' grid grid-cols-2 px-4'>
                         <div className='homeTitle -rotate-[10deg]'>Your</div>
                         <div className='homeTitle rotate-[10deg]'>Trustworthy</div>
@@ -61,7 +61,7 @@ const Carousel = () => {
             </div>
             <div className="images" style={{ '--rotate': `${rotate}deg` }}>
                 {ImageArray.map((image, i) => (
-                    <div className="item w-[100px] h-[100px]" style={{ '--i': i + 1 }} key={i}>
+                    <div className="item " style={{ '--i': i + 1 }} key={i}>
                         <img src={image} className='w-full h-full object-contain' alt={`Slide ${i + 1}`} />
                     </div>
                 ))}

@@ -86,11 +86,6 @@
     outline-offset: -100px;
 }
 
-@media screen and (min-width: 768px){
-    .images{
-        
-    }
-}
 
 .images .item {
     position: absolute;
@@ -108,6 +103,42 @@
 
 }
 
+@media screen and (min-width:1024px){
+    .images{
+        height: 1200px;
+        width: 1200px;
+        top: -35%;
+    }
+    .images .item img{
+        height: 400px;
+        margin-top: -100px;
+    }
+}
+@media screen and (min-width:1440px){
+    .images{
+        height: 1400px;
+        width: 1400px;
+        top: -55%;
+    }
+    .images .item img{
+        height: 500px;
+        margin-top: -130px;
+        -webkit-box-reflect: below -120px linear-gradient(transparent 25%, rgba(0,0,0,0.25));
+    }
+}
+
+@media screen and (min-width:1700px){
+    .images{
+        height: 1660px;
+        width: 1660px;
+        top: -65%;
+    }
+    .images .item img{
+        height: 650px;
+        margin-top: -230px;
+        -webkit-box-reflect: below -150px linear-gradient(transparent 25%, rgba(0,0,0,0.25));
+    }
+}
 .content {
     color: #fff;
     position: absolute;
@@ -189,6 +220,11 @@
     /* line-height: 1.em; */
     /* transform: rotate(-1deg); */
 }
+@media screen and (min-width:1440px){
+    .homeTitle{
+        font-size: 90px;
+    }
+}
 .titleText{
     font-family: 'UrbanRouded', sans-serif;
 }
@@ -212,7 +248,14 @@
     backdrop-filter: blur(10px);
     /* border: .1px solid #ffffffa7; */
     box-shadow: inset rgb(0 0 0 / 16%) 0px 3px 6px;
-
+}
+.productBoxImg{
+    border-radius: 30px;
+    /* backdrop-filter: blur(10px); */
+    /* border: .1px solid #ffffffa7; */
+    -webkit-box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.6);
 }
 .Box{
     border-radius: 10px;
@@ -289,6 +332,16 @@
     -webkit-box-shadow: -1px 1px 8px 0px rgba(0,0,0,0.37);
     -moz-box-shadow: -1px 1px 8px 0px rgba(0,0,0,0.37);
     box-shadow: -1px 1px 8px 0px rgba(0,0,0,0.37);
+}
+@media screen and (min-width : 1024px){
+    .aboutImg::before{
+        width: 150px;
+        height: 150px;
+    }
+    .aboutImg::after{
+        width: 150px;
+        height: 150px;
+    }
 }
 .BlobDesign{
     box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
@@ -392,15 +445,49 @@
 .brush-frame {
     z-index: 10; /* Ensures the brush frame stays on top */
 }
-.DarkBox{
-    -webkit-box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
-    -moz-box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
-    box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
+.DarkBox {
+    -webkit-box-shadow: 1px 5px 19px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 1px 5px 19px 0px rgba(0, 0, 0, 0.55);
+    box-shadow: 1px 5px 19px 0px rgba(0, 0, 0, 0.55);
     backdrop-filter: blur(25px);
     background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.1));
     border: 1px solid white;
-    transition: all .3s linear;
+    position: relative;
+    overflow: hidden;
   }
-  .DarkBox:hover img{
+  
+  .DarkBox:hover .DarkBox-overlay {
+    opacity: 1;
+  }
+  
+  .DarkBox:hover img {
+    opacity: 0.5;
     mix-blend-mode: normal;
+  }
+  
+  .choseUs{
+    position: relative;
+  }
+  .choseUs::before{
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    /* background-color: #FF6C00; */
+    border: 1px solid #FF6C00;
+    z-index: -1;
+    top: 0;
+  }
+  .choseUs::after{
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #FF6C00;
+    /* border: 1px solid #FF6C00; */
+    z-index: 1;
+    bottom: 0;
+    right: 0;
   }

@@ -31,6 +31,17 @@ import homeBanner from "../assets/home-banner.png"
 import brushFrame from "../assets/brush-frame.png"
 import missionVision from "../assets/mission-vision.jpg"
 import OfferSection from './OfferSection';
+import choseUs from "../assets/chose-us.jpg"
+import product1 from "../assets/product1.png"
+import product2 from "../assets/product2.png"
+import product3 from "../assets/product3.png"
+import product4 from "../assets/product4.png"
+import product5 from "../assets/product5.png"
+import product6 from "../assets/product6.png"
+import product7 from "../assets/product7.png"
+import product8 from "../assets/product8.png"
+
+
 
 const Home = () => {
     const [rotate, setRotate] = useState(0);
@@ -127,14 +138,14 @@ const Home = () => {
                     <img src="" alt="" />
                 </div>
                 <div className=' lg:max-w-[1200px] lg:mx-auto'>
-                    <div className=' px-6 py-10'>
+                    <div className=' px-6 py-10 lg:flex lg:gap-10 lg:justify-center lg:items-center'>
                         {/* Left */}
-                        <div className='aboutImg mx-auto BlobDesign'>
+                        <div className='aboutImg mx-auto BlobDesign lg:h-[400px] lg:w-[400px]'>
                             <img src={aboutImg} className='w-full h-full object-cover rounded-full' alt="" />
                         </div>
 
                         {/* Right */}
-                        <div className=''>
+                        <div className='lg:w-[50%]'>
                             <div className='titleText font-bold mb-2 text-[#FF6C00]'>About Us</div>
                             <div className='titleText2 font-bold text-[36px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm'>Lorem, ipsum dolor sit amet consectetur adipisicing</div>
                             <div className='paraText mb-7'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem corrupti ipsum! Explicabo ad, cupiditate nisi voluptatibus deleniti harum incidunt eius tempora excepturi reiciendis nihil et! Aperiam fuga vitae magnam.
@@ -144,7 +155,7 @@ const Home = () => {
                                 <button className='titleText font-bold px-8 py-2 rounded-3xl bg-[#FF6C00] text-[#fff] buttonShadow'>Read More</button>
                             </div>
                             <div className=' mt-10 flex justify-center items-center text-center'>
-                                <div className=''>
+                                <div className='md:flex md:justify-center md:items-center'>
                                     <div className='p-2'>
                                         <div className='titleText1 text-[48px] text-[#0cd50f] drop-shadow-md'>10+</div>
                                         <div className='titleText font-bold text-[#0cd50f]'>Years Of Trust</div>
@@ -181,7 +192,7 @@ const Home = () => {
                     </div>
 
                     {/* Mission & Vision */}
-                    <div className=' px-6 lg:max-w-[1200px] lg:mx-auto pt-10 pb-20 z-10 md:flex md:flex-row-reverse md:gap-10 md:pt-20 md:pb-40'>
+                    <div className=' px-6 lg:max-w-[1200px] lg:mx-auto  z-10 md:flex md:flex-row-reverse md:gap-10 py-10'>
                         {/* Left */}
                         <div>
                             <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#fff] drop-shadow-sm md:text-center'>Our Mission & Vision</div>
@@ -207,7 +218,7 @@ const Home = () => {
                         </div>
 
                     </div>
-                    <div className=' absolute bottom-[-10px] left-0 right-0'>
+                    <div className=' absolute bottom-[-10px] left-0 right-0 lg:hidden'>
                         <img src={bottomPart} className=' w-full h-full object-cover ' alt="" />
                     </div>
                 </div>
@@ -216,36 +227,84 @@ const Home = () => {
             <section>
                 <div className='flex justify-center items-center mb-10'>
                     <div className=' px-6 lg:max-w-[1200px] lg:mx-auto'>
-                        <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm'>Our Products</div>
-                        <div className='paraText mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laborum optio nesciunt eius officiis ea, voluptate impedit veniam dolorum labore cum excepturi asperiores nihil tempore sequi adipisci perspiciatis laudantium? Officiis?
+                        <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm md:text-center'>Our Products</div>
+                        <div className='paraText mb-10 md:text-center lg:px-56'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laborum optio nesciunt eius officiis ea, voluptate impedit veniam dolorum labore cum excepturi asperiores nihil tempore sequi adipisci perspiciatis laudantium? Officiis?
                         Optio eos accusamus dicta facilis ducimus reiciendis maiores, repudiandae minus quis, at perspiciatis. Nam impedit quaerat tenetur. Ullam commodi perferendis laudantium illum veniam molestiae sint, repellendus aliquid assumenda blanditiis ab.
                         </div>
 
                         {/* Product List */}
                         <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-10'>
                             <div className=' w-full h-[300px] productBox'>
-
+                                <div className='w-auto h-[200px]'>
+                                    <img src={product5} className='h-full w-full object-contain drop-shadow-2xl' alt="" />
+                                </div>
+                                <div className=' flex flex-col justify-center items-center titleText2'>
+                                    <div className='text-xl text-[#FF6C00] drop-shadow-sm'>Masala Lays Chips</div>
+                                    <div className='text-sm titleText mt-1'>Lorem ipsum dolor sit amet.</div>
+                                </div>
                             </div>
                             <div className=' w-full h-[300px] productBox'>
-
+                                <div className='w-auto h-[200px]'>
+                                    <img src={product5} className='h-full w-full object-contain drop-shadow-2xl' alt="" />
+                                </div>
+                                <div className=' flex flex-col justify-center items-center titleText2'>
+                                    <div className='text-xl text-[#FF6C00] drop-shadow-sm'>Masala Lays Chips</div>
+                                    <div className='text-sm titleText mt-1'>Lorem ipsum dolor sit amet.</div>
+                                </div>
                             </div>
                             <div className=' w-full h-[300px] productBox'>
-
+                                <div className='w-auto h-[200px]'>
+                                    <img src={product5} className='h-full w-full object-contain drop-shadow-2xl' alt="" />
+                                </div>
+                                <div className=' flex flex-col justify-center items-center titleText2'>
+                                    <div className='text-xl text-[#FF6C00] drop-shadow-sm'>Masala Lays Chips</div>
+                                    <div className='text-sm titleText mt-1'>Lorem ipsum dolor sit amet.</div>
+                                </div>
                             </div>
                             <div className=' w-full h-[300px] productBox'>
-
+                                <div className='w-auto h-[200px]'>
+                                    <img src={product5} className='h-full w-full object-contain drop-shadow-2xl' alt="" />
+                                </div>
+                                <div className=' flex flex-col justify-center items-center titleText2'>
+                                    <div className='text-xl text-[#FF6C00] drop-shadow-sm'>Masala Lays Chips</div>
+                                    <div className='text-sm titleText mt-1'>Lorem ipsum dolor sit amet.</div>
+                                </div>
                             </div>
                             <div className=' w-full h-[300px] productBox'>
-
+                                <div className='w-auto h-[200px]'>
+                                    <img src={product5} className='h-full w-full object-contain drop-shadow-2xl' alt="" />
+                                </div>
+                                <div className=' flex flex-col justify-center items-center titleText2'>
+                                    <div className='text-xl text-[#FF6C00] drop-shadow-sm'>Masala Lays Chips</div>
+                                    <div className='text-sm titleText mt-1'>Lorem ipsum dolor sit amet.</div>
+                                </div>
                             </div>
                             <div className=' w-full h-[300px] productBox'>
-
+                                <div className='w-auto h-[200px]'>
+                                    <img src={product5} className='h-full w-full object-contain drop-shadow-2xl' alt="" />
+                                </div>
+                                <div className=' flex flex-col justify-center items-center titleText2'>
+                                    <div className='text-xl text-[#FF6C00] drop-shadow-sm'>Masala Lays Chips</div>
+                                    <div className='text-sm titleText mt-1'>Lorem ipsum dolor sit amet.</div>
+                                </div>
                             </div>
                             <div className=' w-full h-[300px] productBox'>
-
+                                <div className='w-auto h-[200px]'>
+                                    <img src={product5} className='h-full w-full object-contain drop-shadow-2xl' alt="" />
+                                </div>
+                                <div className=' flex flex-col justify-center items-center titleText2'>
+                                    <div className='text-xl text-[#FF6C00] drop-shadow-sm'>Masala Lays Chips</div>
+                                    <div className='text-sm titleText mt-1'>Lorem ipsum dolor sit amet.</div>
+                                </div>
                             </div>
                             <div className=' w-full h-[300px] productBox'>
-
+                                <div className='w-auto h-[200px]'>
+                                    <img src={product5} className='h-full w-full object-contain drop-shadow-2xl' alt="" />
+                                </div>
+                                <div className=' flex flex-col justify-center items-center titleText2'>
+                                    <div className='text-xl text-[#FF6C00] drop-shadow-sm'>Masala Lays Chips</div>
+                                    <div className='text-sm titleText mt-1'>Lorem ipsum dolor sit amet.</div>
+                                </div>
                             </div>
                         </div>
                         <div className='flex justify-center mt-10 items-center'>
@@ -257,11 +316,18 @@ const Home = () => {
 
             <section>
                 <div className=' mb-10'>
-                    <div className='px-6 lg:max-w-[1200px] lg:mx-auto'>
+                    <div className=' px-6 lg:w-[1200px] lg:mx-auto'>
+                        <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center'>Why People Choose Hyper City</div>
+                        <div className='paraText mb-10 text-center lg:px-56'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In animi corporis minima molestias sint molestiae labore necessitatibus, qui inventore assumenda, rem dolore consequuntur quis commodi, dolorum porro natus magnam amet.
+                        </div>
+                    </div>
+                    <div className='px-6 lg:max-w-[1200px] lg:mx-auto md:flex md:justify-center md:items-center md:gap-10'>
+
                         {/* Left */}
-                        <div>
-                            <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center'>Why People Choose Hyper City</div>
-                            <div className='paraText mb-10 text-center'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In animi corporis minima molestias sint molestiae labore necessitatibus, qui inventore assumenda, rem dolore consequuntur quis commodi, dolorum porro natus magnam amet.
+
+                        <div className='mb-10 flex justify-center items-center'>
+                            <div className=' w-[300px] h-[300px] BlobDesign choseUs bg-[#0cd50f] lg:w-[500px] lg:h-[500px]'>
+                                <img src={choseUs} className='w-full h-full object-cover rounded-full' alt="" />
                             </div>
                         </div>
 
@@ -310,7 +376,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='mb-10 md:px-10 lg:max-w-[1200px]'>
+            <section className='mb-10 md:px-10 lg:max-w-[1200px] lg:mx-auto'>
                 <div>
                    <div className=''>
                         <div className='mb-5 text-[42px] titleText2 leading-tight text-[#0cd50f] text-center'>Our Brands</div>
