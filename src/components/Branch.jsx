@@ -16,7 +16,7 @@ const Branch = () => {
             <div className='grid grid-cols-1 md:flex  mb-10 md:gap-10 md:place-items-start'>
               {/* Box */}
               <div className=' w-full h-[300px] productBox mb-10'>
-                <div>
+                <div className=' w-full h-[300px]'>
                   <img src={branch1} className='w-full h-full object-cover productBoxImg' alt="" />
                 </div>
               </div>
@@ -33,7 +33,7 @@ const Branch = () => {
             <div className='grid grid-cols-1 place-items-center md:flex md:flex-row-reverse md:gap-10'>
               {/* Box */}
               <div className=' w-full h-[300px] productBox mb-10'>
-                <div>
+                <div className=' w-full h-[300px]'>
                   <img src={branch2} className='productBoxImg w-full h-full object-cover' alt="" />
                 </div>
               </div>

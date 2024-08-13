@@ -5,6 +5,7 @@ import logo from "../assets/logo.png"
 import mobileBg1 from "../assets/mobil-bg1.jpg"
 import mobileBg2 from "../assets/mobile-bg2.jpg"
 import mobileFooterImg from "../assets/mobile-footer-img.png"
+import mobileFooterImg2 from "../assets/mobile-footer-img2.png"
 
 const MobileNavbar = ({ handleMenu }) => {
   return (
@@ -29,10 +30,22 @@ const MobileNavbar = ({ handleMenu }) => {
             <li className='drop-shadow-sm'><Link onClick={handleMenu} to='/contact'>Contact</Link></li>
           </ul>
         </nav>
-        <div className='absolute bottom-0 w-full h-[100px] bg-[#FF6C00] rounded-t-3xl '>
-          <div className='w-auto h-[250px] absolute top-[-120px]'>
-            <img src={mobileFooterImg} className=' w-full h-full' alt="" />
+        <div className='absolute bottom-0 w-full h-[100px] bg-[#FF6C00] rounded-t-3xl DarkFooter'>
+          <div className='flex'>
+            <div className='w-auto h-[250px] mt-[-85px]'>
+              <img src={mobileFooterImg} className=' w-full h-full drop-shadow-xl object-contain' alt="" />
+            </div>
+
+          <div className=' right-5 top-2 pr-1 flex justify-center items-center'>
+            <div className='titleText2  text-white mb-10 text-center'>Quality You Can <span className='block'></span> Trust</div>
           </div>
+
+          <div className='w-auto h-[200px] mt-[-58px] mr-[-30px] rotate-12'>
+            <img src={mobileFooterImg2} className=' w-full h-full object-contain' alt="" />
+          </div>
+
+          </div>
+
         </div>
       </div>
     </div>
