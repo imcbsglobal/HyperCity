@@ -10,10 +10,16 @@ import { motion } from "framer-motion"
 const LogoSlider = () => {
     const logos = [
         { id: 1, src: silverTea},
-        { id: 2, src: logoT},
         { id: 3, src: oatrin},
         { id: 4, src: hl},
         { id: 5, src: wayanadanCoffee},
+        { id: 1, src: silverTea},
+        { id: 3, src: oatrin},
+        { id: 4, src: hl},
+        { id: 5, src: wayanadanCoffee},
+        { id: 1, src: silverTea},
+        { id: 3, src: oatrin},
+
     ];
     const animationVariants = {
         animate: {

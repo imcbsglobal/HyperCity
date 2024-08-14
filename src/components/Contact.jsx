@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div>
       <section>
-        <div className='flex justify-center items-center relative'>
+        <div className='flex justify-center items-center relative pt-28'>
             <div className=' absolute top-0 left-0 right-0 bottom-0 -z-20'>
                 <img src={MartBg} className=' w-full h-full object-cover md:opacity-80 md:blur-[2px] blur-[3px]' alt="" />
             </div>

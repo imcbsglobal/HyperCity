@@ -44,7 +44,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to right, #ffaa00, #f49600);
+    background-image: linear-gradient(to right, #000000, #000000);
     overflow: hidden;
 }
 
@@ -55,7 +55,7 @@
     content: '';
     top: 0;
     left: 0;
-    background-color: #6c920c;
+    background-color: #000000;
 }
 
 .title {
@@ -71,10 +71,14 @@
     line-height: .9em;
     transform: rotate(-5deg);
 }
+.titleOrg{
+    font-family: 'Wigglye', sans-serif;
+    font-style:oblique;
+}
 
 .images {
     position: absolute;
-    bottom: 0%;
+    bottom: -10%;
     left: 50%;
     --rotate: 0deg;
     transform: translate(-50%, 50%) rotate(var(--rotate));
@@ -98,16 +102,27 @@
 .images .item img {
     height: 280px;
     margin-top: -30px;
-    -webkit-box-reflect: below -70px linear-gradient(transparent 25%, rgba(0,0,0,0.25));
+    -webkit-box-reflect: below -70px linear-gradient(transparent 25%, rgba(0,0,0,0.45));
     filter: drop-shadow(1px 12px rgba(50, 52, 7, 0.408));
 
 }
 
 @media screen and (min-width:1024px){
+    .slider{
+        height: 900px;
+    }
+    .slider::before{
+        height: 900px;
+    }
     .images{
         height: 1200px;
         width: 1200px;
-        top: -35%;
+        top: 250px;
+        rotate: 45deg;
+        left: 150px;
+        transform: translate(-50%, 50%) rotate(var(--rotate));
+        /* background-color: #29b9016c; */
+        background: linear-gradient(120deg, rgba(0,188,15,1) 0%, rgba(0,0,0,1) 100%);
     }
     .images .item img{
         height: 400px;
@@ -118,7 +133,7 @@
     .images{
         height: 1400px;
         width: 1400px;
-        top: -55%;
+        top: -35%;
     }
     .images .item img{
         height: 500px;
@@ -213,7 +228,7 @@
 }
 .homeTitle{
     font-family: 'Wigglye', sans-serif;
-    font-size: 70px;
+    font-size: 60px;
     color: #fff;
     font-style:oblique;
     text-shadow: 1px 1px 0px #478860;
@@ -304,7 +319,7 @@
     height: 250px;
     border-radius: 50%;
     position: relative;
-    background-color: #0cd50f;
+    /* background-color: #0cd50f; */
 }
 .aboutImg::before{
     content: '';
@@ -497,4 +512,9 @@
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+  }
+  .navbarBg{
+    background-color: #ffffffcf;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid white;
   }

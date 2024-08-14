@@ -140,8 +140,8 @@ const Home = () => {
                 <div className=' lg:max-w-[1200px] lg:mx-auto'>
                     <div className=' px-6 py-10 lg:flex lg:gap-10 lg:justify-center lg:items-center'>
                         {/* Left */}
-                        <div className='aboutImg mx-auto BlobDesign lg:h-[400px] lg:w-[400px]'>
-                            <img src={aboutImg} className='w-full h-full object-cover rounded-full' alt="" />
+                        <div className='aboutImg mx-auto  lg:h-[400px] lg:w-[400px]'>
+                            <img src={aboutImg} className='w-full h-full object-cover rounded-full BlobDesign' alt="" />
                         </div>
 
                         {/* Right */}

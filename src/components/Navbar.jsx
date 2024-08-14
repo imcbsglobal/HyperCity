@@ -18,8 +18,8 @@ const Navbar = () => {
           <MobileNavbar handleMenu={handleMenu} />
         </div>
       ) : (
-        <header className=' w-full px-6 py-2'>
-          <nav className=' flex justify-between items-center'>
+        <header className=' w-full px-6 py-2 fixed z-[999] navbarBg'>
+          <nav className=' flex justify-between items-center lg:max-w-[1200px] lg:mx-auto'>
             <div className=' w-auto h-[80px]'>
               <img src={logo} className=' w-full h-full object-contain drop-shadow-sm' alt="" />
             </div>

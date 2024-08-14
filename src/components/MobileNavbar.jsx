@@ -36,13 +36,13 @@ const MobileNavbar = ({ handleMenu }) => {
               <img src={mobileFooterImg} className=' w-full h-full drop-shadow-xl object-contain' alt="" />
             </div>
 
-          <div className=' right-5 top-2 pr-1 flex justify-center items-center'>
+          {/* <div className=' right-5 top-2 pr-1 flex justify-center items-center'>
             <div className='titleText2  text-white mb-10 text-center'>Quality You Can <span className='block'></span> Trust</div>
-          </div>
+          </div> */}
 
-          <div className='w-auto h-[200px] mt-[-58px] mr-[-30px] rotate-12'>
+          {/* <div className='w-auto h-[200px] mt-[-58px] mr-[-30px] rotate-12'>
             <img src={mobileFooterImg2} className=' w-full h-full object-contain' alt="" />
-          </div>
+          </div> */}
 
           </div>
 
