@@ -326,8 +326,8 @@ const Home = () => {
                         {/* Left */}
 
                         <div className='mb-10 flex justify-center items-center'>
-                            <div className=' w-[300px] h-[300px] BlobDesign choseUs bg-[#0cd50f] lg:w-[500px] lg:h-[500px]'>
-                                <img src={choseUs} className='w-full h-full object-cover rounded-full' alt="" />
+                            <div className=' w-[300px] h-[300px]  choseUs  lg:w-[500px] lg:h-[500px]'>
+                                <img src={choseUs} className='w-full h-full object-cover rounded-full BlobDesign' alt="" />
                             </div>
                         </div>
 

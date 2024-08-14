@@ -13,6 +13,7 @@ import homeBanner2 from "../assets/home-banner2.png"
 // import margBg from "../assets/branch1.jpeg"
 import homeVideo from "../assets/home-video.mp4"
 import blackShade from "../assets/black-shade.png"
+import { motion } from "framer-motion"
 
 
 const Carousel = () => {
@@ -63,11 +64,31 @@ const Carousel = () => {
             </div> */}
             <div className=' flex justify-center items-center'>
                 <div className='absolute top-10 lg:top-[20px] text-center z-10 lg:right-0 lg:hidden'>
-                    <div className=' grid grid-cols-2 px-4 mt-20'>
-                        <div className='homeTitle -rotate-[10deg]'>Quality</div>
-                        <div className='homeTitle rotate-[10deg] '>You</div>
-                        <div className='homeTitle -rotate-[10deg] mt-[-20px]'>Can</div>
-                        <div className='homeTitle rotate-[10deg] mt-[-20px]'>Trust</div>
+                    <div className=' grid grid-cols-2 px-4 mt-32'>
+                        <motion.div 
+                            initial={{scale:0, opacity:0}}
+                            animate={{scale:1,opacity:1}}
+                            transition={{duration:1,ease:'backInOut'}}
+                            className='homeTitle -rotate-[10deg]'>
+                            Quality
+                        </motion.div>
+                        <motion.div
+                            initial={{scale:0, opacity:0}}
+                            animate={{scale:1,opacity:1}}
+                            transition={{duration:1,ease:'backInOut',delay:.5}}
+                        className='homeTitle rotate-[10deg] '>
+                            You
+                        </motion.div>
+                        <motion.div
+                            initial={{scale:0, opacity:0}}
+                            animate={{scale:1,opacity:1}}
+                            transition={{duration:1,ease:'backInOut',delay:1}}
+                        className='homeTitle -rotate-[10deg] mt-[-20px]'>Can</motion.div>
+                        <motion.div
+                            initial={{scale:0, opacity:0}}
+                            animate={{scale:1,opacity:1}}
+                            transition={{duration:1,ease:'backInOut',delay:1.5}}
+                        className='homeTitle rotate-[10deg] mt-[-20px]'>Trust</motion.div>
                     </div>
                 </div>
                 
@@ -88,10 +109,10 @@ const Carousel = () => {
                     <img src={margBg} className=' absolute w-full h-full object-cover rounded-l-[100px] blur-[5px] border-[1px] border-white' alt="" />
                 </div> */}
                 <div className=' absolute left-[40%] top-[30%] translate-[-50%-50%] titleOrg hidden lg:block'>
-                    <div className='text-[82px] text-[#fff] text-center leading-tight'>Your Trust Worthy Quality Source</div>
-                    <div className='text-center px-20 text-[#ffffff]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis adipisci doloremque, totam quibusdam repudiandae explicabo facere ipsam omnis, tempore nisi libero, soluta ullam dolore voluptatum. Autem quidem facere provident at.</div>
+                    <div className='text-[82px] text-[#fff] text-center leading-tight home-Quote'>Your Trust Worthy Quality <span className='block'>Source</span></div>
+                    <div className='text-center px-20 text-[#ffffff] homePara paraText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis adipisci doloremque, totam quibusdam repudiandae explicabo facere ipsam omnis, tempore nisi libero, soluta ullam dolore voluptatum. Autem quidem facere provident at.</div>
                     <div className=' justify-center items-center flex mt-5'>
-                        <button className='homeTitle1 font-bold px-8 py-2 rounded-3xl bg-[#fff] text-[#0cd50f]'>Discover More</button>
+                        <button className='homeTitle1 font-bold px-8 py-2 rounded-3xl bg-[#fff] text-[#0cd50f] homeButton'>Discover More</button>
                     </div>
                 </div>
                 {/* <div className=''>
@@ -111,13 +132,17 @@ const Carousel = () => {
                 {/* Hyper City! */}
             </div>
             
-            <div className="images" style={{ '--rotate': `${rotate}deg` }}>
+            <motion.div
+                initial={{opacity:0}}
+                animate={{opacity:1}}
+                transition={{duration:1,delay:2,ease:'backInOut'}}
+            className="images" style={{ '--rotate': `${rotate}deg` }}>
                 {ImageArray.map((image, i) => (
                     <div className="item " style={{ '--i': i + 1 }} key={i}>
                         <img src={image} className='w-full h-full object-contain' alt={`Slide ${i + 1}`} />
                     </div>
                 ))}
-            </div>
+            </motion.div>
 
             {/* <button id="prev" onClick={prevSlider}>&lt;</button>
             <button id="next" onClick={nextSlider}>&gt;</button> */}
