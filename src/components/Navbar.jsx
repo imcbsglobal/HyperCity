@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import logo from "../assets/logo.png"
 import { CgMenuGridO } from "react-icons/cg";
 import MobileNavbar from './MobileNavbar';
+import { IoCallSharp } from "react-icons/io5";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
@@ -35,6 +37,16 @@ const Navbar = () => {
             </div>
             <div className=' md:hidden'>
               <CgMenuGridO onClick={handleMenu} className='text-3xl text-[#059328] font-bold cursor-pointer drop-shadow-lg' />
+            </div>
+            <div className=' flex flex-col gap-2 text-[#494343]'>
+              <div className=' flex items-center gap-2'>
+                <div><IoCallSharp/></div>
+                <div className=' font-bold'>+91 987575654567</div>
+              </div>
+              <div className=' flex items-center gap-2'>
+                <div><HiOutlineMail/></div>
+                <div className=' font-bold'>info@hypercity.com</div>
+              </div>
             </div>
           </nav>
         </header>

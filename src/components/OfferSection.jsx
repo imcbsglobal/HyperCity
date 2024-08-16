@@ -11,7 +11,7 @@ const OfferSection = () => {
       <section>
         <div className='py-10 mb-10'>
             <div className='px-2'>
-                <div className=' titleText2 text-center font-bold text-[36px] mb-5 leading-tight text-[#0cd50f] md:text-white drop-shadow-sm'>Offer Section</div>
+                <div className=' titleText2 text-center font-bold text-[36px] mb-5 leading-tight text-[#fff] md:text-white drop-shadow-sm'>Offer Section</div>
                 {/* Offer Image-Cards */}
                 <div className=' grid grid-cols-2 w-full gap-2 lg:grid-cols-4 lg:mx-auto offerSectionsWidth'>
                     <div className='w-full h-[300px] lg:h-[500px] rounded-lg DarkBox'>
