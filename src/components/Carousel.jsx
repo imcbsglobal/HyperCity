@@ -14,6 +14,9 @@ import homeBanner2 from "../assets/home-banner2.png"
 import homeVideo from "../assets/home-video.mp4"
 import blackShade from "../assets/black-shade.png"
 import { motion } from "framer-motion"
+import fruitCart from "../assets/fruits-cart.png"
+import meatCart from "../assets/meat-cart.png"
+import stationeryCart from "../assets/stationery-cart.png" 
 
 
 const Carousel = () => {
@@ -22,7 +25,7 @@ const Carousel = () => {
     const [currentImage, setCurrentImage] = useState(0);
 
     // const images = [slider1, slider2, slider3];
-    const ImageArray = [cart1, cart2, cart3,cart4,cart5,cart6];
+    const ImageArray = [cart2, fruitCart, stationeryCart,meatCart,fruitCart,stationeryCart];
     const countItem = ImageArray.length; // Number of images
     const rotateAdd = 360 / countItem;
     const autoNextRef = useRef();

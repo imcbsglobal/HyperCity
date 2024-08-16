@@ -130,13 +130,13 @@ const Home = () => {
             </div>
 
             {/* Offer Section */}
-            <section className=' relative'>
+            <section className=' relative offerSectionBg'>
                 <div className='hidden  absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-0'>
-                    <img src={offerBg} className='w-full h-full object-cover mix-blend-multiply' alt="" />
+                    <img src={offerBg} className='w-full h-full object-cover' alt="" />
                 </div>
-                <div className='hidden md:block absolute top-0 left-0 right-0 bottom-0 w-full h-full'>
+                {/* <div className='hidden md:block absolute top-0 left-0 right-0 bottom-0 w-full h-full'>
                     <img src={blackShade} className='w-full h-full object-cover' alt="" />
-                </div>
+                </div> */}
                 <div className='md:hidden absolute top-0 bottom-0 left-0 right-0 mix-blend-multiply opacity-55'>
                     <img src={offerCoverBg} className=' w-full h-full object-cover' alt="" />
                 </div>

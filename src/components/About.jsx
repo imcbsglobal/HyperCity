@@ -1,6 +1,9 @@
 import React from 'react'
 import aboutImg from "../assets/about-img.jpg"
 import Footer from './Footer'
+import author1 from '../assets/author1.jpg'
+import author2 from '../assets/author2.jpg'
+
 
 const About = () => {
   return (
@@ -37,7 +40,7 @@ const About = () => {
             <div className='grid grid-cols-1 place-items-center mb-10 md:flex md:justify-center md:items-center md:gap-10'>
               {/* Excecutive Photo */}
               <div className=' w-[150px] h-[150px] rounded-full bg-[#8f6666] mb-3'>
-                <img src="" alt="" />
+                <img src={author1} className='w-full h-full object-cover rounded-full' alt="" />
               </div>
               {/* Excecutive Quote */}
               <div className='md:w-[70%]'>
@@ -51,7 +54,7 @@ const About = () => {
             <div className='grid grid-cols-1 place-items-center mb-10 md:flex md:justify-center md:items-center md:gap-10 md:flex-row-reverse'>
               {/* Excecutive Photo */}
               <div className=' w-[150px] h-[150px] rounded-full bg-[#8f6666] mb-3'>
-                <img src="" alt="" />
+              <img src={author2} className='w-full h-full object-cover rounded-full' alt="" />
               </div>
               {/* Excecutive Quote */}
               <div className='md:w-[70%]'>
