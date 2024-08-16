@@ -1,6 +1,7 @@
 import React from 'react'
 import branch1 from "../assets/branch1.jpeg"
 import branch2 from "../assets/branch2.jpg"
+import Footer from './Footer'
 
 
 const Branch = () => {
@@ -49,6 +50,10 @@ const Branch = () => {
 
           </div>
         </div>
+      </section>
+
+      <section className='bg-[#FF6C00]'>
+        <Footer/>
       </section>
     </div>
   )

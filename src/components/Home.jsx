@@ -40,6 +40,9 @@ import product5 from "../assets/product5.png"
 import product6 from "../assets/product6.png"
 import product7 from "../assets/product7.png"
 import product8 from "../assets/product8.png"
+import offerBg from "../assets/offer-bg.jpg"
+import offerCoverBg from "../assets/offer-cover-bg.png"
+ 
 
 
 
@@ -114,7 +117,7 @@ const Home = () => {
                 <div className=' absolute bottom-0 w-full h-[60px] bg-[#fff]'>
                     <div className=' flex justify-center mt-3'>
                         
-                        <button className='bg-[#00ff15] px-8 py-1 text-[#fff] font-bold titleText2 rounded-3xl shadow-md flex justify-center items-center gap-2'><span className='text-xl'><FaWhatsapp/></span>Start Now</button>
+                        <button className='bg-[#01af10] px-8 py-1 text-[#fff] font-bold titleText2 rounded-3xl shadow-md flex justify-center items-center gap-2'><span className='text-xl'><FaWhatsapp/></span>Start Now</button>
                     </div>
                 </div>
 
@@ -127,7 +130,16 @@ const Home = () => {
             </div>
 
             {/* Offer Section */}
-            <section>
+            <section className=' relative'>
+                <div className='hidden  absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-0'>
+                    <img src={offerBg} className='w-full h-full object-cover mix-blend-multiply' alt="" />
+                </div>
+                <div className='hidden md:block absolute top-0 left-0 right-0 bottom-0 w-full h-full'>
+                    <img src={blackShade} className='w-full h-full object-cover' alt="" />
+                </div>
+                <div className='md:hidden absolute top-0 bottom-0 left-0 right-0 mix-blend-multiply opacity-55'>
+                    <img src={offerCoverBg} className=' w-full h-full object-cover' alt="" />
+                </div>
                 <OfferSection/>
             </section>
 
@@ -140,7 +152,7 @@ const Home = () => {
                 <div className=' lg:max-w-[1200px] lg:mx-auto'>
                     <div className=' px-6 py-10 lg:flex lg:gap-10 lg:justify-center lg:items-center'>
                         {/* Left */}
-                        <div className='aboutImg mx-auto  lg:h-[400px] lg:w-[400px]'>
+                        <div className='aboutImg mx-auto  lg:h-[500px] lg:w-[500px]'>
                             <img src={aboutImg} className='w-full h-full object-cover rounded-full BlobDesign' alt="" />
                         </div>
 
@@ -226,7 +238,7 @@ const Home = () => {
 
             <section>
                 <div className='flex justify-center items-center mb-10'>
-                    <div className=' px-6 lg:max-w-[1200px] lg:mx-auto'>
+                    <div className=' px-6 lg:mx-auto'>
                         <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm md:text-center'>Our Products</div>
                         <div className='paraText mb-10 md:text-center lg:px-56'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laborum optio nesciunt eius officiis ea, voluptate impedit veniam dolorum labore cum excepturi asperiores nihil tempore sequi adipisci perspiciatis laudantium? Officiis?
                         Optio eos accusamus dicta facilis ducimus reiciendis maiores, repudiandae minus quis, at perspiciatis. Nam impedit quaerat tenetur. Ullam commodi perferendis laudantium illum veniam molestiae sint, repellendus aliquid assumenda blanditiis ab.
@@ -430,7 +442,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section>
+            <section className='bg-[#FF6C00]'>
                 <Footer/>
             </section>
         </div>

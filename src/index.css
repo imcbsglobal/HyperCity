@@ -135,10 +135,17 @@
         width: 1400px;
         top: -35%;
     }
+    .images .item{
+        rotate: calc(60deg * var(--i));
+    }
     .images .item img{
         height: 500px;
         margin-top: -130px;
         -webkit-box-reflect: below -120px linear-gradient(transparent 25%, rgba(0,0,0,0.25));
+        rotate: -120deg;
+    }
+    .logo{
+        height: 200px;
     }
 }
 
@@ -161,6 +168,9 @@
     }
     .homeButton{
         font-size:26px;
+    }
+    .offerSectionsWidth{
+        max-width: 1650px;
     }
 }
 .content {
@@ -247,6 +257,9 @@
 @media screen and (min-width:1440px){
     .homeTitle{
         font-size: 90px;
+    }
+    .logo{
+        height: 200px;
     }
 }
 .titleText{
@@ -401,10 +414,29 @@
   
   .logo {
     width: 200px; /* Adjust as per your design */
-    height: 100px; /* Maintain aspect ratio */
+    height: 50px; /* Maintain aspect ratio */
     object-fit: contain;
-    /* margin-right: 20px; */
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  }
+  @media screen and (min-width:1440px){
+    .logo-slider-container {
+        width: 100%; /* Full width of the container */
+        overflow: hidden; /* Hide the overflowing logos */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .logo-slider {
+        display: flex;
+        width: fit-content;
+        gap: 20px;
+      }
+      
+      .logo {
+        width: 250px; /* Adjust as per your design */
+        height: 100px; /* Maintain aspect ratio */
+        object-fit: contain;
+      }
   }
   .InputStyle{
     -webkit-box-shadow: -1px 6px 29px -10px rgba(0,0,0,0.75);
@@ -526,4 +558,7 @@
     background-color: #ffffffcf;
     backdrop-filter: blur(20px);
     border-bottom: 1px solid white;
+  }
+  .offerSectionBg{
+    background: linear-gradient(120deg, rgba(255,255,255,1) 0%, rgba(178,161,161,1) 100%);
   }

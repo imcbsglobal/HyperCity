@@ -1,5 +1,6 @@
 import React from 'react'
 import aboutImg from "../assets/about-img.jpg"
+import Footer from './Footer'
 
 const About = () => {
   return (
@@ -61,6 +62,10 @@ const About = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className='bg-[#FF6C00]'>
+        <Footer/>
       </section>
     </div>
   )

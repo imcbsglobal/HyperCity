@@ -111,8 +111,8 @@ const Carousel = () => {
                 <div className=' absolute left-[40%] top-[30%] translate-[-50%-50%] titleOrg hidden lg:block'>
                     <div className='text-[82px] text-[#fff] text-center leading-tight home-Quote'>Your Trust Worthy Quality <span className='block'>Source</span></div>
                     <div className='text-center px-20 text-[#ffffff] homePara paraText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis adipisci doloremque, totam quibusdam repudiandae explicabo facere ipsam omnis, tempore nisi libero, soluta ullam dolore voluptatum. Autem quidem facere provident at.</div>
-                    <div className=' justify-center items-center flex mt-5'>
-                        <button className='homeTitle1 font-bold px-8 py-2 rounded-3xl bg-[#fff] text-[#0cd50f] homeButton'>Discover More</button>
+                    <div className=' justify-center items-center flex mt-5 cursor-pointer'>
+                        <button className='paraText font-bold px-8 py-2 rounded-3xl bg-[#fff] text-[#0cd50f] homeButton cursor-pointer relative z-30'>Discover More</button>
                     </div>
                 </div>
                 {/* <div className=''>
@@ -135,7 +135,7 @@ const Carousel = () => {
             <motion.div
                 initial={{opacity:0}}
                 animate={{opacity:1}}
-                transition={{duration:1,delay:2,ease:'backInOut'}}
+                transition={{duration:1,delay:.2,ease:'backInOut'}}
             className="images" style={{ '--rotate': `${rotate}deg` }}>
                 {ImageArray.map((image, i) => (
                     <div className="item " style={{ '--i': i + 1 }} key={i}>
