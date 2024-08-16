@@ -141,7 +141,7 @@
     .images .item img{
         height: 500px;
         margin-top: -130px;
-        -webkit-box-reflect: below -120px linear-gradient(transparent 25%, rgba(0,0,0,0.25));
+        -webkit-box-reflect: below -120px linear-gradient(transparent 25%, rgba(0,0,0,0));
         rotate: -120deg;
     }
     .logo{
