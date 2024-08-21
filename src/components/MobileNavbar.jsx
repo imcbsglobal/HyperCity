@@ -7,6 +7,7 @@ import mobileBg2 from "../assets/mobile-bg2.jpg"
 import mobileFooterImg from "../assets/mobile-footer-img.png"
 import mobileFooterImg2 from "../assets/mobile-footer-img2.png"
 
+
 const MobileNavbar = ({ handleMenu }) => {
   return (
     <div>

@@ -5,6 +5,7 @@ import { CgMenuGridO } from "react-icons/cg";
 import MobileNavbar from './MobileNavbar';
 import { IoCallSharp } from "react-icons/io5";
 import { HiOutlineMail } from "react-icons/hi";
+import { FaUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
@@ -35,7 +36,8 @@ const Navbar = () => {
                 <li><Link to='/contact'>Contact</Link></li>
               </ul>
             </div>
-            <div className=' md:hidden'>
+            <div className=' md:hidden flex items-center gap-5'>
+              <FaUserCircle className='text-[25px] text-[#FF6C00] drop-shadow-md cursor-pointer'/>
               <CgMenuGridO onClick={handleMenu} className='text-3xl text-[#059328] font-bold cursor-pointer drop-shadow-lg' />
             </div>
             <div className=' hidden md:flex flex-col gap-2 text-[#494343]'>

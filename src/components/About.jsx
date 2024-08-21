@@ -3,11 +3,17 @@ import aboutImg from "../assets/about-img.jpg"
 import Footer from './Footer'
 import author1 from '../assets/author1.jpg'
 import author2 from '../assets/author2.jpg'
+import customer from "../assets/customer.png"
+import Testimonials from './Testimonials'
+import mobileBg from "../assets/mobil-bg1.jpg"
 
 
 const About = () => {
   return (
-    <div>
+    <div className='relative'>
+      <div className=' absolute w-full h-full left-0 right-0 top-0 bottom-0 -z-30'>
+        <img src={mobileBg} className=' w-full h-full object-cover opacity-55' alt="" />
+      </div>
       <section className='pt-32'>
         <div className=''>
           <div className=' px-6 lg:max-w-[1200px] lg:mx-auto mt-2 mb-10 lg:flex lg:flex-row-reverse lg:gap-10'>
@@ -65,6 +71,22 @@ const About = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className=' mb-16 overflow-hidden'>
+        <div className=' px-6 text-center mb-10 md:flex md:justify-center md:gap-5 md:items-center llg:w-[1400px] mx-auto'>
+          <div className='md:w-[50%] lg:w-[40%] mb-5 lg:mb-0'>
+            <img src={customer} className=' boxShadow' alt="" />
+          </div>
+          <div className='md:w-[50%] lg:w-[60%]'>
+            <div className='text-[42px] mb-5 titleText2 leading-tight text-[#0cd50f]'>Our Customers Love</div>
+            <div className='paraText mb-5 lg:px-20'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, placeat expedita eum ratione ex itaque veritatis quam pariatur incidunt. Nostrum ad adipisci natus voluptates! Voluptatem placeat nisi quaerat quod iusto.Molestiae soluta ad sint doloribus autem. Aliquid ex sed alias magni molestias. Quibusdam in odit cumque ipsa deserunt nam quos reiciendis a provident illum voluptate, doloremque voluptates maiores architecto explicabo!
+            </div>
+            <Testimonials className="mt-5"/>
+          </div>
+        </div>
+        
       </section>
 
       <section className='bg-[#FF6C00]'>

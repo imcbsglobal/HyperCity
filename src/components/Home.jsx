@@ -42,6 +42,8 @@ import product7 from "../assets/product7.png"
 import product8 from "../assets/product8.png"
 import offerBg from "../assets/offer-bg.jpg"
 import offerCoverBg from "../assets/offer-cover-bg.png"
+import customer from "../assets/customer.png"
+import ProductCarousel from './ProductCarousel';
  
 
 
@@ -130,16 +132,17 @@ const Home = () => {
             </div>
 
             {/* Offer Section */}
-            <section className=' relative offerSectionBg'>
-                <div className='hidden  absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-0'>
+            <section className=' relative '>
+                {/* <div className='hidden  absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-0'>
                     <img src={offerBg} className='w-full h-full object-cover' alt="" />
-                </div>
+                </div> */}
                 {/* <div className='hidden md:block absolute top-0 left-0 right-0 bottom-0 w-full h-full'>
                     <img src={blackShade} className='w-full h-full object-cover' alt="" />
                 </div> */}
-                <div className='md:hidden absolute top-0 bottom-0 left-0 right-0 mix-blend-multiply opacity-55'>
+                {/* <div className='md:hidden absolute top-0 bottom-0 left-0 right-0 mix-blend-multiply opacity-55'>
                     <img src={offerCoverBg} className=' w-full h-full object-cover' alt="" />
-                </div>
+                </div> */}
+                <ProductCarousel/>
                 <OfferSection/>
             </section>
 
@@ -208,7 +211,7 @@ const Home = () => {
                         {/* Left */}
                         <div>
                             <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#fff] drop-shadow-sm md:text-center'>Our Mission & Vision</div>
-                            <div className=' w-full h-[200px] relative overflow-hidden mb-10 hidden md:flex'>
+                            <div className=' w-full h-[200px] relative overflow-hidden mb-10 hidden md:flex lg:h-[330px]'>
                                 <img src={missionVision} className='main-image absolute top-0 left-0 w-full h-full object-cover shadow-2xl drop-shadow-2xl' alt="" />
                                 {/* <img src={brushFrame} className=' brush-frame absolute top-0 left-0 w-full h-full object-cover ' alt="" /> */}
                             </div>
@@ -219,13 +222,13 @@ const Home = () => {
                             {/* Mission */}
                             <div className=' mb-10'>
                                 <div className='titleText font-bold text-[32px] mb-5 leading-tight text-[#fff] drop-shadow-sm'>Our Mission</div>
-                                <div className='paraText text-[#fff]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo aperiam quos, vel aut facilis illum animi veritatis distinctio minima dolore soluta aliquam nam laboriosam et ipsam mollitia. Cum, natus.</div>
+                                <div className='paraText text-[#fff]'>To provide the community with fresh, high-quality products at competitive prices while delivering exceptional customer service. The supermarket aims to be a trusted local provider, ensuring that every shopping experience is convenient, enjoyable, and fulfilling, because at our supermarket, we stand for “Quality You Can Trust</div>
                             </div>
 
                             {/* Vision */}
                             <div>
                                 <div className='titleText font-bold text-[32px] mb-5 leading-tight text-[#fff] drop-shadow-sm'>Our Vision</div>
-                                <div className='titleText paraText text-[#fff]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugit nesciunt molestiae inventore, quia vitae asperiores iure sed, pariatur voluptas enim voluptatem libero amet. Quis rem vitae ex inventore quidem!</div>
+                                <div className='titleText paraText text-[#fff]'>To become the leading supermarket chain in the region, known for its commitment to quality, customer satisfaction, and community support. The goal is to expand further, bringing our unique shopping experience to more neighbourhoods while maintaining the highest standards of service and product selection.</div>
                             </div>
                         </div>
 
@@ -329,8 +332,8 @@ const Home = () => {
             <section>
                 <div className=' mb-10'>
                     <div className=' px-6 lg:w-[1200px] lg:mx-auto'>
-                        <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center'>Why People Choose Hyper City</div>
-                        <div className='paraText mb-10 text-center lg:px-56'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In animi corporis minima molestias sint molestiae labore necessitatibus, qui inventore assumenda, rem dolore consequuntur quis commodi, dolorum porro natus magnam amet.
+                        <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center'>The Values We Live By</div>
+                        <div className='paraText mb-10 text-center lg:px-56'>At Hyper City, we prioritize our customers by delivering excellent service and high-quality products. We uphold integrity with honesty and transparency in all we do, and we stay committed to supporting our community. Through continuous innovation, we evolve to meet our customers' needs while maintaining the quality they trust.
                         </div>
                     </div>
                     <div className='px-6 lg:max-w-[1200px] lg:mx-auto md:flex md:justify-center md:items-center md:gap-10'>
@@ -349,41 +352,41 @@ const Home = () => {
                                 <div className='w-auto h-[60px]'>
                                     <img src={cartIcon} className='w-full h-full object-contain drop-shadow-lg' alt="" />
                                 </div>
-                                <div className=' text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum inventore pariatur</div>
+                                <div className=' text-sm'>Customer Focus: Always putting the needs and satisfaction of our customers first.</div>
                             </div>
                             <div className='flex justify-center items-center gap-5 px-5 py-3 Box'>
                                 <div className='w-auto h-[60px]'>
                                     <img src={cartIcon} className='w-full h-full object-contain drop-shadow-lg' alt="" />
                                 </div>
-                                <div className=' text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum inventore pariatur</div>
+                                <div className=' text-sm'>Quality: Offering only the best products and maintaining high standards in everything we do.</div>
                             </div>
                             <div className='flex justify-center items-center gap-5 Box px-5 py-3'>
                                 <div className=' w-auto h-[60px]'>
                                     <img src={cartIcon} className=' h-full w-full object-contain drop-shadow-lg' alt="" />
                                 </div>
-                                <div className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum inventore pariatur</div>
+                                <div className='text-sm'>Integrity: We conduct business with honesty, transparency, and a steadfast commitment to doing what's right.</div>
                             </div>
                             <div className='flex justify-center items-center gap-5 px-5 py-3 Box'>
                                 <div className=' w-auto h-[60px]'>
                                     <img src={cartIcon} className=' h-full w-full object-contain drop-shadow-lg' alt="" />
                                 </div>
-                                <div className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum inventore pariatur</div>
+                                <div className='text-sm'>Community: Supporting and giving back to the local community, fostering strong relationships.</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section>
-                <div className=' mb-10 flex justify-center items-center'>
-                    <div className=' lg:max-w-[1200px] lg:mx-auto px-6'>
-                        <div className='mb-5 text-[42px] titleText2 leading-tight text-[#0cd50f]'>Our Customers Love</div>
-                        <div className='mb-5 paraText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nulla et maxime impedit quam, porro deleniti saepe aspernatur ipsum temporibus nemo, consectetur eum, earum ipsa commodi! Praesentium deserunt maxime obcaecati?
-                        Aliquam earum velit, nobis fugiat soluta qui facere molestias quasi deleniti voluptates hic alias necessitatibus dolores nesciunt et veniam non quam ad accusantium voluptatibus similique facilis odit corporis quos! Exercitationem.
+            <section className=' mb-10 overflow-hidden'>
+                <div className=' px-6 text-center mb-10 md:flex md:justify-center md:gap-5 md:items-center llg:w-[1400px] mx-auto'>
+                    <div className='md:w-[50%] lg:w-[40%] mb-5 lg:mb-0'>
+                        <img src={customer} className=' boxShadow' alt="" />
+                    </div>
+                    <div className='md:w-[50%] lg:w-[60%]'>
+                        <div className='text-[42px] mb-5 titleText2 leading-tight text-[#0cd50f]'>Our Customers Love</div>
+                        <div className='paraText mb-5 lg:px-20'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, placeat expedita eum ratione ex itaque veritatis quam pariatur incidunt. Nostrum ad adipisci natus voluptates! Voluptatem placeat nisi quaerat quod iusto.Molestiae soluta ad sint doloribus autem. Aliquid ex sed alias magni molestias. Quibusdam in odit cumque ipsa deserunt nam quos reiciendis a provident illum voluptate, doloremque voluptates maiores architecto explicabo!
                         </div>
-                        {/* <div className='mt-10'>
-                            <Testimonials/>
-                        </div> */}
+                        <Testimonials className="mt-5"/>
                     </div>
                 </div>
             </section>
