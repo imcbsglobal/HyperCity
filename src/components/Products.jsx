@@ -7,6 +7,8 @@ import product5 from "../assets/product5.png"
 import customer from "../assets/customer.png"
 import mobileBg from "../assets/mobil-bg1.jpg"
 import ProductCarousel from './ProductCarousel';
+import Category from './Category';
+import OfferPosters from './OfferPosters';
 
 
 
@@ -19,7 +21,9 @@ const Products = () => {
       </div>
 
       {/* Carousel */}
-      <ProductCarousel/>
+      <div className=' pt-24'>
+        <ProductCarousel className=""/>
+      </div>
 
       <section>
         <div className='pt-10 mb-10 overflow-hidden'>
@@ -29,7 +33,13 @@ const Products = () => {
                 </div> 
 
 
-                <section className='mt-10'>
+              {/* Offer Posters */}
+
+              <section>
+                <OfferPosters/>
+              </section>
+
+                {/* <section className='mt-10'>
                   <div className=' flex justify-center items-center gap-10'>
                     <div><button className=' px-8 py-2 bg-[#FF6C00] text-white font-bold rounded-lg flex  items-center gap-2'>Select <span><FaFileImage/></span></button>
                     
@@ -37,6 +47,13 @@ const Products = () => {
                     <div><button className='px-8 py-2 bg-[#FF6C00] text-white font-bold rounded-lg flex items-center gap-2'>Upload <span><BiSolidPlusSquare/></span></button>
                     </div>
                   </div>
+                </section> */}
+
+
+                {/* Category List */}
+
+                <section>
+                  <Category/>
                 </section>
 
                 {/* Product List */}

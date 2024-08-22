@@ -36,8 +36,8 @@ const Branch = () => {
                 {/* Contact Details */}
                 <div className=' mt-5'>
                   <div className=' text-center md:text-start'>
-                    <div className='font-bold flex items-center gap-2'><span className='text-[#FF6C00]'><FaPhoneAlt/></span>Phone : +9197765768856</div>
-                    <div className='font-bold flex items-center gap-2'><span className='text-[#FF6C00]'><MdEmail/></span>email : info@hypercity.com</div>
+                    <div className='font-bold flex justify-center items-center gap-2 md:justify-start'><span className='text-[#FF6C00]'><FaPhoneAlt/></span>Phone : +9197765768856</div>
+                    <div className='font-bold flex items-center justify-center md:justify-start gap-2'><span className='text-[#FF6C00]'><MdEmail/></span>email : info@hypercity.com</div>
                   </div>
                 </div>
 
@@ -61,8 +61,8 @@ const Branch = () => {
                  {/* Contact Details */}
                  <div className=' mt-5'>
                   <div className=' text-center md:text-end'>
-                  <div className='font-bold flex items-center gap-2 justify-end'><span className='text-[#FF6C00]'><FaPhoneAlt/></span>Phone : +9197765768856</div>
-                  <div className='font-bold flex items-center gap-2 justify-end'><span className='text-[#FF6C00]'><MdEmail/></span>email : info@hypercity.com</div>
+                  <div className='font-bold flex items-center justify-center gap-2 md:justify-end'><span className='text-[#FF6C00]'><FaPhoneAlt/></span>Phone : +9197765768856</div>
+                  <div className='font-bold flex items-center gap-2 md:justify-end justify-center'><span className='text-[#FF6C00]'><MdEmail/></span>email : info@hypercity.com</div>
                   </div>
                 </div>
               </div>
