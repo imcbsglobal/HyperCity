@@ -570,9 +570,9 @@
   }
   .slick-slide {
     padding: 0 10px; /* Adjust the value to control the space between slides */
-  }
-  
-  .slick-list {
+}
+
+.slick-list {
     margin: 0 -10px; /* Offsets the padding to maintain alignment */
-  }
+}
   
