@@ -1,4 +1,3 @@
-
 import Home from './components/Home';
 import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -7,24 +6,34 @@ import Products from './components/Products';
 import Branch from './components/Branch';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
-
+import Vegitables from './components/categoryList/Vegitables';
+import Fruits from './components/categoryList/Fruits';
+import Grocery from './components/categoryList/Grocery';
+import Cosmetics from './components/categoryList/Cosmetics';
+import Footwear from './components/categoryList/Footwear';
 
 function App() {
-  
-
   return (
     <Router>
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/products' element={<Products/>}/>
-        <Route path='/branch' element={<Branch/>}/>
-        <Route path='/gallery' element={<Gallery/>}/>
-        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/products/*' element={<Products />}>
+          {/* Category Lists */}
+          <Route path='vegitables' element={<Vegitables />} />
+          <Route path='fruits' element={<Fruits />} />
+          <Route path='grocery' element={<Grocery />} />
+          <Route path='cosmetics' element={<Cosmetics />} />
+          <Route path='footwear' element={<Footwear />} />
+
+        </Route>
+        <Route path='/branch' element={<Branch />} />
+        <Route path='/gallery' element={<Gallery />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </Router>
   )
 }
 
-export default App
+export default App;

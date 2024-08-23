@@ -9,10 +9,20 @@ import mobileBg from "../assets/mobil-bg1.jpg"
 import ProductCarousel from './ProductCarousel';
 import Category from './Category';
 import OfferPosters from './OfferPosters';
+// import Vegitables from "../components/categoryList/Vegitables";
+// import Fruits from "../components/categoryList/Fruits";
+// import Grocery from "../components/categoryList/Grocery";
+// import Cosmetics from "../components/categoryList/Cosmetics";
+import { Outlet } from 'react-router-dom';
+import Footwear from "../components/categoryList/Footwear";
+// import Category from './Category';
+// import { Routes, Route, useLocation } from 'react-router-dom';
+
 
 
 
 const Products = () => {
+
  
   return (
     <div className=' relative'>
@@ -39,16 +49,6 @@ const Products = () => {
                 <OfferPosters/>
               </section>
 
-                {/* <section className='mt-10'>
-                  <div className=' flex justify-center items-center gap-10'>
-                    <div><button className=' px-8 py-2 bg-[#FF6C00] text-white font-bold rounded-lg flex  items-center gap-2'>Select <span><FaFileImage/></span></button>
-                    
-                    </div>
-                    <div><button className='px-8 py-2 bg-[#FF6C00] text-white font-bold rounded-lg flex items-center gap-2'>Upload <span><BiSolidPlusSquare/></span></button>
-                    </div>
-                  </div>
-                </section> */}
-
 
                 {/* Category List */}
 
@@ -56,8 +56,14 @@ const Products = () => {
                   <Category/>
                 </section>
 
+                 {/* Outlet for selected category */}
+                <section>
+                  <Outlet />
+                </section>
+               
+
                 {/* Product List */}
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 llg:grid-cols-4 place-items-center mt-10 gap-10'>
+                {/* <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 llg:grid-cols-4 place-items-center mt-10 gap-10'>
                     
                     <div className=' w-full h-[300px] productBox pb-2'>
                       <div className='w-auto h-[200px]'>
@@ -92,7 +98,7 @@ const Products = () => {
 
                     </div>
 
-                </div>
+                </div> */}
             </div>
         </div>
       </section>
