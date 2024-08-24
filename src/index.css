@@ -575,4 +575,10 @@
 .slick-list {
     margin: 0 -10px; /* Offsets the padding to maintain alignment */
 }
+.uploadInput::placeholder{
+    color: white;
+}
+.uploadInput:placeholder-shown{
+    color: #ffffff;
+}
   

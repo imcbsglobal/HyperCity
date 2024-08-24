@@ -17,6 +17,8 @@ const UploadFile = ({ storagePath, dbPath }) => {
   const [playStoreLink, setPlayStoreLink] = useState('');
   const inRef = useRef();
   const [user, setUser] = useState(null);
+  const [productName, setProductName] = useState('')
+  const [productParagraph, setProductParagraph] = useState('')
 
   useEffect(() => {
     const imageRef = dbRef(db, `${dbPath}/latest`);
@@ -44,7 +46,7 @@ const UploadFile = ({ storagePath, dbPath }) => {
   };
 
   const handleImageUpload = () => {
-    if (!file) return;
+    if (!file || !productName || !productParagraph) return;
     setIsLoading(true);
     const storageRef = ref(storage, `${storagePath}/${fileName}`);
     const uploadTask = uploadBytesResumable(storageRef, file);
@@ -59,7 +61,7 @@ const UploadFile = ({ storagePath, dbPath }) => {
       getDownloadURL(uploadTask.snapshot.ref).then(async (url) => {
         setImgUrl(url);
         const newImageRef = push(dbRef(db, dbPath));
-        set(newImageRef, { url, playStoreLink });
+        set(newImageRef, { url, playStoreLink, productName, productParagraph });
         set(dbRef(db, `${dbPath}/latest`), { url });
         setIsLoading(false);
         setShowSuccess(true);
@@ -79,11 +81,11 @@ const UploadFile = ({ storagePath, dbPath }) => {
         <input type="file" accept='image/*' ref={inRef} className='hidden' onChange={handleInputFile} />
         
           <div className='grid grid-cols-1 place-items-center Mlg:grid-cols-2 gap-5'>
-            <div className='flex justify-center items-center'>
-              <input type="text" placeholder='Product Name' />
+            <div className='flex justify-center items-center w-full'>
+              <input type="text" placeholder='Product Name' className='w-full py-3 pl-5 outline-none border-none rounded-lg shadow-md bg-[#FF6C00] uploadInput' value={productName} onChange={(e)=>setProductName(e.target.value)} required />
             </div>
-            <div className='flex justify-center items-center'>
-              <input type="text" placeholder='Product Paragraph' />
+            <div className='flex justify-center items-center w-full'>
+              <input type="text" placeholder='Product Paragraph' className=' w-full py-3 pl-5 outline-none border-none rounded-lg shadow-md bg-[#FF6C00] uploadInput' value={productParagraph} onChange={(e)=>setProductParagraph(e.target.value)} required />
             </div>
             <div className='flex justify-center items-center gap-10 mt-5 lg:mt-0'>
               <button className='px-8 py-2 bg-[#FF6C00] text-white font-bold rounded-lg flex  items-center gap-2' onClick={selectImage}>
