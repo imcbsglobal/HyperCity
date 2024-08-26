@@ -1,12 +1,12 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { FaSquarePlus } from "react-icons/fa6";
-import { storage, db, auth } from "../Firebase";
+import { storage, db, auth } from "./Firebase";
 import { BiSolidFileImage } from "react-icons/bi";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { ref as dbRef, set, onValue, push } from "firebase/database";
 import { onAuthStateChanged } from 'firebase/auth';
 
-const UploadFile = ({ storagePath, dbPath }) => {
+const UploadGallery = ({ storagePath, dbPath }) => {
   const [imgUrl, setImgUrl] = useState('');
   const [fileName, setFileName] = useState('');
   const [isError, setIsError] = useState(false);
@@ -46,7 +46,7 @@ const UploadFile = ({ storagePath, dbPath }) => {
   };
 
   const handleImageUpload = () => {
-    if (!file || !productName || !productParagraph) return;
+    if (!file) return;
     setIsLoading(true);
     const storageRef = ref(storage, `${storagePath}/${fileName}`);
     const uploadTask = uploadBytesResumable(storageRef, file);
@@ -61,7 +61,7 @@ const UploadFile = ({ storagePath, dbPath }) => {
       getDownloadURL(uploadTask.snapshot.ref).then(async (url) => {
         setImgUrl(url);
         const newImageRef = push(dbRef(db, dbPath));
-        set(newImageRef, { url, playStoreLink, productName, productParagraph });
+        set(newImageRef, { url, playStoreLink });
         set(dbRef(db, `${dbPath}/latest`), { url });
         setIsLoading(false);
         setShowSuccess(true);
@@ -77,17 +77,11 @@ const UploadFile = ({ storagePath, dbPath }) => {
 
   return (
     <div>
-      <div className='flex justify-center items-center gap-10 mt-10'>
+      <div className='flex justify-center items-center gap-10'>
         <input type="file" accept='image/*' ref={inRef} className='hidden' onChange={handleInputFile} />
         
           {user && (
             <div className='grid grid-cols-1 place-items-center Mlg:grid-cols-2 gap-5'>
-            <div className='flex justify-center items-center w-full'>
-              <input type="text" placeholder='Product Name' className='w-full py-3 pl-5 outline-none border-none rounded-lg shadow-md bg-[#FF6C00] uploadInput' value={productName} onChange={(e)=>setProductName(e.target.value)} required />
-            </div>
-            <div className='flex justify-center items-center w-full'>
-              <input type="text" placeholder='Product Paragraph' className=' w-full py-3 pl-5 outline-none border-none rounded-lg shadow-md bg-[#FF6C00] uploadInput' value={productParagraph} onChange={(e)=>setProductParagraph(e.target.value)} required />
-            </div>
             <div className='flex justify-center items-center gap-10 mt-5 lg:mt-0'>
               <button className='px-8 py-2 bg-[#FF6C00] text-white font-bold rounded-lg flex  items-center gap-2' onClick={selectImage}>
                 Select<span className=''><BiSolidFileImage /></span>
@@ -99,6 +93,7 @@ const UploadFile = ({ storagePath, dbPath }) => {
           </div>
           )}
         
+        
       </div>
       <div className='text-center mt-10'>
         {isLoading ? <span className='text-sm md:text-xl font-semibold fontName text-[#343434]'>Loading... {percentage}<span className='text-[#ff9019]'>%</span></span> : null}
@@ -109,4 +104,4 @@ const UploadFile = ({ storagePath, dbPath }) => {
   );
 };
 
-export default UploadFile;
+export default UploadGallery

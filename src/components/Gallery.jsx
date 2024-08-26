@@ -1,53 +1,103 @@
-import React from 'react'
-import Footer from './Footer'
-import galler1 from "../assets/gallery1.jpg"
-import galler2 from "../assets/gallery2.jpg"
-import galler3 from "../assets/gallery3.jpg"
-import galler4 from "../assets/gallery4.jpg"
-import galler5 from "../assets/gallery5.jpg"
-import galler6 from "../assets/gallery6.jpg"
-import mobileBg from "../assets/mobil-bg1.jpg"
+import React, { useEffect, useState } from 'react';
+import { db, storage } from "./Firebase";
+import { ref, onValue, remove } from "firebase/database";
+import { ref as storageRef, deleteObject } from "firebase/storage";
+import UploadGallery from './UploadGallery';
+import { onAuthStateChanged } from 'firebase/auth';
+import { auth } from './Firebase';
+import notFound from "../assets/not-found.mp4"
+import Footer from './Footer';
 
 
 const Gallery = () => {
+  const [gallery, setGallery] = useState([]);
+  const [images, setImages] = useState([]);
+  const [selectedImage, setSelectedImage] = useState([]);
+  const [showImageView, setShowImageView] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+    return () => unsubscribe();
+  }, []);
+
+  useEffect(() => {
+    const dbRef = ref(db, 'gallery');
+    onValue(dbRef, (snapshot) => {
+      const data = snapshot.val();
+      const fetchedGallery = [];
+      for (let key in data) {
+        if (key !== 'latest') {
+          fetchedGallery.push({ key, ...data[key] });
+        }
+      }
+      setGallery(fetchedGallery);
+      setImages(fetchedGallery.map(veg => veg.url));
+      setLoading(false);
+    });
+  }, []);
+
+  const handleDelete = async (key, url) => {
+    try {
+      await remove(ref(db, `gallery/${key}`));
+      const galleryRef = storageRef(storage, `gallery/${url.split('/').pop().split('?')[0]}`);
+      await deleteObject(galleryRef);
+      setGallery(gallery.filter(galleryImage => galleryImage.key !== key));
+    } catch (error) {
+      console.error("Error deleting image:", error);
+    }
+  };
+
+  const handleView = (index) => {
+    setSelectedImage(images.map(img => img));
+    setCurrentIndex(index);
+    setShowImageView(true);
+  };
+
   return (
-    <div className=' relative'>
-      <div className=' absolute right-0 left-0 top-0 bottom-0 w-full h-full -z-30'>
-        <img src={mobileBg} className=' w-full h-full object-cover opacity-80' alt="" />
-      </div>
-      <section>
-        <div className='pt-24 mb-10'>
-          <div className=' lg:mx-auto dlg:max-w-[1500px] px-6 pt-5'>
-            <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center'>Our Gallery</div>
-            <div className='text-center paraText lg:px-56'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi odit, consectetur officia ut, sed deleniti perspiciatis sit delectus repudiandae alias reprehenderit dolorum architecto veritatis! Quisquam debitis non accusantium vero impedit.
-            </div>
-
-            {/* Gallery Images */}
-            <div className='grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10'>
-
-              <div className=' w-full h-[300px] rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
-                <img src={galler1} className=' w-full h-full object-cover rounded-3xl' alt="" />
-              </div>
-              <div className=' w-full h-[300px] rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
-                <img src={galler2} className=' w-full h-full object-cover rounded-3xl' alt="" />
-              </div>
-              <div className=' w-full h-[300px] rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
-                <img src={galler3} className=' w-full h-full object-cover rounded-3xl' alt="" />
-              </div>
-              <div className=' w-full h-[300px] rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
-                <img src={galler4} className=' w-full h-full object-cover rounded-3xl' alt="" />
-              </div>
-              <div className=' w-full h-[300px] rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
-                <img src={galler5} className=' w-full h-full object-cover rounded-3xl' alt="" />
-              </div>
-              <div className=' w-full h-[300px] rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
-                <img src={galler6} className=' w-full h-full object-cover rounded-3xl' alt="" />
-              </div>
-
-            </div>
-
+    <div className='pt-36'>
+      <section className=' mb-5'>
+        <div className=' flex flex-col justify-center items-center  text-center'>
+          <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm md:text-center'>Our Gallery</div>
+          <div className='px-6 md:px-10 lg:px-56'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod est, magnam illum temporibus excepturi voluptate harum soluta distinctio ut. Similique voluptas a quibusdam at adipisci nisi natus cupiditate fugiat! Veritatis Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi asperiores ex, optio quibusdam reprehenderit veniam dolor tempora cumque, corporis quas consequatur tempore quaerat commodi voluptatum, ipsa ullam maxime dolore!</div>
+        </div>
+      </section>
+      <section className=' mb-10'>
+        {user && (
+          <div className='h-full w-full rounded-lg grid place-items-center'>
+            <UploadGallery storagePath="gallery" dbPath="gallery" />
           </div>
+        )}
+        <div className='gap-10 grid place-items-center px-6'>
+          {gallery.length > 0 ? (
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 llg:grid-cols-3 place-items-center dlg:max-w-[1440px] gap-10 w-full'>
+              {gallery.map((galleryItem, index) => (
+                <div key={galleryItem.key} className='w-full h-[300px] relative  pb-2 cursor-pointer rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
+                  <div onClick={() => handleView(index)} className='w-full h-[300px] '>
+                    <img src={galleryItem.url} className='h-full w-full object-cover rounded-3xl' alt="Image" />
+                  </div>
+                  {/* <div className="flex flex-col justify-center items-center titleText2">
+                    <div className='text-xl text-[#FF6C00] drop-shadow-sm'>{galleryItem.productName || 'Product Name'}</div>
+                    <div className='text-sm titleText mt-1'>{galleryItem.productParagraph || 'Product description here'}</div>
+                  </div> */}
+                  {user && (
+                    <div className="flex justify-center items-center absolute bottom-10 left-[50%] translate-x-[-50%]">
+                    <button onClick={() => handleDelete(galleryItem.key, galleryItem.url)} className='px-8 py-1 mt-1 rounded-3xl bg-[#ff2020] font-bold text-[#fff] drop-shadow-md'>Delete</button>
+                  </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className=" grid place-items-center md:flex md:items-center md:gap-5 justify-center items-center">
+              <video src={notFound} autoPlay loop muted playsInline className=" mix-blend-multiply w-[100px] h-[100px]" type="video/mp4"></video>
+              <p className=" font-bold text-center">No Image Found</p>
+            </div>
+          )}
         </div>
       </section>
 

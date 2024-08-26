@@ -9,14 +9,8 @@ import mobileBg from "../assets/mobil-bg1.jpg"
 import ProductCarousel from './ProductCarousel';
 import Category from './Category';
 import OfferPosters from './OfferPosters';
-// import Vegitables from "../components/categoryList/Vegitables";
-// import Fruits from "../components/categoryList/Fruits";
-// import Grocery from "../components/categoryList/Grocery";
-// import Cosmetics from "../components/categoryList/Cosmetics";
 import { Outlet } from 'react-router-dom';
 import Footwear from "../components/categoryList/Footwear";
-// import Category from './Category';
-// import { Routes, Route, useLocation } from 'react-router-dom';
 
 
 
@@ -37,9 +31,9 @@ const Products = () => {
 
       <section>
         <div className='pt-10 mb-10 overflow-hidden'>
-            <div className=' pt-2  lg:mx-auto dlg:max-w-[1500px] px-6'>
-                <div className='titleText2 font-bold text-[36px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center'>Our Products</div>
-                <div className='paraText text-center lg:px-56'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta, voluptates totam dicta eveniet odio maiores hic repellat odit inventore temporibus suscipit mollitia tempore corporis sequi? Fugiat velit aliquam exercitationem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, minus cumque possimus eligendi beatae fugit, accusamus facere culpa temporibus nihil vel? Obcaecati doloremque repellat tempora voluptatum est. Eveniet, veniam labore!
+            <div className=' pt-2  lg:mx-auto dlg:max-w-[1500px]'>
+                <div className='titleText2 font-bold text-[36px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center px-6'>Our Products</div>
+                <div className='paraText text-center lg:px-56 px-6 mb-5 lg:mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta, voluptates totam dicta eveniet odio maiores hic repellat odit inventore temporibus suscipit mollitia tempore corporis sequi? Fugiat velit aliquam exercitationem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, minus cumque possimus eligendi beatae fugit, accusamus facere culpa temporibus nihil vel? Obcaecati doloremque repellat tempora voluptatum est. Eveniet, veniam labore!
                 </div> 
 
 
@@ -52,56 +46,27 @@ const Products = () => {
 
                 {/* Category List */}
 
-                <section>
+                <section className='px-6 mb-10'>
                   <Category/>
                 </section>
 
                  {/* Outlet for selected category */}
-                <section>
+                <section className='px-6'>
                   <Outlet />
                 </section>
                
-
-                {/* Product List */}
-                {/* <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 llg:grid-cols-4 place-items-center mt-10 gap-10'>
-                    
-                    <div className=' w-full h-[300px] productBox pb-2'>
-                      <div className='w-auto h-[200px]'>
-                          <img src={product5} className='h-full w-full object-contain drop-shadow-2xl' alt="" />
-                      </div>
-                      <div className=' flex flex-col justify-center items-center titleText2'>
-                        <div className='text-xl text-[#FF6C00] drop-shadow-sm'>Masala Lays Chips</div>
-                        <div className='text-sm titleText mt-1'>Lorem ipsum dolor sit amet.</div>
-                        </div>
-                        <div className='flex justify-center items-center '>
-                          <button className='px-8 py-1 mt-1 rounded-3xl bg-[#ff2020] font-bold text-[#fff] drop-shadow-md'>Delete</button>
-                        </div>
-                    </div>
-                    <div className=' w-full h-[300px] productBox'>
-
-                    </div><div className=' w-full h-[300px] productBox'>
-
-                    </div>
-                    <div className=' w-full h-[300px] productBox'>
-
-                    </div>
-                    <div className=' w-full h-[300px] productBox'>
-
-                    </div>
-                    <div className=' w-full h-[300px] productBox'>
-
-                    </div>
-                    <div className=' w-full h-[300px] productBox'>
-
-                    </div>
-                    <div className=' w-full h-[300px] productBox'>
-
-                    </div>
-
-                </div> */}
             </div>
         </div>
       </section>
+
+
+      {/* <Slider {...settings} className='mx-auto'>
+          {OfferPostersList.map((item, index) => (
+            <div key={index} className='w-full h-[300px] rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] lg:h-[400px]'>
+              <img src={item} className='w-full h-full rounded-3xl object-cover' alt={`offer-poster-${index + 1}`} />
+            </div>
+          ))}
+        </Slider> */}
 
       {/* Testimonials */}
       <section className=' mb-16 overflow-hidden'>

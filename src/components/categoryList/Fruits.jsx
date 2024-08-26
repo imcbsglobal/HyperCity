@@ -60,9 +60,11 @@ const Fruits = () => {
     <div>
       
       <section>
-        <div className='h-full w-full rounded-lg grid place-items-center'>
-          <UploadFile storagePath="fruits" dbPath="fruits" />
-        </div>
+        {user && (
+          <div className='h-full w-full rounded-lg grid place-items-center'>
+            <UploadFile storagePath="fruits" dbPath="fruits" />
+          </div>
+        )}
         <div className='gap-10 grid place-items-center'>
           {fruits.length > 0 ? (
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 llg:grid-cols-3 place-items-center dlg:max-w-[1440px] gap-10 w-full'>
@@ -75,9 +77,11 @@ const Fruits = () => {
                     <div className='text-xl text-[#FF6C00] drop-shadow-sm'>{fruit.productName || 'Product Name'}</div>
                     <div className='text-sm titleText mt-1'>{fruit.productParagraph || 'Product description here'}</div>
                   </div>
-                  <div className="flex justify-center items-center">
+                  {user && (
+                    <div className="flex justify-center items-center">
                     <button onClick={() => handleDelete(fruit.key, fruit.url)} className='px-8 py-1 mt-1 rounded-3xl bg-[#ff2020] font-bold text-[#fff] drop-shadow-md'>Delete</button>
                   </div>
+                  )}
                 </div>
               ))}
             </div>
