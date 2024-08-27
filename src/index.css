@@ -316,6 +316,8 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    top: 0;
+    left: 0;
     /* background-color: #E88735; */
     border: 1px solid #0cd50f;
     z-index: -1;
