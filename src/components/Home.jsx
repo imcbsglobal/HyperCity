@@ -27,19 +27,11 @@ import logo from "../assets/single-logo.png"
 import { FaFacebook } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
-import homeBanner from "../assets/home-banner.png"
 import brushFrame from "../assets/brush-frame.png"
 import missionVision from "../assets/mission-vision.jpg"
-import OfferSection from './OfferSection';
+
 import choseUs from "../assets/chose-us.jpg"
-import product1 from "../assets/product1.png"
-import product2 from "../assets/product2.png"
-import product3 from "../assets/product3.png"
-import product4 from "../assets/product4.png"
-import product5 from "../assets/product5.png"
-import product6 from "../assets/product6.png"
-import product7 from "../assets/product7.png"
-import product8 from "../assets/product8.png"
+
 import offerBg from "../assets/offer-bg.jpg"
 import offerCoverBg from "../assets/offer-cover-bg.png"
 import customer from "../assets/customer.png"

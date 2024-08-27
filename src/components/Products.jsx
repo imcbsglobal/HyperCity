@@ -3,7 +3,7 @@ import Footer from './Footer'
 import Testimonials from './Testimonials'
 import { BiSolidPlusSquare } from "react-icons/bi";
 import { FaFileImage } from "react-icons/fa";
-import product5 from "../assets/product5.png"
+
 import customer from "../assets/customer.png"
 import mobileBg from "../assets/mobil-bg1.jpg"
 import ProductCarousel from './ProductCarousel';

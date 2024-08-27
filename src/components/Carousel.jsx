@@ -5,7 +5,7 @@ import cart3 from "../assets/cart3.png";
 import cart4 from "../assets/cart4.png"
 import cart5 from "../assets/cart5.png"
 import cart6 from "../assets/cart6.png"
-import homeBanner from "../assets/home-banner.png"
+
 import homeBanner2 from "../assets/home-banner2.png"
 // import slider1 from "../assets/slide1.png"
 // import slider2 from "../assets/slide2.png"
