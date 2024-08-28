@@ -1,5 +1,5 @@
 import React from 'react'
-import branch1 from "../assets/branch1.jpeg"
+import branch1 from "../assets/hypercity-branch.jpg"
 import branch2 from "../assets/branch2.jpg"
 import Footer from './Footer'
 import mobileBg from "../assets/mobil-bg1.jpg"
@@ -30,8 +30,13 @@ const Branch = () => {
               {/* Content */}
               <div className='md:w-[50%]'>
                 <div>
-                  <div className='titleText2 font-bold text-[32px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center md:text-start'>Brach Name1</div>
-                  <div className='text-center md:text-start font-semibold flex items-start gap-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet quia dolorum facilis odit nostrum suscipit obcaecati consequatur eum nesciunt earum laudantium deserunt molestiae, ullam, nam sit iste fugiat. Eaque.</div>
+                  <div className='titleText2 font-bold text-[32px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center md:text-start'>Kamblakkad, Wayanad</div>
+                  <div className='text-center md:text-start font-semibold flex items-start gap-2'>
+                   <div>HYPERCITY Hypermarket
+                    <span className='block'>Kamblakkad, Wayanad, Kerala</span> 
+                    <span className='block'>Pin : 673122</span>
+                  </div>
+                  </div>
                 </div>
                 {/* Contact Details */}
                 <div className=' mt-5'>
@@ -49,14 +54,18 @@ const Branch = () => {
               {/* Box */}
               <div className=' w-full h-[300px] productBox mb-10'>
                 <div className=' w-full h-[300px] md:h-[350px]'>
-                  <img src={branch2} className='productBoxImg w-full h-full object-cover' alt="" />
+                  <img src={branch1} className='productBoxImg w-full h-full object-cover' alt="" />
                 </div>
               </div>
               {/* Content */}
               <div className='md:w-[50%]'>
                 <div>
-                  <div className='titleText2 font-bold text-[32px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center md:text-end'>Brach Name2</div>
-                  <div className='text-center md:text-end font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet quia dolorum facilis odit nostrum suscipit obcaecati consequatur eum nesciunt earum laudantium deserunt molestiae, ullam, nam sit iste fugiat. Eaque.</div>
+                  <div className='titleText2 font-bold text-[32px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center md:text-end'>Manathavady, Wayanad</div>
+                  <div className='text-center md:text-end font-semibold'>
+                    HYPERCITY Hypermarket
+                    <span className='block'>Payod, Manathavady, Wayanad, Kerala 
+                    <span className='block'>Pin : 670645</span></span> 
+                  </div>
                 </div>
                  {/* Contact Details */}
                  <div className=' mt-5'>

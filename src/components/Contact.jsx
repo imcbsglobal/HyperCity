@@ -33,7 +33,7 @@ const Contact = () => {
                     <div>
                         <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Our Address</div>
                         <div className=' mb-5 text-[18px] titleText leading-tight font-bold text-[#fff]'>Hyper City PVT LTD,</div>
-                        <div className='titleText text-sm text-[#fff] font-light'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sed quidem libero est? Blanditiis odio natus error magnam minus esse</div>
+                        <div className='titleText text-sm text-[#fff] font-light'>We're here to help with any questions or concerns. Reach out to us, and we'll ensure you receive the support and assistance you need. Your satisfaction is our top priority.</div>
                     </div>
                     <div>
                         <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Email</div>

@@ -33,7 +33,7 @@ const Products = () => {
         <div className='pt-10 mb-10 overflow-hidden'>
             <div className=' pt-2  lg:mx-auto dlg:max-w-[1500px]'>
                 <div className='titleText2 font-bold text-[36px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center px-6'>Our Products</div>
-                <div className='paraText text-center lg:px-56 px-6 mb-5 lg:mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta, voluptates totam dicta eveniet odio maiores hic repellat odit inventore temporibus suscipit mollitia tempore corporis sequi? Fugiat velit aliquam exercitationem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, minus cumque possimus eligendi beatae fugit, accusamus facere culpa temporibus nihil vel? Obcaecati doloremque repellat tempora voluptatum est. Eveniet, veniam labore!
+                <div className='paraText text-center lg:px-56 px-6 mb-5 lg:mb-10'>Discover a wide array of high-quality items at our store, from fresh produce to a variety of essential groceries and more. Each selection is carefully chosen to ensure exceptional quality and reflect our commitment to delivering outstanding customer satisfaction. Built on years of market expertise and trust, our offerings are designed to provide you with convenience and excellence in every purchase. Explore our collection and enjoy a superior shopping experience.
                 </div> 
 
 
@@ -76,7 +76,7 @@ const Products = () => {
           </div>
           <div className='md:w-[50%] lg:w-[60%]'>
             <div className='text-[42px] mb-5 titleText2 leading-tight text-[#0cd50f]'>Our Customers Love</div>
-            <div className='paraText mb-5 lg:px-20'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, placeat expedita eum ratione ex itaque veritatis quam pariatur incidunt. Nostrum ad adipisci natus voluptates! Voluptatem placeat nisi quaerat quod iusto.Molestiae soluta ad sint doloribus autem. Aliquid ex sed alias magni molestias. Quibusdam in odit cumque ipsa deserunt nam quos reiciendis a provident illum voluptate, doloremque voluptates maiores architecto explicabo!
+            <div className='paraText mb-5 lg:px-20'>Our customers love the exceptional quality and variety we offer in every aspect of our store. From the freshness of our produce to the reliability of our groceries and the thoughtful selection of our other products, we consistently exceed expectations. Our dedication to providing a superior shopping experience, coupled with our years of market expertise, ensures that each visit is met with satisfaction and trust. Discover why our customers keep coming back for more.
             </div>
             <Testimonials className="mt-5"/>
           </div>

@@ -549,6 +549,16 @@
     bottom: 0;
     right: 0;
   }
+  @media screen and (min-width : 1024px) {
+    .choseUs::before{
+        width: 150px;
+        height: 150px;
+      }
+      .choseUs::after{
+        width: 150px;
+        height: 150px;
+      }
+  }
   .DarkFooter{
     border: .1px solid white;
     backdrop-filter: blur(10px);

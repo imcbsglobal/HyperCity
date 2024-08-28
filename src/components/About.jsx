@@ -16,17 +16,21 @@ const About = () => {
       </div>
       <section className='pt-32'>
         <div className=''>
-          <div className=' px-6 lg:max-w-[1200px] lg:mx-auto mt-2 mb-10 lg:flex lg:flex-row-reverse lg:gap-10'>
+          <div className=' px-6 lg:w-[1200px] llg:w-[1400px] lg:mx-auto mt-2 mb-10 lg:flex lg:flex-row-reverse lg:gap-10'>
             {/* Left */}
-            <div className='lg:w-[50%]'>
+            <div className='lg:w-[60%]'>
               <div className='titleText font-bold mb-2 text-[#FF6C00]'>About Us</div>
-              <div className='titleText2 font-bold text-[36px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm'>Lorem ipsum dolor, sit amet consectetur adipisicing elit</div>
-              <div className='paraText mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia enim error quos? Iste ducimus quae veniam! Quisquam officia consequatur rem culpa saepe vel, architecto quidem iusto quibusdam pariatur possimus nobis.Qui non facere quas alias perspiciatis iusto doloremque. Ea sequi amet repudiandae atque, dicta blanditiis quaerat laborum. Facere officia, quam fuga cupiditate, deleniti praesentium enim sunt iusto vero quos possimus!
-              Modi, eum voluptate? Vitae soluta accusantium doloribus vel, eaque dignissimos, minus quia aliquid praesentium a officia eligendi ea saepe placeat repudiandae. Eligendi cum modi corrupti provident facere, mollitia natus harum?
+              <div className='titleText2 font-bold text-[36px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm'>From Market Expertise to the <span className='lg:block'>Success of Hypercity </span>
               </div>
-              <div className='paraText mb-7'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi eligendi facilis qui dolorum! Debitis voluptas distinctio reiciendis saepe totam eligendi quia inventore odit corporis maxime laborum, dolores nisi harum voluptatem?
-                Labore dolore et ullam cum, sed temporibus, qui possimus ex modi nesciunt molestiae deserunt maiores inventore corporis dignissimos beatae in! Illum possimus ab magnam quas dignissimos odit deserunt suscipit veniam.
+              <div className=' mb-5'>Noufal KK began his entrepreneurial journey over 20 years ago with Naas Agencies, a wholesale sugar dealership serving both Wayanad and Kannur districts. This business laid the foundation for his deep market knowledge and expertise, which he later channelled into the grocery retail industry.
+              </div>
+              <div className=' mb-7'>
+              Together with his brothers, Noufal expanded into the grocery business in Kannur district, marking the start of their successful retail journey. With 20 years of experience in the grocery field, Noufal KK launched his first supermarket, Hypercity Hypermarket, in Kamblakkad, Wayanad, Kerala, on 2nd May 2019. The grand opening was inaugurated by Panakkad Sayyid Basheer Ali Shihad Thangal, and it quickly became a trusted name among customers.
+              <br /><br />
+              Our success is built on a foundation of trust, extensive knowledge, and a passion for delivering exceptional customer experiences. These values are the driving force behind everything we do.
+              <br /> <br />
+
+              Building on the success of Naas Agencies and Hypercity Hypermarket, we are now thrilled to announce our most ambitious project yet—a 30,000 square feet Hypercity Hypermarket in Payod, Mananthavady, Wayanad, Kerala. This upcoming hypermarket is set to become one of the leading retail destinations in Wayanad district, offering an unparalleled shopping experience.
               </div>
             </div>
             {/* Right */}
@@ -81,7 +85,7 @@ const About = () => {
           </div>
           <div className='md:w-[50%] lg:w-[60%]'>
             <div className='text-[42px] mb-5 titleText2 leading-tight text-[#0cd50f]'>Our Customers Love</div>
-            <div className='paraText mb-5 lg:px-20'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, placeat expedita eum ratione ex itaque veritatis quam pariatur incidunt. Nostrum ad adipisci natus voluptates! Voluptatem placeat nisi quaerat quod iusto.Molestiae soluta ad sint doloribus autem. Aliquid ex sed alias magni molestias. Quibusdam in odit cumque ipsa deserunt nam quos reiciendis a provident illum voluptate, doloremque voluptates maiores architecto explicabo!
+            <div className='paraText mb-5 lg:px-20'>Our customers love the exceptional quality and variety we offer in every aspect of our store. From the freshness of our produce to the reliability of our groceries and the thoughtful selection of our other products, we consistently exceed expectations. Our dedication to providing a superior shopping experience, coupled with our years of market expertise, ensures that each visit is met with satisfaction and trust. Discover why our customers keep coming back for more.
             </div>
             <Testimonials className="mt-5"/>
           </div>

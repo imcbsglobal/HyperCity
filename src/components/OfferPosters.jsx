@@ -107,7 +107,7 @@ const OfferPosters = () => {
       <Slider {...settings} className='mx-auto'>
           {posters.length > 0 ? (
             posters.map((poster, index) => (
-              <div key={index} className='w-full relative h-[300px] rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] lg:h-[400px]'>
+              <div key={index} className='w-full relative h-[300px] rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] lg:h-[400px] dlg:h-[550px]'>
                 <img
                   src={poster.url}
                   className='w-full h-full rounded-3xl object-cover'

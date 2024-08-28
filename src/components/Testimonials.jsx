@@ -36,7 +36,7 @@ const Testimonials = () => {
                     <div className='text-center mb-2 italic px-8 lg:px-32 llg:px-56'>
                     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quam, sit quisquam mollitia, doloremque totam praesentium temporibus placeat expedita modi dolores. Soluta blanditiis itaque necessitatibus ad veritatis saepe temporibus labore"
                     </div>
-                    <div className='text-center font-bold'>Testimonial Member1</div>
+                    <div className='text-center font-bold'>Girish Choudary</div>
                 </div>
 
             </div>
@@ -51,7 +51,7 @@ const Testimonials = () => {
                 <div className='text-center mb-2 italic px-8 lg:px-32 llg:px-56'>
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quam, sit quisquam mollitia, doloremque totam praesentium temporibus placeat expedita modi dolores. Soluta blanditiis itaque necessitatibus ad veritatis saepe temporibus labore"
                 </div>
-                <div className='text-center font-bold'>Testimonial Member2</div>
+                <div className='text-center font-bold'>Saniya Jithesh</div>
               </div>
             </div>
     
@@ -65,7 +65,7 @@ const Testimonials = () => {
                 <div className='text-center mb-2 italic px-8 lg:px-32 llg:px-56'>
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quam, sit quisquam mollitia, doloremque totam praesentium temporibus placeat expedita modi dolores. Soluta blanditiis itaque necessitatibus ad veritatis saepe temporibus labore"
                 </div>
-                <div className='text-center font-bold'>Testimonial Member3</div>
+                <div className='text-center font-bold'>Akash K V</div>
               </div>
             </div>
           </Slider>

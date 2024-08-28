@@ -40,7 +40,7 @@ import OfferPosters from './OfferPosters';
 import Vegitables from './categoryList/Vegitables';
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
- 
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 
@@ -135,6 +135,11 @@ const Home = () => {
                 {/* <OfferSection/> */}
                 <div>
                     <OfferPosters className=""/>
+                    <div className=' mt-10 flex justify-center items-center'>
+                        <Link to='/products'>
+                            <button className='px-8 py-3 rounded-3xl text-sm titleText font-bold bg-[#FF6C00] text-[#fff]'>View More </button>
+                        </Link>
+                    </div>
                 </div>
 
             </section>
@@ -149,7 +154,7 @@ const Home = () => {
                     <div className=' px-6 py-10 lg:flex lg:gap-10 lg:justify-center lg:items-center'>
                         {/* Left */}
                         <motion.div
-                        initial={{scale:0, opacity:0}}
+                        initial={{scale:0, opacity:0}} 
                         animate={{ scale:1,opacity:1,transition:{duration:1,ease:'backInOut',delay:.2}}}
                         className='aboutImg mx-auto  lg:h-[500px] lg:w-[500px]'>
                             <motion.img src={aboutImg} className='w-full h-full object-cover rounded-full BlobDesign' alt="" />
@@ -158,12 +163,12 @@ const Home = () => {
                         {/* Right */}
                         <div className='lg:w-[50%]'>
                             <div className='titleText font-bold mb-2 text-[#FF6C00]'>About Us</div>
-                            <div className='titleText2 font-bold text-[36px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm'>Lorem, ipsum dolor sit amet consectetur adipisicing</div>
-                            <div className='paraText mb-7'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem corrupti ipsum! Explicabo ad, cupiditate nisi voluptatibus deleniti harum incidunt eius tempora excepturi reiciendis nihil et! Aperiam fuga vitae magnam.
-                            Cupiditate in omnis cumque, quae dolorem velit nesciunt consequatur, quibusdam laborum aperiam possimus molestias enim sapiente. Atque tempora itaque totam. Totam perspiciatis tempore non blanditiis atque et accusantium voluptas laborum.
+                            <div className='titleText2 font-bold text-[36px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm'>From Market Expertise to the <span className='lg:block'>Success of Hypercity </span></div>
+                            <div className=' mb-7'>Noufal KK began his entrepreneurial journey over 20 years ago with Naas Agencies, a wholesale sugar dealership serving both Wayanad and Kannur districts. This business laid the foundation for his deep market knowledge and expertise, which he later channelled into the grocery retail industry.
+                            Together with his brothers, Noufal expanded into the grocery business in Kannur district, marking the start of their successful retail journey. With 20 years of experience in the grocery field, Noufal KK launched his first supermarket, Hypercity Hypermarket, in Kamblakkad, Wayanad, Kerala, on 2nd May 2019. The grand opening was inaugurated by Panakkad Sayyid Basheer Ali Shihad Thangal, and it quickly became a trusted name among customers.
                             </div>
                             <div>
-                                <button className='titleText font-bold px-8 py-2 rounded-3xl bg-[#FF6C00] text-[#fff] buttonShadow'>Read More</button>
+                                <Link to='/about'><button className='titleText font-bold px-8 py-2 rounded-3xl bg-[#FF6C00] text-[#fff] buttonShadow'>Read More</button></Link>
                             </div>
                             <div className=' mt-10 flex justify-center items-center text-center'>
                                 <div className='md:flex md:justify-center md:items-center'>
@@ -172,8 +177,8 @@ const Home = () => {
                                         <div className='titleText font-bold text-[#0cd50f]'>Years Of Trust</div>
                                     </div>
                                     <div className='p-2'>
-                                        <div className='titleText1 text-[48px] text-[#0cd50f] drop-shadow-md'>30+</div>
-                                        <div className='titleText font-bold text-[#0cd50f]'>Products</div>
+                                        <div className='titleText1 text-[48px] text-[#0cd50f] drop-shadow-md'>300+</div>
+                                        <div className='titleText font-bold text-[#0cd50f]'>Employees</div>
                                     </div>
                                     <div className='p-2'>
                                         <div className='titleText1 text-[48px] text-[#0cd50f] drop-shadow-md'>100K+</div>
@@ -239,8 +244,7 @@ const Home = () => {
                 <div className='flex justify-center items-center mb-10'>
                     <div className=' px-6 lg:mx-auto'>
                         <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm md:text-center'>Our Products</div>
-                        <div className='paraText mb-10 md:text-center lg:px-56'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laborum optio nesciunt eius officiis ea, voluptate impedit veniam dolorum labore cum excepturi asperiores nihil tempore sequi adipisci perspiciatis laudantium? Officiis?
-                        Optio eos accusamus dicta facilis ducimus reiciendis maiores, repudiandae minus quis, at perspiciatis. Nam impedit quaerat tenetur. Ullam commodi perferendis laudantium illum veniam molestiae sint, repellendus aliquid assumenda blanditiis ab.
+                        <div className='paraText mb-10 md:text-center lg:px-56'>Discover a wide array of high-quality items at our store, from fresh produce to a variety of essential groceries and more. Each selection is carefully chosen to ensure exceptional quality and reflect our commitment to delivering outstanding customer satisfaction. Built on years of market expertise and trust, our offerings are designed to provide you with convenience and excellence in every purchase. Explore our collection and enjoy a superior shopping experience.
                         </div>
                         {/* Product List */}
 
@@ -248,7 +252,7 @@ const Home = () => {
                         
                         <div className='flex justify-center mt-10 items-center'>
                             <Link to='/products'>
-                                <button className='px-8 py-2 rounded-3xl buttonShadow text-[#fff] bg-[#FF6C00] titleText font-bold text-sm'>View More</button>
+                                <button className='px-8 py-2 rounded-3xl  buttonShadow text-[#fff] bg-[#FF6C00] titleText font-bold text-sm'>View More</button>
                             </Link>
                         </div>
                     </div>
@@ -310,7 +314,7 @@ const Home = () => {
                     </div>
                     <div className='md:w-[50%] lg:w-[60%]'>
                         <div className='text-[42px] mb-5 titleText2 leading-tight text-[#0cd50f]'>Our Customers Love</div>
-                        <div className='paraText mb-5 lg:px-20'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, placeat expedita eum ratione ex itaque veritatis quam pariatur incidunt. Nostrum ad adipisci natus voluptates! Voluptatem placeat nisi quaerat quod iusto.Molestiae soluta ad sint doloribus autem. Aliquid ex sed alias magni molestias. Quibusdam in odit cumque ipsa deserunt nam quos reiciendis a provident illum voluptate, doloremque voluptates maiores architecto explicabo!
+                        <div className='paraText mb-5 lg:px-20'>Our customers love the exceptional quality and variety we offer in every aspect of our store. From the freshness of our produce to the reliability of our groceries and the thoughtful selection of our other products, we consistently exceed expectations. Our dedication to providing a superior shopping experience, coupled with our years of market expertise, ensures that each visit is met with satisfaction and trust. Discover why our customers keep coming back for more.
                         </div>
                         <Testimonials className="mt-5"/>
                     </div>
@@ -355,16 +359,16 @@ const Home = () => {
                             <div>
                                 <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Our Address</div>
                                 <div className=' mb-5 text-[18px] titleText leading-tight font-bold text-[#fff]'>Hyper City PVT LTD,</div>
-                                <div className='titleText text-sm text-[#fff] font-light'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sed quidem libero est? Blanditiis odio natus error magnam minus esse</div>
+                                <div className='titleText text-sm text-[#fff] font-light'>We're here to help with any questions or concerns. Reach out to us, and we'll ensure you receive the support and assistance you need. Your satisfaction is our top priority.</div>
                             </div>
                             <div>
                                 <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Email</div>
-                                <div className='mb-5 text-[18px] titleText leading-tight text-[#fff] font-bold'>hypercity@gmail.com</div>
+                                <div className='mb-5 text-[18px] titleText leading-tight text-[#fff] font-bold'>info@hypercityhypermarket.com</div>
                             </div>
                             <div>
                                 <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Phone</div>
-                                <div className='mb-2 text-[18px] titleText leading-tight text-[#fff] font-bold'>+91 877544658788</div>
-                                <div className='mb-5 text-[18px] titleText leading-tight text-[#fff] font-bold'>+91 865434568767</div>
+                                <div className='mb-2 text-[18px] titleText leading-tight text-[#fff] font-bold'>+91 9539336622</div>
+                                <div className='mb-5 text-[18px] titleText leading-tight text-[#fff] font-bold'>+91 4936298888</div>
                             </div>
                         </div>
                     </div>

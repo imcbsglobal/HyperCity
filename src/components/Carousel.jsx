@@ -5,18 +5,17 @@ import cart3 from "../assets/cart3.png";
 import cart4 from "../assets/cart4.png"
 import cart5 from "../assets/cart5.png"
 import cart6 from "../assets/cart6.png"
-
+import groceryCart from "../assets/grocery-cart.png"
+import fruitCarts from "../assets/fruit-cart.png"
 import homeBanner2 from "../assets/home-banner2.png"
-// import slider1 from "../assets/slide1.png"
-// import slider2 from "../assets/slide2.png"
-// import slider3 from "../assets/slide3.png"
-// import margBg from "../assets/branch1.jpeg"
 import homeVideo from "../assets/home-video.mp4"
 import blackShade from "../assets/black-shade.png"
 import { motion } from "framer-motion"
 import fruitCart from "../assets/fruits-cart.png"
 import meatCart from "../assets/meat-cart.png"
 import stationeryCart from "../assets/stationery-cart.png" 
+import meatCarts from "../assets/meats-cart.png"
+
 
 
 const Carousel = () => {
@@ -25,7 +24,7 @@ const Carousel = () => {
     const [currentImage, setCurrentImage] = useState(0);
 
     // const images = [slider1, slider2, slider3];
-    const ImageArray = [cart2, fruitCart, stationeryCart,meatCart,fruitCart,stationeryCart];
+    const ImageArray = [cart2, fruitCarts, groceryCart,meatCarts,fruitCarts,groceryCart];
     const countItem = ImageArray.length; // Number of images
     const rotateAdd = 360 / countItem;
     const autoNextRef = useRef();
@@ -113,7 +112,7 @@ const Carousel = () => {
                 </div> */}
                 <div className=' absolute left-[40%] top-[30%] translate-[-50%-50%] titleOrg hidden lg:block'>
                     <div className='text-[82px] text-[#fff] text-center leading-tight home-Quote'>Your Trust Worthy Quality <span className='block'>Source</span></div>
-                    <div className='text-center px-20 text-[#ffffff] homePara paraText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis adipisci doloremque, totam quibusdam repudiandae explicabo facere ipsam omnis, tempore nisi libero, soluta ullam dolore voluptatum. Autem quidem facere provident at.</div>
+                    <div className='text-center px-20 text-[#ffffff] homePara paraText'>Depend on us for unparalleled quality in every product we offer. With a steadfast commitment to excellence and a wealth of experience, we ensure that each item meets the highest standards. Our dedication to providing only the best makes us a reliable source for all your needs, promising consistency and satisfaction with every purchase.</div>
                     <div className=' justify-center items-center flex mt-5 cursor-pointer'>
                         <button className='paraText font-bold px-8 py-2 rounded-3xl bg-[#fff] text-[#0cd50f] homeButton cursor-pointer relative z-30'>Discover More</button>
                     </div>

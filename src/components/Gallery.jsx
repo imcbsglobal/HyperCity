@@ -63,7 +63,7 @@ const Gallery = () => {
       <section className=' mb-5'>
         <div className=' flex flex-col justify-center items-center  text-center'>
           <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm md:text-center'>Our Gallery</div>
-          <div className='px-6 md:px-10 lg:px-56'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod est, magnam illum temporibus excepturi voluptate harum soluta distinctio ut. Similique voluptas a quibusdam at adipisci nisi natus cupiditate fugiat! Veritatis Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi asperiores ex, optio quibusdam reprehenderit veniam dolor tempora cumque, corporis quas consequatur tempore quaerat commodi voluptatum, ipsa ullam maxime dolore!</div>
+          <div className='px-6 md:px-10 lg:px-56 mb-5'>Explore our gallery to discover a curated collection of our finest offerings. Each piece showcases the quality and variety we take pride in, reflecting our dedication to excellence. Whether you’re browsing for inspiration or looking to see our products in action, our gallery offers a visual journey through our diverse range, highlighting the craftsmanship and care we put into everything we do.</div>
         </div>
       </section>
       <section className=' mb-10'>

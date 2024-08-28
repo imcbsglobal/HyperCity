@@ -15,16 +15,16 @@ const Footer = () => {
             <img src={logo} className='w-full h-full object-contain drop-shadow-sm' alt="" />
         </div>
         <div className=' titleText font-bold text-[#ecebeb] text-sm'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, sapiente!
+          Have questions? Reach out to us for support and ensure your satisfaction.
         </div>
         <div>
             <div className=' titleText2 font-bold mb-2 text-[#ffffff]'>Customer Care Number</div>
             <div className=' flex justify-start items-center gap-2'>
-               <a href="tel:+91 986756578" className=' flex justify-center items-center gap-2'>
+               <a href="tel:+91 9539336622" className=' flex justify-center items-center gap-2'>
                  {/* Icon */}
                  <div><FaPhoneAlt className='text-2xl text-[#ecebeb]'/></div>
                 {/* Phone Nuumber */}
-                <div className=' titleText2 text-[20px] text-[#ecebeb]'>+91 86754563547</div>
+                <div className=' titleText2 text-[20px] text-[#ecebeb]'>+91 9539336622</div>
                </a>
             </div>
             <div className='flex justify-start mt-4 gap-3'>
@@ -54,30 +54,34 @@ const Footer = () => {
       {/* Thrid Div Address1 */}
       <div className='px-6 mb-10 mx-auto flex flex-col justify-start items-start text-start'>
         <div className='mb-2 titleText2 text-[26px] text-[#ffff]'>Hyper City(Address 1)</div>
-        <div className=' titleText font-bold mb-1 text-[#ecebeb]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, delectus!</div>
+        <div className=' titleText font-bold mb-1 text-[#ecebeb]'>HYPERCITY Hypermarket 
+          Kamblakkad, Wayanad, Kerala 
+        </div>
         <div className='titleText font-bold mb-3 text-[#ecebeb]'>Pin - 699087</div>
         <div className='flex items-center gap-3'>
             <div><FaPhoneAlt className='text-[#ecebeb]'/></div>
-            <div className=' titleText2 text-[#ecebeb]'>+91 987655467987</div>
+            <div className=' titleText2 text-[#ecebeb]'>+91 9539336622</div>
         </div>
         <div className=' flex items-center gap-3 mt-2'>
             <div><MdEmail className='text-[#ecebeb]'/></div>
-            <div className='titleText2 text-[#ecebeb]'>info@vjhknkmk.com</div>
+            <div className='titleText2 text-[#ecebeb]'>info@hypercityhypermarket.com</div>
         </div>
       </div>
 
       {/* Fourth Div Address2 */}
       <div className='px-6 mb-10 mx-auto flex flex-col justify-start items-start text-start'>
         <div className='mb-2 titleText2 text-[26px] text-[#ffff]'>Hyper City(Address 2)</div>
-        <div className=' titleText font-bold mb-1 text-[#ecebeb]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, delectus!</div>
+        <div className=' titleText font-bold mb-1 text-[#ecebeb]'>HYPERCITY Hypermarket 
+          Payod, Manathavady, Wayanad, Kerala 
+        </div>
         <div className='titleText font-bold mb-3 text-[#ecebeb]'>Pin - 699087</div>
         <div className='flex items-center gap-3'>
             <div><FaPhoneAlt className='text-[#ecebeb]'/></div>
-            <div className=' titleText2 text-[#ecebeb]'>+91 987655467987</div>
+            <div className=' titleText2 text-[#ecebeb]'>+91 9539336622</div>
         </div>
         <div className=' flex items-center gap-3 mt-2'>
             <div><MdEmail className='text-[#ecebeb]'/></div>
-            <div className='titleText2 text-[#ecebeb]'>info@vjhknkmk.com</div>
+            <div className='titleText2 text-[#ecebeb]'>info@hypercityhypermarket.com</div>
         </div>
       </div>
 
