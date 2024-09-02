@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import aboutImg from "../assets/about-img.jpg"
 import Footer from './Footer'
 import author1 from '../assets/author1.jpg'
@@ -9,6 +9,11 @@ import mobileBg from "../assets/mobil-bg1.jpg"
 
 
 const About = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
+
   return (
     <div className='relative'>
       <div className=' absolute w-full h-full left-0 right-0 top-0 bottom-0 -z-30'>
@@ -30,7 +35,7 @@ const About = () => {
               Our success is built on a foundation of trust, extensive knowledge, and a passion for delivering exceptional customer experiences. These values are the driving force behind everything we do.
               <br /> <br />
 
-              Building on the success of Naas Agencies and Hypercity Hypermarket, we are now thrilled to announce our most ambitious project yet—a 30,000 square feet Hypercity Hypermarket in Payod, Mananthavady, Wayanad, Kerala. This upcoming hypermarket is set to become one of the leading retail destinations in Wayanad district, offering an unparalleled shopping experience.
+              Building on the success of Naas Agencies and Hypercity Hypermarket, we are now thrilled to announce our most ambitious project yet—a 32,000 square feet Hypercity Hypermarket in Payod, Mananthavady, Wayanad, Kerala. This upcoming hypermarket is set to become one of the leading retail destinations in Wayanad district, offering an unparalleled shopping experience.
               </div>
             </div>
             {/* Right */}

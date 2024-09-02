@@ -10,6 +10,12 @@ import Footer from './Footer';
 
 
 const Gallery = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
+
+
   const [gallery, setGallery] = useState([]);
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState([]);

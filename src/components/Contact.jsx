@@ -1,10 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import MartBg from "../assets/mart-bg.jpeg"
 import blackShade from "../assets/black-shade.png"
 import Footer from './Footer'
 
 
 const Contact = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
+
   return (
     <div>
       <section>

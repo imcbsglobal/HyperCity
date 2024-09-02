@@ -76,6 +76,11 @@ const Home = () => {
     const handleOpenChatc = () => {
         setOPenChat(!openChat)
     }
+
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
+
     return (
         <div className='overflow-hidden'>
             <div className='fixed z-[100] bottom-5 right-2'>

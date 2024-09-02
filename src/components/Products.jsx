@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Footer from './Footer'
 import Testimonials from './Testimonials'
 import { BiSolidPlusSquare } from "react-icons/bi";
@@ -17,7 +17,10 @@ import Footwear from "../components/categoryList/Footwear";
 
 const Products = () => {
 
- 
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
+
   return (
     <div className=' relative'>
       <div className=' absolute right-0 left-0 top-0 bottom-0 w-full h-full -z-30'>

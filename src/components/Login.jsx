@@ -16,6 +16,10 @@ const Login = () => {
     const [user, setUser] = useState(null);
     const [showPassword, setShowPassword] = useState(false)
 
+    useEffect(()=>{
+      window.scrollTo(0,0)
+    },[])
+
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
           setUser(currentUser);

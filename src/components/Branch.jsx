@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import branch1 from "../assets/hypercity-branch.jpg"
 import branch2 from "../assets/branch2.jpg"
 import Footer from './Footer'
@@ -8,6 +8,11 @@ import { MdEmail } from "react-icons/md";
 import { ImLocation2 } from "react-icons/im";
 
 const Branch = () => {
+  
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
+
   return (
     <div className=' relative'>
       <div className=' absolute w-full h-full left-0 top-0 right-0 bottom-0 -z-20'>
