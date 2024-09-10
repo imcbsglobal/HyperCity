@@ -10,6 +10,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './Firebase';
 import notFound from "../assets/not-found.mp4"
 import UploadGallery from "./UploadGallery";
+import ImageView from "./ImageView";
 
 
 
@@ -61,6 +62,10 @@ const OfferPosters = () => {
     setSelectedImage(images.map(img => img));
     setCurrentIndex(index);
     setShowImageView(true);
+  };
+  
+  const handleCloseImageView = () => {
+    setShowImageView(false);
   };
 
 
@@ -128,6 +133,14 @@ const OfferPosters = () => {
             </div>
           )}
         </Slider>
+
+        {showImageView && (
+          <ImageView 
+            urls={selectedImage} // Pass the image URLs
+            currentIndex={currentIndex} // Current index in the array
+            onClose={handleCloseImageView} 
+          />
+        )}
       
     </section>
   </div>

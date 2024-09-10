@@ -37,7 +37,7 @@ const Navbar = () => {
     } catch (error) {
         console.error("Error Logging Out:", error.message);
     }
-}
+  }
 
   return (
     <div>

@@ -18,7 +18,7 @@ import meatCarts from "../assets/meats-cart.png"
 
 
 
-const Carousel = () => {
+const Carousel = ({ handlScrollDown }) => {
     const [rotate, setRotate] = useState(0);
     const [active, setActive] = useState(0);
     const [currentImage, setCurrentImage] = useState(0);
@@ -114,7 +114,7 @@ const Carousel = () => {
                     <div className='text-[82px] text-[#fff] text-center leading-tight home-Quote'>Your Trust Worthy Quality <span className='block'>Source</span></div>
                     <div className='text-center px-20 text-[#ffffff] homePara paraText'>Depend on us for unparalleled quality in every product we offer. With a steadfast commitment to excellence and a wealth of experience, we ensure that each item meets the highest standards. Our dedication to providing only the best makes us a reliable source for all your needs, promising consistency and satisfaction with every purchase.</div>
                     <div className=' justify-center items-center flex mt-5 cursor-pointer'>
-                        <button className='paraText font-bold px-8 py-2 rounded-3xl bg-[#fff] text-[#0cd50f] homeButton cursor-pointer relative z-30'>Discover More</button>
+                        <button className='paraText font-bold px-8 py-2 rounded-3xl bg-[#fff] text-[#0cd50f] homeButton cursor-pointer relative z-30' onClick={handlScrollDown}>Discover More</button>
                     </div>
                 </div>
                 {/* <div className=''>
