@@ -16,7 +16,7 @@ const Food = () => {
 
     return (
         <div>
-            <div className='grid grid-cols-3 gap-4 place-items-center lg:w-[1200px] mx-auto llg:w-[1400px]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 llg:grid-cols-3 gap-4 place-items-center lg:w-[1200px] mx-auto llg:w-[1400px]'>
                 {foodItems.map((item, i) => (
                     <div 
                         key={i}
