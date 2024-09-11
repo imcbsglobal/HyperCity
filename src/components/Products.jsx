@@ -3,14 +3,11 @@ import Footer from './Footer'
 import Testimonials from './Testimonials'
 import { BiSolidPlusSquare } from "react-icons/bi";
 import { FaFileImage } from "react-icons/fa";
-
-import customer from "../assets/customer.png"
 import mobileBg from "../assets/mobil-bg1.jpg"
 import ProductCarousel from './ProductCarousel';
 import Category from './Category';
 import OfferPosters from './OfferPosters';
 import { Outlet } from 'react-router-dom';
-import Footwear from "../components/categoryList/Footwear";
 import whatsapp from "../assets/whatsapp.png"
 import messageBox from "../assets/message-box.png"
 import chatBg from "../assets/chatting-bg.png"

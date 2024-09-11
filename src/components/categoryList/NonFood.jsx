@@ -1,17 +1,20 @@
-import fruit from "../../assets/fruits.jpg"
-import vegetbaleItems from "../../assets/vegetableitems.jpg"
+import React from 'react'
+import personalCare from "../../assets/homecare.jpeg"
+import babyCare from "../../assets/babycare.jpg"
+import homeCare from "../../assets/nonFood.jpg"
+import pooja from "../../assets/pooja.jpg"
 
-const Vegitables = () => {
-
-  const vegetableItems = [
-    { name : 'Vegetables', img : vegetbaleItems },
-    { name : 'Fruits', img : fruit }
-  ]
-  
+const NonFood = () => {
+    const nonFoodItems = [
+        { name:'Personal Care', img : personalCare },
+        { name:'Baby Care', img : babyCare },
+        { name : 'Home Care', img : homeCare  },
+        { name : 'Pooja', img : pooja }
+    ]
   return (
     <div>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center lg:w-[900px] mx-auto llg:w-[1000px]'>
-                {vegetableItems.map((item, i) => (
+      <div className='grid grid-cols-3 gap-4 place-items-center lg:w-[1200px] mx-auto llg:w-[1400px]'>
+                {nonFoodItems.map((item, i) => (
                     <div 
                         key={i}
                         className={` ${ 
@@ -27,7 +30,7 @@ const Vegitables = () => {
                 ))}
             </div>
     </div>
-  );
+  )
 }
 
-export default Vegitables;
+export default NonFood

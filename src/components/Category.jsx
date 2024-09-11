@@ -1,54 +1,24 @@
 import React from 'react';
-import vegitables from "../assets/vegitables.jpeg";
-import fruits from "../assets/fruits.jpg";
-import grocery from "../assets/grocery.jpg";
-import cosmetics from "../assets/cosmetics.jpg";
-import footwear from "../assets/footwear.jpg";
+import vegitables from "../assets/fruitVeg.png";
+
 import nonGrocery from "../assets/nongrocery.jpg";
-import beverageandDrinks from "../assets/drinks.jpg";
-import roastery from "../assets/roastery.jpeg";
-import frozenFood from "../assets/frozenFoods.png";
-import personalcare from "../assets/personalCare.png";
-import babyCare from "../assets/babyCare.png";
-import homeCare from "../assets/homeCare.png";
-import pooja from "../assets/pooja.png";
-import electronics from "../assets/electronics.png";
-import toysSport from "../assets/sports.jpeg";
-import smallappliance from "../assets/smallAppliance.jpg";
-import fishery from "../assets/fishery.png";
-import butchery from "../assets/butchery.jpg";
-import hotFood from "../assets/hotFood.png";
-import bakery from "../assets/bakery.png";
+import groceryFood from "../assets/groceryFood.jpg"
+import nonFood from "../assets/nonFood.jpg"
+import freshFood from "../assets/butchery.jpg"
 import { Link } from 'react-router-dom';
 
 const Category = () => {
   const categoryList = [
-    { name: "Vegitables", img: vegitables, link: 'vegitables' },
-    { name: "Fruits", img: fruits, link: 'fruits' },
-    { name: "Grocery", img: grocery, link: 'grocery' },
-    { name: "Non-Grocery", img: nonGrocery, link: 'nonGrocery' },
-    { name: "Cosmetics", img: cosmetics, link: 'cosmetics' },
-    { name: "Footwear", img: footwear, link: 'footwear' },
-    { name: "Beverage & Drinks", img: beverageandDrinks, link: 'beverageandDrinks' },
-    { name: "Roastery", img: roastery, link: 'roastery' },
-    { name: "Frozen Foods", img: frozenFood, link: 'frozenFoods' },
-    { name: "Personal Care", img: personalcare, link: 'personalCare' },
-    { name: "Baby Care", img: babyCare, link: 'babyCare' },
-    { name: "Home Care", img: homeCare, link: 'homeCare' },
-    { name: "Pooja", img: pooja, link: 'pooja' },
-    { name: "House Hold", img: homeCare, link: 'houseHold' },
-    { name: "Toys & Sports", img: toysSport, link: 'toysAndSports' },
-    { name: "Small Appliance", img: smallappliance, link: 'smallAppliance' },
-    { name: "Electronics", img: electronics, link: 'electronicsAndIT' },
-    { name: "Fishery", img: fishery, link: 'fishery' },
-    { name: "Butchery", img: butchery, link: 'butchery' },
-    { name: "Hot Food", img: hotFood, link: 'hotFood' },
-    { name: "Bakery & Pastry", img: bakery, link: 'bakery' },    
+    { name: "Fruits & Vegitables", img: vegitables, link: 'vegitables' },
+    { name: "Food", img: groceryFood, link: 'food' },
+    { name: "Non Food", img: nonFood, link: 'nonFood' },
+    { name: "Department Store", img: nonGrocery, link: 'departmentStore' },
+    { name: "Fresh Food", img: freshFood, link: 'freshFood' },
   ];
 
   return (
     <div className='mt-10 relative px-5'>
-      <div className='flex justify-start items-start gap-10 ScrollBarHidden overflow-x-auto p-5 hideScrollbar'>
+      <div className='flex justify-center items-start gap-10 ScrollBarHidden overflow-x-auto p-5 hideScrollbar'>
         {categoryList.map((item) => (
           <Link key={item.name} to={`/products/${item.link}`}>
             <div className=' flex flex-col justify-center items-center gap-2 cursor-pointer'>

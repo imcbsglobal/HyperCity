@@ -83,15 +83,19 @@ const Navbar = () => {
               
               
               <div className=' hidden md:flex flex-col gap-2 text-[#494343]'>
-                <div className=' flex items-center gap-2'>
-                  <div><IoCallSharp/></div>
-                  <div className=' font-bold'>+91 9539336622</div>
-                </div>
-                <div className=' flex items-center gap-2'>
-                  <div><HiOutlineMail/></div>
-                  <div className=' font-bold'>info@hypercityhypermarket.com
+                <a href="tel:+919539336622">
+                  <div className=' flex items-center gap-2'>
+                    <div><IoCallSharp/></div>
+                    <div className=' font-bold'>+91 9539336622</div>
+                  </div>  
+                </a>
+                <a href="mailto:info@hypercityhypermarket.com">
+                  <div className=' flex items-center gap-2'>
+                    <div><HiOutlineMail/></div>
+                    <div className=' font-bold'>info@hypercityhypermarket.com
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </nav>

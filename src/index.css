@@ -604,3 +604,14 @@ transform: scale(1);
 .hideScrollbar::-webkit-scrollbar{
     display: none;
 }
+.DarkBox2{
+    -webkit-box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.9);
+    -moz-box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
+    box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
+    backdrop-filter: blur(25px);
+    background: linear-gradient(to top, #ff9d00, rgba(0, 0, 0, 0.1));
+    border: 1px solid white;
+    mix-blend-mode: multiply;
+    font-family: 'UrbanRoudeSemidBold';
+    /* color: #000000; */
+  }
