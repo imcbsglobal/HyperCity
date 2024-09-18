@@ -258,7 +258,7 @@ const Home = () => {
                     </div>
 
                     {/* Mission & Vision */}
-                    <div className=' px-6 lg:max-w-[1200px] lg:mx-auto  z-10 md:flex md:flex-row-reverse md:gap-10 py-10'>
+                    <div className=' px-6 lg:max-w-[1200px] lg:mx-auto  z-10 md:flex md:flex-row-reverse md:gap-10 py-10 md:justify-center md:items-center'>
                         {/* Left */}
                         <div>
                             <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#fff] drop-shadow-sm md:text-center'>Our Mission & Vision</div>
@@ -279,7 +279,7 @@ const Home = () => {
                             {/* Vision */}
                             <div>
                                 <div className='titleText font-bold text-[32px] mb-5 leading-tight text-[#fff] drop-shadow-sm'>Our Vision</div>
-                                <div className='titleText paraText text-[#fff]'>To become the leading supermarket chain in the region, known for its commitment to quality, customer satisfaction, and community support. The goal is to expand further, bringing our unique shopping experience to more neighbourhoods while maintaining the highest standards of service and product selection.</div>
+                                <div className='titleText paraText text-[#fff]'>We envision a shopping experience that transcends the ordinary. Our vision is to become the leading hypermarket destination where every customer feels valued and inspired. Our vision is to become the leading supermarket chain in the region, known for its commitment to quality, customer satisfaction, and community support. The goal is to expand further, bringing our unique shopping experience to more neighbourhoods while maintaining the highest standards of service and product selection.</div>
                             </div>
                         </div>
 
