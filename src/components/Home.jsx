@@ -374,30 +374,30 @@ const Home = () => {
                         </div>
 
                         {/* Right */}
-                        <div className='flex flex-col justify-center items-center gap-5'>
-                            <div className='flex justify-center items-center gap-5 Box px-5 py-3'>
+                        <div className='flex flex-col justify-center items-center gap-5 w-full'>
+                            <div className='flex justify-start items-center gap-5 Box px-5 py-3 w-full'>
                                 <div className='w-[60px] h-[60px] bg-[#fff] rounded-full p-2'>
                                     <img src={CustomerFocus} className='w-full h-full object-contain drop-shadow-lg' alt="" />
                                 </div>
-                                <div className=' text-sm'>Customer Focus: Always putting the needs and satisfaction of our customers first.</div>
+                                <div className=' text-sm'><span className='font-bold'>Customer Focus :</span> <br />Always putting the needs and satisfaction of our customers first.</div>
                             </div>
-                            <div className='flex justify-center items-center gap-5 px-5 py-3 Box'>
+                            <div className='flex justify-start items-center gap-5 px-5 py-3 Box w-full'>
                                 <div className='w-[60px] rounded-full bg-[#fff] p-2 h-[60px]'>
                                     <img src={quality} className='w-full h-full object-contain drop-shadow-lg' alt="" />
                                 </div>
-                                <div className=' text-sm'>Quality: Offering only the best products and maintaining high standards in everything we do.</div>
+                                <div className=' text-sm'><span className='font-bold'>Quality :</span><br /> Offering only the best products and maintaining high standards in everything we do.</div>
                             </div>
-                            <div className='flex justify-center items-center gap-5 Box px-5 py-3'>
+                            <div className='flex justify-start items-center gap-5 Box px-5 py-3 w-full'>
                                 <div className=' w-[60px] h-[60px] bg-[#fff] rounded-full p-2'>
                                     <img src={integrity} className=' h-full w-full object-contain drop-shadow-lg' alt="" />
                                 </div>
-                                <div className='text-sm'>Integrity: We conduct business with honesty, transparency, and a steadfast commitment to doing what's right.</div>
+                                <div className='text-sm'><span className='font-bold'>Integrity :</span><br /> We conduct business with honesty, transparency, and a steadfast commitment to doing what's right.</div>
                             </div>
-                            <div className='flex justify-center items-center gap-5 px-5 py-3 Box'>
+                            <div className='flex justify-start items-center gap-5 px-5 py-3 Box w-full'>
                                 <div className=' w-[60px] h-[60px] bg-[#fff] rounded-full p-2'>
                                     <img src={Community} className=' h-full w-full object-contain drop-shadow-lg' alt="" />
                                 </div>
-                                <div className='text-sm'>Community: Supporting and giving back to the local community, fostering strong relationships.</div>
+                                <div className='text-sm'><span className='font-bold'>Community :</span><br /> Supporting and giving back to the local community, fostering strong relationships.</div>
                             </div>
                         </div>
                     </div>
