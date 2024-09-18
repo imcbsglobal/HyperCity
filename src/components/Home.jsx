@@ -273,7 +273,7 @@ const Home = () => {
                             {/* Mission */}
                             <div className=' mb-10'>
                                 <div className='titleText font-bold text-[32px] mb-5 leading-tight text-[#fff] drop-shadow-sm'>Our Mission</div>
-                                <div className='paraText text-[#fff]'>To provide the community with fresh, high-quality products at competitive prices while delivering exceptional customer service. The supermarket aims to be a trusted local provider, ensuring that every shopping experience is convenient, enjoyable, and fulfilling, because at our supermarket, we stand for “Quality You Can Trust</div>
+                                <div className='paraText text-[#fff]'>At Hyper City Hypermarket, we are committed to providing our customers with a one-stop shopping experience that combines quality, variety, and values.  Our mission is to provide the community with fresh, high-quality products at competitive prices while delivering exceptional customer service. Our supermarket aims to be a trusted local provider, ensuring that every shopping experience is convenient, enjoyable, and fulfilling, because at our supermarket, we stand for "Quality You Can Trust"</div>
                             </div>
 
                             {/* Vision */}
