@@ -109,30 +109,34 @@ const OfferPosters = () => {
           <UploadGallery storagePath="posters" dbPath="posters"/>
         </div>
       )}
-      <Slider {...settings} className='mx-auto'>
-          {posters.length > 0 ? (
-            posters.map((poster, index) => (
-              <div key={index} className='w-full relative h-[300px] rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] lg:h-[400px] dlg:h-[550px]'>
-                <img
-                  src={poster.url}
-                  className='w-full h-full rounded-3xl object-cover'
-                  alt={`offer-poster-${index + 1}`}
-                  onClick={() => handleView(index)}
-                />
-                {user && (
-                  <div className="flex justify-center items-center absolute bottom-10 left-[50%] translate-x-[-50%]">
-                  <button onClick={() => handleDelete(poster.key, poster.url)} className='px-8 py-1 mt-1 rounded-3xl bg-[#ff2020] font-bold text-[#fff] drop-shadow-md'>Delete</button>
-                </div>
-                )}
-              </div>
-            ))
-          ) : (
-            <div className="grid place-items-center">
-              <video src={notFound} autoPlay loop muted playsInline className="mix-blend-multiply w-[100px] h-[100px]" type="video/mp4"></video>
-              <p className="font-bold text-center">No Image Found</p>
-            </div>
-          )}
-        </Slider>
+      {posters.length > 0 ? (
+  <Slider {...settings} className='mx-auto'>
+    {posters.map((poster, index) => (
+      <div key={index} className='w-full relative h-[300px] rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] lg:h-[400px] dlg:h-[550px]'>
+        <img
+          src={poster.url}
+          className='w-full h-full rounded-3xl object-cover'
+          alt={`offer-poster-${index + 1}`}
+          onClick={() => handleView(index)}
+        />
+        {user && (
+          <div className="flex justify-center items-center absolute bottom-10 left-[50%] translate-x-[-50%]">
+            <button onClick={() => handleDelete(poster.key, poster.url)} className='px-8 py-1 mt-1 rounded-3xl bg-[#ff2020] font-bold text-[#fff] drop-shadow-md'>
+              Delete
+            </button>
+          </div>
+        )}
+      </div>
+    ))}
+  </Slider>
+) : (
+  <div className="grid place-items-center">
+    <video src={notFound} autoPlay loop muted playsInline className="mix-blend-multiply w-[100px] h-[100px]" type="video/mp4"></video>
+    <p className="font-bold text-center">No Offer Found</p>
+  </div>
+)}
+
+        
 
         {showImageView && (
           <ImageView 

@@ -95,7 +95,9 @@ const Contact = () => {
           <div className=' absolute bottom-0 w-full h-[60px] bg-[#fff]'>
               <div className=' flex justify-center mt-3'>
                   
-                  <button className='bg-[#01af10] px-8 py-1 text-[#fff] font-bold titleText2 rounded-3xl shadow-md flex justify-center items-center gap-2'><span className='text-xl'><FaWhatsapp/></span>Start Now</button>
+              <a href="https://wa.me/qr/RONTMIZCOXJRI1">
+                <button className='bg-[#01af10] px-8 py-1 text-[#fff] font-bold titleText2 rounded-3xl shadow-md flex justify-center items-center gap-2'><span className='text-xl'><FaWhatsapp/></span>Start Now</button>
+              </a>
               </div>
           </div>
 
@@ -125,11 +127,19 @@ const Contact = () => {
                     <ToastContainer className='mt-5'/>
                 </div>
                 {/* Address */}
-                <div className='flex flex-col gap-5'>
+                <div className='flex flex-col gap-5 lg:w-[50%]'>
                     <div>
                         <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Our Address</div>
-                        <div className=' mb-5 text-[18px] titleText leading-tight font-bold text-[#fff]'>Hyper City PVT LTD,</div>
-                        <div className='titleText text-sm text-[#fff] font-light'>We're here to help with any questions or concerns. Reach out to us, and we'll ensure you receive the support and assistance you need. Your satisfaction is our top priority.</div>
+                        <div className=' mb-5 text-[18px] titleText leading-tight font-bold text-[#fff]'>Hyper City Retail India Pvt Ltd,</div>
+                        
+                        <div className='titleText text-sm text-[#fff] font-light flex flex-col justify-start items-start'>
+                          <div className='mb-2 font-bold'>
+                              Kamblakkad, Wayanad, Kerala ,
+                          </div>
+                          <div className=' font-bold'>
+                              Manathavady, Wayanad, Kerala
+                          </div>
+                        </div>
                     </div>
                     <div>
                         <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Email</div>

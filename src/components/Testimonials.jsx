@@ -34,7 +34,7 @@ const Testimonials = () => {
                 
                 <div> 
                     <div className='text-center mb-2 italic px-8 lg:px-32 llg:px-56'>
-                    "Shopping at Hypercity Hypermarket has always been a fantastic experience. Their wide range of products ensures I find everything I need in one place. The quality is consistently high, and the prices are unbeatable. The staff is always courteous and quick to assist. Hypercity has become my trusted destination for all my shopping needs."
+                    "Shopping at Hypercity Hypermarket is always great. They have lots of top-quality products at affordable prices, and the staff is very helpful. It's my go-to spot for all my shopping needs."
                     </div>
                     <div className='text-center font-bold'>Girish Choudary</div>
                 </div>
@@ -49,7 +49,7 @@ const Testimonials = () => {
               </div>
               <div>
                 <div className='text-center mb-2 italic px-8 lg:px-32 llg:px-56'>
-                  "I've been a loyal Hypercity Hypermarket customer for years, and I'm always impressed by their quality and affordability. From groceries to household items, they offer top-notch products at great prices. The staff is friendly, and the service is exceptional. Hypercity is my go-to for all my household needs!"
+                  "I have been a loyal customer of Hypercity Hypermarket for years. I always feel that their quality and prices are as good as can be. Their products are great, and their service is excellent too. Household needs will, without a doubt, take one to Hypercity!"
                 </div>
                 <div className='text-center font-bold'>Saniya Jithesh</div>
               </div>
@@ -63,7 +63,7 @@ const Testimonials = () => {
               </div>
               <div>
                 <div className='text-center mb-2 italic px-8 lg:px-32 llg:px-56'>
-                  "Hypercity Hypermarket never disappoints! The variety of products is impressive, and the store layout makes shopping convenient. I love that I can rely on the freshness of their groceries and the quality of every item. Plus, the frequent discounts make it a great value for money. Hypercity has definitely earned my loyalty!"
+                  "Hypercity Hypermarket never disappoints! With a great product variety, fresh groceries, and frequent discounts, it's a reliable and convenient place to shop. They've earned my loyalty!"
                 </div>
                 <div className='text-center font-bold'>Akash K V</div>
               </div>

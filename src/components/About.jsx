@@ -71,7 +71,9 @@ const About = () => {
           <div className=' absolute bottom-0 w-full h-[60px] bg-[#fff]'>
               <div className=' flex justify-center mt-3'>
                   
-                  <button className='bg-[#01af10] px-8 py-1 text-[#fff] font-bold titleText2 rounded-3xl shadow-md flex justify-center items-center gap-2'><span className='text-xl'><FaWhatsapp/></span>Start Now</button>
+              <a href="https://wa.me/qr/RONTMIZCOXJRI1">
+                <button className='bg-[#01af10] px-8 py-1 text-[#fff] font-bold titleText2 rounded-3xl shadow-md flex justify-center items-center gap-2'><span className='text-xl'><FaWhatsapp/></span>Start Now</button>
+              </a>
               </div>
           </div>
 
@@ -115,29 +117,29 @@ const About = () => {
             <div className='grid grid-cols-1 place-items-center mb-10 md:flex md:justify-center md:items-center md:gap-10'>
               {/* Excecutive Photo */}
               <div className=' w-[150px] h-[150px] rounded-full bg-[#8f6666] mb-3'>
-                <img src={author1} className='w-full h-full object-cover rounded-full' alt="" />
+                <img src="" className='w-full h-full object-cover rounded-full' alt="" />
               </div>
               {/* Excecutive Quote */}
               <div className='md:w-[70%]'>
-                  <div className=' paraText text-sm italic text-center md:text-start px-16 md:px-0 mb-3'>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus error aspernatur aliquid ipsa nisi reiciendis obcaecati optio repudiandae incidunt non consectetur impedit, in sed ipsum. Consequuntur esse necessitatibus odio accusamus"
+                  <div className=' paraText text-sm italic text-center md:text-start px-16 md:px-0 mb-3'>"With a foundation built on trust and expertise, we deliver a value and service proposition to our customers that few can match. Our vision for Hypercity Hypermarket is to become the destination for quality within affordability."
                   </div>
-                  <div className=' text-center md:text-start font-bold titleText'>Excecutive Name - Managing Director</div>
+                  <div className=' text-center md:text-start font-bold titleText'>Noufal KK - Founder</div>
               </div>
             </div>
 
             {/* Excecutive List 2 */}
-            <div className='grid grid-cols-1 place-items-center mb-10 md:flex md:justify-center md:items-center md:gap-10 md:flex-row-reverse'>
+            {/* <div className='grid grid-cols-1 place-items-center mb-10 md:flex md:justify-center md:items-center md:gap-10 md:flex-row-reverse'> */}
               {/* Excecutive Photo */}
-              <div className=' w-[150px] h-[150px] rounded-full bg-[#8f6666] mb-3'>
+              {/* <div className=' w-[150px] h-[150px] rounded-full bg-[#8f6666] mb-3'>
               <img src={author2} className='w-full h-full object-cover rounded-full' alt="" />
-              </div>
+              </div> */}
               {/* Excecutive Quote */}
-              <div className='md:w-[70%]'>
+              {/* <div className='md:w-[70%]'>
                   <div className=' paraText text-sm italic text-center px-16 mb-3 md:px-0 md:text-end'>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus error aspernatur aliquid ipsa nisi reiciendis obcaecati optio repudiandae incidunt non consectetur impedit, in sed ipsum. Consequuntur esse necessitatibus odio accusamus"
                   </div>
                   <div className=' text-center font-bold titleText md:text-end'>Excecutive Name - Managing Director</div>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
         </div>
       </section>

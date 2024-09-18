@@ -75,7 +75,9 @@ const Products = () => {
           <div className=' absolute bottom-0 w-full h-[60px] bg-[#fff]'>
               <div className=' flex justify-center mt-3'>
                   
-                  <button className='bg-[#01af10] px-8 py-1 text-[#fff] font-bold titleText2 rounded-3xl shadow-md flex justify-center items-center gap-2'><span className='text-xl'><FaWhatsapp/></span>Start Now</button>
+              <a href="https://wa.me/qr/RONTMIZCOXJRI1">
+                <button className='bg-[#01af10] px-8 py-1 text-[#fff] font-bold titleText2 rounded-3xl shadow-md flex justify-center items-center gap-2'><span className='text-xl'><FaWhatsapp/></span>Start Now</button>
+              </a>
               </div>
           </div>
 

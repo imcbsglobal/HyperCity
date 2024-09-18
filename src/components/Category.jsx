@@ -1,6 +1,5 @@
 import React from 'react';
 import vegitables from "../assets/fruitVeg.png";
-
 import nonGrocery from "../assets/nongrocery.jpg";
 import groceryFood from "../assets/groceryFood.jpg"
 import nonFood from "../assets/nonFood.jpg"

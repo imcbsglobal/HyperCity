@@ -41,7 +41,15 @@ import { Link } from "react-router-dom"
 import { FaArrowRightLong } from "react-icons/fa6";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import quality from "../assets/quality.png"
+import integrity from "../assets/Integrity.png"
+import CustomerFocus from "../assets/CustomerFocus.png"
+import Community from "../assets/Community.png"
+import fruitVeg from "../assets/fruitVeg.png"
+import groceryFood from "../assets/groceryFood.png"
+import nonFood from "../assets/nonFood.png"
+import nonGrocery from "../assets/nonGrocery.png"
+import freshFood from "../assets/butchery.png"
 
 
 const Home = () => {
@@ -156,7 +164,9 @@ const Home = () => {
                 <div className=' absolute bottom-0 w-full h-[60px] bg-[#fff]'>
                     <div className=' flex justify-center mt-3'>
                         
-                        <button className='bg-[#01af10] px-8 py-1 text-[#fff] font-bold titleText2 rounded-3xl shadow-md flex justify-center items-center gap-2'><span className='text-xl'><FaWhatsapp/></span>Start Now</button>
+                        <a href="https://wa.me/qr/RONTMIZCOXJRI1">
+                            <button className='bg-[#01af10] px-8 py-1 text-[#fff] font-bold titleText2 rounded-3xl shadow-md flex justify-center items-center gap-2'><span className='text-xl'><FaWhatsapp/></span>Start Now</button>
+                        </a>
                     </div>
                 </div>
 
@@ -288,7 +298,54 @@ const Home = () => {
                         </div>
                         {/* Product List */}
 
-                        <Vegitables/>
+                        {/* <Vegitables/> */}
+                        <div className='grid grid-cols-1 place-items-center md:grid-cols-2 llg:grid-cols-3 gap-10 llg:w-[1200px] mx-auto'>
+                            <div className='w-full h-[250px] rounded-3xl relative flex justify-center items-center'>
+                                <div className=' w-full h-[250px] rounded-3xl bg-[#232020]'>
+                                    <img src={fruitVeg} alt="" className=' w-full h-full object-cover rounded-3xl' />
+                                </div>
+                                <div className='absolute bg-[#fff] w-full text-center py-3 font-bold titleText'>
+                                    Fruits & Vegetables
+                                </div>
+                            </div>
+
+                            <div className='w-full h-[250px] rounded-3xl relative flex justify-center items-center'>
+                                <div className=' w-full h-[250px] rounded-3xl bg-[#232020]'>
+                                    <img src={groceryFood} alt="" className=' w-full h-full object-cover rounded-3xl' />
+                                </div>
+                                <div className='absolute bg-[#fff] w-full text-center py-3 font-bold titleText'>
+                                    Food
+                                </div>
+                            </div>
+
+                            <div className='w-full h-[250px] rounded-3xl relative flex justify-center items-center'>
+                                <div className=' w-full h-[250px] rounded-3xl bg-[#232020]'>
+                                    <img src={nonFood} alt="" className=' w-full h-full object-cover rounded-3xl' />
+                                </div>
+                                <div className='absolute bg-[#fff] w-full text-center py-3 font-bold titleText'>
+                                    Non Food
+                                </div>
+                            </div>
+
+                            <div className='w-full h-[250px] rounded-3xl relative flex justify-center items-center'>
+                                <div className=' w-full h-[250px] rounded-3xl bg-[#232020]'>
+                                    <img src={nonGrocery} alt="" className=' w-full h-full object-cover rounded-3xl' />
+                                </div>
+                                <div className='absolute bg-[#fff] w-full text-center py-3 font-bold titleText'>
+                                    Department Store
+                                </div>
+                            </div>
+
+                            <div className='w-full h-[250px] rounded-3xl relative flex justify-center items-center'>
+                                <div className=' w-full h-[250px] rounded-3xl bg-[#232020]'>
+                                    <img src={freshFood} alt="" className=' w-full h-full object-cover rounded-3xl' />
+                                </div>
+                                <div className='absolute bg-[#fff] w-full text-center py-3 font-bold titleText'>
+                                    Fresh Food
+                                </div>
+                            </div>
+
+                        </div>
                         
                         <div className='flex justify-center mt-10 items-center'>
                             <Link to='/products'>
@@ -319,26 +376,26 @@ const Home = () => {
                         {/* Right */}
                         <div className='flex flex-col justify-center items-center gap-5'>
                             <div className='flex justify-center items-center gap-5 Box px-5 py-3'>
-                                <div className='w-auto h-[60px]'>
-                                    <img src={cartIcon} className='w-full h-full object-contain drop-shadow-lg' alt="" />
+                                <div className='w-[60px] h-[60px] bg-[#fff] rounded-full p-2'>
+                                    <img src={CustomerFocus} className='w-full h-full object-contain drop-shadow-lg' alt="" />
                                 </div>
                                 <div className=' text-sm'>Customer Focus: Always putting the needs and satisfaction of our customers first.</div>
                             </div>
                             <div className='flex justify-center items-center gap-5 px-5 py-3 Box'>
-                                <div className='w-auto h-[60px]'>
-                                    <img src={cartIcon} className='w-full h-full object-contain drop-shadow-lg' alt="" />
+                                <div className='w-[60px] rounded-full bg-[#fff] p-2 h-[60px]'>
+                                    <img src={quality} className='w-full h-full object-contain drop-shadow-lg' alt="" />
                                 </div>
                                 <div className=' text-sm'>Quality: Offering only the best products and maintaining high standards in everything we do.</div>
                             </div>
                             <div className='flex justify-center items-center gap-5 Box px-5 py-3'>
-                                <div className=' w-auto h-[60px]'>
-                                    <img src={cartIcon} className=' h-full w-full object-contain drop-shadow-lg' alt="" />
+                                <div className=' w-[60px] h-[60px] bg-[#fff] rounded-full p-2'>
+                                    <img src={integrity} className=' h-full w-full object-contain drop-shadow-lg' alt="" />
                                 </div>
                                 <div className='text-sm'>Integrity: We conduct business with honesty, transparency, and a steadfast commitment to doing what's right.</div>
                             </div>
                             <div className='flex justify-center items-center gap-5 px-5 py-3 Box'>
-                                <div className=' w-auto h-[60px]'>
-                                    <img src={cartIcon} className=' h-full w-full object-contain drop-shadow-lg' alt="" />
+                                <div className=' w-[60px] h-[60px] bg-[#fff] rounded-full p-2'>
+                                    <img src={Community} className=' h-full w-full object-contain drop-shadow-lg' alt="" />
                                 </div>
                                 <div className='text-sm'>Community: Supporting and giving back to the local community, fostering strong relationships.</div>
                             </div>
@@ -399,8 +456,15 @@ const Home = () => {
                         <div className='flex flex-col gap-5'>
                             <div>
                                 <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Our Address</div>
-                                <div className=' mb-5 text-[18px] titleText leading-tight font-bold text-[#fff]'>Hyper City PVT LTD,</div>
-                                <div className='titleText text-sm text-[#fff] font-light'>We're here to help with any questions or concerns. Reach out to us, and we'll ensure you receive the support and assistance you need. Your satisfaction is our top priority.</div>
+                                <div className=' mb-5 text-[18px] titleText leading-tight font-bold text-[#fff]'>Hyper City Retail India Pvt Ltd,</div>
+                                <div className='titleText text-sm text-[#fff] font-light flex flex-col justify-start items-start'>
+                                    <div className='mb-2 font-bold'>
+                                        Kamblakkad, Wayanad, Kerala ,
+                                    </div>
+                                    <div className=' font-bold'>
+                                        Manathavady, Wayanad, Kerala
+                                    </div>
+                                </div>
                             </div>
                             <div>
                                 <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Email</div>

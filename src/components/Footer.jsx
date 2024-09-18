@@ -54,10 +54,10 @@ const Footer = () => {
       {/* Thrid Div Address1 */}
       <div className='px-6 mb-10 mx-auto flex flex-col justify-start items-start text-start'>
         <div className='mb-2 titleText2 text-[26px] text-[#ffff]'>Hyper City Kamblakkad</div>
-        <div className=' titleText font-bold mb-1 text-[#ecebeb]'>HYPERCITY Hypermarket 
+        <div className=' titleText font-bold mb-1 text-[#ecebeb]'>Hyper City Hypermarket 
           Kamblakkad, Wayanad, Kerala 
         </div>
-        <div className='titleText font-bold mb-3 text-[#ecebeb]'>Pin - 699087</div>
+        <div className='titleText font-bold mb-3 text-[#ecebeb]'>Pin - 673122</div>
         <a href="tel:+919539336622">
           <div className='flex items-center gap-3'>
               <div><FaPhoneAlt className='text-[#ecebeb]'/></div>
@@ -75,10 +75,10 @@ const Footer = () => {
       {/* Fourth Div Address2 */}
       <div className='px-6 mb-10 mx-auto flex flex-col justify-start items-start text-start'>
         <div className='mb-2 titleText2 text-[26px] text-[#ffff]'>Hyper City Manathavady</div>
-        <div className=' titleText font-bold mb-1 text-[#ecebeb]'>HYPERCITY Hypermarket 
+        <div className=' titleText font-bold mb-1 text-[#ecebeb]'>Hyper City Hypermarket 
           Payod, Manathavady, Wayanad, Kerala 
         </div>
-        <div className='titleText font-bold mb-3 text-[#ecebeb]'>Pin - 699087</div>
+        <div className='titleText font-bold mb-3 text-[#ecebeb]'>Pin - 670645</div>
         <a href="tel:+919539336622">
           <div className='flex items-center gap-3'>
               <div><FaPhoneAlt className='text-[#ecebeb]'/></div>
