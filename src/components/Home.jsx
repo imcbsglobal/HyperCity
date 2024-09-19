@@ -215,7 +215,7 @@ const Home = () => {
                         <div className='lg:w-[50%]'>
                             <div className='titleText font-bold mb-2 text-[#FF6C00]'>About Us</div>
                             <div className='titleText2 font-bold text-[36px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm'>From Market Expertise to the <span className='lg:block'>Success of Hypercity </span></div>
-                            <div className=' mb-7'>The Hypercity Hypermarket was established on 2nd May 2019 in Kamblakkad, Wayanad, Kerala. We are committed to providing maximum quality products at minimum prices, drawing on over 20 years of experience in the grocery industry. Noufal KK, who previously expanded into the grocery sector with his brothers in Kannur district, laid the foundation for this venture with a wealth of market knowledge and expertise. The grand opening was inaugurated by Panakkad Sayyid Basheer Ali Shihad Thangal, and the supermarket has since become a trusted name among customers.
+                            <div className=' mb-7'>The Hypercity Hypermarket was established on 2nd May 2019 in Kamblakkad, Wayanad, Kerala. We are committed to providing maximum quality products at minimum prices, drawing on over 25 years of experience in the grocery industry. Noufal KK, who previously expanded into the grocery sector with his brothers in Kannur district, laid the foundation for this venture with a wealth of market knowledge and expertise. The grand opening was inaugurated by Panakkad Sayyid Basheer Ali Shihad Thangal, and the supermarket has since become a trusted name among customers.
                             </div>
                             <div>
                                 <Link to='/about'><button className='titleText font-bold px-8 py-2 rounded-3xl bg-[#FF6C00] text-[#fff] buttonShadow'>Read More</button></Link>
@@ -223,11 +223,11 @@ const Home = () => {
                             <div className=' mt-10 flex justify-center items-center text-center'>
                                 <div className='md:flex md:justify-center md:items-center'>
                                     <div className='p-2'>
-                                        <div className='titleText1 text-[48px] text-[#0cd50f] drop-shadow-md'>10+</div>
+                                        <div className='titleText1 text-[48px] text-[#0cd50f] drop-shadow-md'>25+</div>
                                         <div className='titleText font-bold text-[#0cd50f]'>Years Of Trust</div>
                                     </div>
                                     <div className='p-2'>
-                                        <div className='titleText1 text-[48px] text-[#0cd50f] drop-shadow-md'>300+</div>
+                                        <div className='titleText1 text-[48px] text-[#0cd50f] drop-shadow-md'>200+</div>
                                         <div className='titleText font-bold text-[#0cd50f]'>Employees</div>
                                     </div>
                                     <div className='p-2'>
@@ -235,7 +235,7 @@ const Home = () => {
                                         <div className='titleText font-bold text-[#0cd50f]'>Loyal Customers</div>
                                     </div>
                                     <div className='p-2'> 
-                                        <div className='titleText1 text-[48px] text-[#0cd50f] drop-shadow-md'>2+</div>
+                                        <div className='titleText1 text-[48px] text-[#0cd50f] drop-shadow-md'>3+</div>
                                         <div className='titleText font-bold text-[#0cd50f]'>Branches</div>
                                     </div>
                                 </div>
@@ -461,14 +461,17 @@ const Home = () => {
                                     <div className='mb-2 font-bold'>
                                         Kamblakkad, Wayanad, Kerala ,
                                     </div>
-                                    <div className=' font-bold'>
+                                    <div className=' font-bold mb-2'>
                                         Manathavady, Wayanad, Kerala
+                                    </div>
+                                    <div className=' font-bold'>
+                                        Kadavathur, Kannur, Kerala
                                     </div>
                                 </div>
                             </div>
                             <div>
                                 <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Email</div>
-                                <div className='mb-5 text-[18px] titleText leading-tight text-[#fff] font-bold'>info@hypercityhypermarket.com</div>
+                                <div className='text-[18px] titleText leading-tight text-[#fff] font-bold'>info@hypercityhypermarket.com</div>
                             </div>
                             <div>
                                 <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Phone</div>

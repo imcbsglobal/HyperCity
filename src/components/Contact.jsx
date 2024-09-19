@@ -136,14 +136,17 @@ const Contact = () => {
                           <div className='mb-2 font-bold'>
                               Kamblakkad, Wayanad, Kerala ,
                           </div>
-                          <div className=' font-bold'>
+                          <div className=' font-bold mb-2'>
                               Manathavady, Wayanad, Kerala
+                          </div>
+                          <div className=' font-bold'>
+                              Kadavathur, Kannur, Kerala
                           </div>
                         </div>
                     </div>
                     <div>
                         <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Email</div>
-                        <div className='mb-5 text-[18px] titleText leading-tight text-[#fff] font-bold'>hypercity@gmail.com</div>
+                        <div className='text-[18px] titleText leading-tight text-[#fff] font-bold'>hypercity@gmail.com</div>
                     </div>
                     <div>
                         <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Phone</div>
