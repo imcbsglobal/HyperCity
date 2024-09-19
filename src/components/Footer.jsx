@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
-    <div className='grid grid-cols-1  md:grid-cols-2 mx-auto lg:grid-cols-4 md:px-6  pt-10 llg:max-w-[1400px]'>
+    <div className='grid grid-cols-1  md:grid-cols-2 mx-auto lg:grid-cols-4 llg:flex llg:justify-center md:px-6  pt-10 llg:max-w-[1400px]'>
         {/* First Div */}
       <div className=' flex flex-col justify-start items-start gap-3 px-6 mb-10 text-start'>
         <div className=' w-[200px] h-[150px]'>
@@ -83,6 +83,26 @@ const Footer = () => {
           <div className='flex items-center gap-3'>
               <div><FaPhoneAlt className='text-[#ecebeb]'/></div>
               <div className=' titleText2 text-[#ecebeb]'>+91 9539336622</div>
+          </div>
+        </a>
+        <a href="mailto:info@hypercityhypermarket.com">
+          <div className=' flex items-center gap-3 mt-2'>
+              <div><MdEmail className='text-[#ecebeb]'/></div>
+              <div className='titleText2 text-[#ecebeb]'>info@hypercityhypermarket.com</div>
+          </div>
+        </a>
+      </div>
+
+      <div className='px-6 mb-10 mx-auto flex flex-col justify-start items-start text-start'>
+        <div className='mb-2 titleText2 text-[26px] text-[#ffff]'>Hyper City Kadavathur</div>
+        <div className=' titleText font-bold mb-1 text-[#ecebeb]'>Hyper City Hypermarket 
+          Kadavathur, Kannur, Kerala 
+        </div>
+        <div className='titleText font-bold mb-3 text-[#ecebeb]'>Pin - 670676</div>
+        <a href="tel:+919539336622">
+          <div className='flex items-center gap-3'>
+              <div><FaPhoneAlt className='text-[#ecebeb]'/></div>
+              <div className=' titleText2 text-[#ecebeb]'>+91 8078962425</div>
           </div>
         </a>
         <a href="mailto:info@hypercityhypermarket.com">
