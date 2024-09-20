@@ -9,7 +9,7 @@ const FreshFood = () => {
     const freshFoodItem = [
         { name: 'Fishery', img: fishery },
         { name: 'Butchery', img: butchery },
-        { name: 'Beverage & Drinks Foods', img: hotFood },
+        { name: 'Hot Food', img: hotFood },
         { name: 'Bakery & Pastry', img: bakery },
     ];
   return (

@@ -11,9 +11,11 @@ const Footer = () => {
     <div className='grid grid-cols-1  md:grid-cols-2 mx-auto lg:grid-cols-4 llg:flex llg:justify-center md:px-6  pt-10 llg:max-w-[1400px]'>
         {/* First Div */}
       <div className=' flex flex-col justify-start items-start gap-3 px-6 mb-10 text-start'>
-        <div className=' w-[200px] h-[150px]'>
-            <img src={logo} className='w-full h-full object-contain drop-shadow-sm' alt="" />
-        </div>
+        <Link to="/">
+          <div className=' w-[200px] h-[150px]'>
+              <img src={logo} className='w-full h-full object-contain drop-shadow-sm' alt="" />
+          </div>
+        </Link>
         <div className=' titleText font-bold text-[#ecebeb] text-sm'>
           Have questions? Reach out to us for support and ensure your satisfaction.
         </div>

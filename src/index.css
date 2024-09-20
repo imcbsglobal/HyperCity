@@ -615,3 +615,14 @@ transform: scale(1);
     font-family: 'UrbanRoudeSemidBold';
     /* color: #000000; */
   }
+  .NavbarHover {
+    transition: all .1s ease;
+}
+
+.NavbarHover:hover {
+    color: #ff9d00;
+}
+
+.active-link {
+    color: #ff9d00;
+}

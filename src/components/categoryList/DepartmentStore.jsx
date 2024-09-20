@@ -5,6 +5,7 @@ import houseHolds from "../../assets/household.jpg"
 import sportsToys from "../../assets/sportstoys.jpeg"
 import orangeShade from "../../assets/orange.png"
 
+
 const DepartmentStore = () => {
     const departmentStoreItems = [
         { name : 'Electronics & IT', img : electronics },

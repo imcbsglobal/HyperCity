@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import logo from "../assets/logo.png"
 import { CgMenuGridO } from "react-icons/cg";
 import MobileNavbar from './MobileNavbar';
@@ -14,7 +14,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
   const [user, setUser] = useState(null);
-
+  const [active, setActive] = useState(false)
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -39,6 +39,24 @@ const Navbar = () => {
     }
   }
 
+  useEffect(() => {
+    const scrollActive = () => {
+        setActive(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", scrollActive);
+    return () => window.removeEventListener('scroll', scrollActive);
+}, []);
+
+const location = useLocation()
+
+const getLinkClassName = (path) => {
+  // Check if the current location path matches the route, allowing nested route support.
+  return location.pathname === path || location.pathname.startsWith(path)
+    ? 'NavbarHover active-link'
+    : 'NavbarHover';
+};
+
+
   return (
     <div>
       {menu ? (
@@ -48,17 +66,19 @@ const Navbar = () => {
       ) : (
         <header className=' w-full px-6 py-2 fixed z-[999] navbarBg'>
           <nav className=' flex justify-between items-center lg:max-w-[1200px] lg:mx-auto'>
-            <div className=' w-auto h-[80px]'>
-              <img src={logo} className=' w-full h-full object-contain drop-shadow-sm' alt="" />
-            </div>
+            <Link to="/">
+              <div className=' w-auto h-[80px]'>
+                <img src={logo} className=' w-full h-full object-contain drop-shadow-sm' alt="" />
+              </div>
+            </Link>
             <div className='hidden md:flex md:justify-center md:items-center'>
               <ul className=' flex justify-center items-center gap-5 titleText font-bold text-[#494343]'>
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to='/about'>About</Link></li>
-                <li><Link to='/branch'>Branch</Link></li>
-                <li><Link to='/products'>Products</Link></li>
-                <li><Link to='/gallery'>Gallery</Link></li>
-                <li><Link to='/contact'>Contact</Link></li>
+                <li><Link className={getLinkClassName("/")} to='/'>Home</Link></li>
+                <li><Link className={getLinkClassName("/about")} to='/about'>About</Link></li>
+                <li><Link className={getLinkClassName("/branch")} to='/branch'>Branch</Link></li>
+                <li><Link className={getLinkClassName("/products")} to='/products'>Products</Link></li>
+                <li><Link className={getLinkClassName("/gallery")}  to='/gallery'>Gallery</Link></li>
+                <li><Link className={getLinkClassName("/contact")} to='/contact'>Contact</Link></li>
               </ul>
             </div>
             <div className=' md:hidden flex items-center gap-5'>

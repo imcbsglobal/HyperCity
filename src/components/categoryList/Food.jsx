@@ -4,11 +4,12 @@ import nonGrocery from "../../assets/nonFood.jpg";
 import roastery from "../../assets/roastery.jpeg";
 import frozenFood from "../../assets/frozen.jpg";
 import beverageDrink from "../../assets/drinks.jpeg";
+import nonGroceryFood from "../../assets/nonGroceryfood.jpg"
 
 const Food = () => {
     const foodItems = [
         { name: 'Grocery Foods', img: grocery },
-        { name: 'Non-Grocery Foods', img: nonGrocery },
+        { name: 'Non-Grocery Foods', img: nonGroceryFood },
         { name: 'Beverage & Drinks Foods', img: beverageDrink },
         { name: 'Roastery Foods', img: roastery },
         { name: 'Frozen Foods', img: frozenFood },

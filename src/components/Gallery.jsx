@@ -128,7 +128,7 @@ const Gallery = () => {
       <section className=' mb-5'>
         <div className=' flex flex-col justify-center items-center  text-center'>
           <div className='titleText2 font-bold text-[44px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm md:text-center'>Our Gallery</div>
-          <div className='px-6 md:px-10 lg:px-56 mb-5'>Explore our gallery to discover a curated collection of our finest offerings. Each piece showcases the quality and variety we take pride in, reflecting our dedication to excellence. Whether you’re browsing for inspiration or looking to see our products in action, our gallery offers a visual journey through our diverse range, highlighting the craftsmanship and care we put into everything we do.</div>
+          <div className='px-6 md:px-10 lg:px-56 mb-5 llg:w-[800px] mx-auto llg:px-0'>This is our gallery page, where you can see the images of this hypermarket. Each piece showcases the quality and variety we are dedicated to, reflecting our commitment to excellence.</div>
         </div>
       </section>
       <section className=' mb-10'>

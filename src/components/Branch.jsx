@@ -84,7 +84,8 @@ const Branch = () => {
         <div className=' pt-24'>
           <div className=' lg:max-w-[1200px] lg:mx-auto mb-10 px-6 pt-5'>
             <div className='text-center titleText2 font-bold text-[44px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm'>Our Branches</div>
-            <div className='text-center mb-10 paraText lg:px-56 font-semibold'>With two thriving branches, We stands as a symbol of quality and affordability. Our flagship store marked the beginning of our journey to deliver exceptional service and value to our customers. As we continue to grow, our second branch extends the same trusted offerings, reinforcing our commitment to providing the best products at the most competitive prices across all locations.
+            <div className='text-center mb-10 paraText lg:px-56 font-semibold'>
+            With three thriving branches, we stand as a symbol of quality and affordability. Our flagship store marked the beginning of our journey to deliver exceptional service and value to our customers. Serving Malabar areas in Kerala, we continue to grow while remaining committed to providing the best products at the most competitive prices across all locations.
             </div>
             {/* Branches */}
             <div className='grid grid-cols-1 md:flex  mb-10 md:gap-10 md:place-items-center'>
