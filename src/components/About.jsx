@@ -13,6 +13,7 @@ import logo from "../assets/single-logo.png"
 import { IoClose } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdWavingHand } from "react-icons/md";
+import founder from "../assets/founder.jpg"
 
 
 const About = () => {
@@ -117,7 +118,7 @@ const About = () => {
             <div className='grid grid-cols-1 place-items-center mb-10 md:flex md:justify-center md:items-center md:gap-10'>
               {/* Excecutive Photo */}
               <div className=' w-[150px] h-[150px] rounded-full bg-[#8f6666] mb-3'>
-                <img src="" className='w-full h-full object-cover rounded-full' alt="" />
+                <img src={founder} className='w-full h-full object-cover rounded-full' alt="" />
               </div>
               {/* Excecutive Quote */}
               <div className='md:w-[70%]'>
