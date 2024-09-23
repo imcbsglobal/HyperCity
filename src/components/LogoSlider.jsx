@@ -39,9 +39,20 @@ import brand33 from "../assets/brand33.png"
 import brand34 from "../assets/brand34.png"
 import brand35 from "../assets/brand35.png"
 import brand36 from "../assets/brand36.png"
-import brand37 from "../assets/brand38.png"
-
-
+import brand38 from "../assets/brand38.png"
+import brand39 from "../assets/brand39.png"
+import brand40 from "../assets/brand40.jpg"
+import brand41 from "../assets/brand41.jpg"
+import brand42 from "../assets/brand42.png"
+import brand43 from "../assets/brand43.png"
+import brand44 from "../assets/brand44.png"
+import brand45 from "../assets/brand45.jpg"
+import brand46 from "../assets/brand46.png"
+import brand47 from "../assets/brand47.png"
+import brand48 from "../assets/brand48.png"
+import brand49 from "../assets/brand49.jpg"
+import brand50 from "../assets/brand50.png"
+import brand51 from "../assets/brand49.jpg"
 
 import { motion } from "framer-motion"
 
@@ -49,32 +60,32 @@ import { motion } from "framer-motion"
 const LogoSlider = () => {
     const logos = [
         { id: 1, src: brand1},
-        { id: 2, src: brand2},
-        { id: 3, src: brand3},
-        { id: 4, src: brand4},
-        { id: 5, src: brand5},
-        { id: 6, src: brand6},
-        { id: 7, src: brand7},
-        { id: 8, src: brand8},
-        { id: 9, src: brand9},
-        { id: 10, src: brand10},
-        { id: 11, src: brand11},
-        { id: 12, src: brand12},
-        { id: 14, src: brand14},
-        { id: 15, src: brand15},
-        { id: 16, src: brand16},
-        { id: 17, src: brand17},
-        { id: 18, src: brand18},
-        { id: 19, src: brand19},
-        { id: 20, src: brand20},
-        { id: 21, src: brand21},
-        { id: 22, src: brand22},
-        { id: 23, src: brand23},
-        { id: 24, src: brand24},
-        { id: 25, src: brand25},
-        { id: 26, src: brand26},
+        // { id: 2, src: brand2},
+        // { id: 3, src: brand3},
+        // { id: 4, src: brand4},
+        // { id: 5, src: brand5},
+        // { id: 6, src: brand6},
+        // { id: 7, src: brand7},
+        // { id: 8, src: brand8},
+        // { id: 9, src: brand9},
+        // { id: 10, src: brand10},
+        // { id: 11, src: brand11},
+        // { id: 12, src: brand12},
+        // { id: 14, src: brand14},
+        // { id: 15, src: brand15},
+        // { id: 16, src: brand16},
+        // { id: 17, src: brand17},
+        // { id: 18, src: brand18},
+        // { id: 19, src: brand19},
+        // { id: 20, src: brand20},
+        // { id: 21, src: brand21},
+        // { id: 22, src: brand22},
+        // { id: 23, src: brand23},
+        // { id: 24, src: brand24},
+        // { id: 25, src: brand25},
+        // { id: 26, src: brand26},
         { id: 27, src: brand27},
-        { id: 28, src: brand28},
+        // { id: 28, src: brand28},
         { id: 29, src: brand29},
         { id: 30, src: brand30},
         { id: 31, src: brand31},
@@ -83,9 +94,20 @@ const LogoSlider = () => {
         { id: 34, src: brand34},
         { id: 35, src: brand35},
         { id: 36, src: brand36},
-        { id: 37, src: brand37},
-
-
+        { id: 38, src: brand38},
+        { id: 39, src: brand39},
+        { id: 40, src: brand40},
+        { id: 41, src: brand41},
+        { id: 42, src: brand42},
+        { id: 43, src: brand43},
+        { id: 44, src: brand44},
+        { id: 45, src: brand45},
+        { id: 46, src: brand46},
+        { id: 47, src: brand47},
+        { id: 48, src: brand48},
+        { id: 49, src: brand49},
+        { id: 50, src: brand50},
+        { id: 51, src: brand51},
     ];
     const animationVariants = {
         animate: {
