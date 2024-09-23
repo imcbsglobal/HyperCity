@@ -63,7 +63,7 @@ const Footer = () => {
         <a href="tel:+919539336622">
           <div className='flex items-center gap-3'>
               <div><FaPhoneAlt className='text-[#ecebeb]'/></div>
-              <div className=' titleText2 text-[#ecebeb]'>+91 9539336622</div>
+              <div className=' titleText2 text-[#ecebeb]'>+91 7034173173</div>
           </div>
         </a>
         <a href="mailto:info@hypercityhypermarket.com">
