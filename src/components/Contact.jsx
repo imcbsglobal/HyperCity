@@ -146,12 +146,12 @@ const Contact = () => {
                     </div>
                     <div>
                         <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Email</div>
-                        <div className='text-[18px] titleText leading-tight text-[#fff] font-bold'>hypercity@gmail.com</div>
+                        <div className='text-[18px] titleText leading-tight text-[#fff] font-bold'>info@hypercityhypermarket.com</div>
                     </div>
                     <div>
                         <div className='mb-2 text-[32px] titleText2 leading-tight text-[#0cd50f]'>Phone</div>
-                        <div className='mb-2 text-[18px] titleText leading-tight text-[#fff] font-bold'>+91 877544658788</div>
-                        <div className='mb-5 text-[18px] titleText leading-tight text-[#fff] font-bold'>+91 865434568767</div>
+                        <div className='mb-2 text-[18px] titleText leading-tight text-[#fff] font-bold'>+91 7034173173</div>
+                        <div className='mb-5 text-[18px] titleText leading-tight text-[#fff] font-bold'>+91 9539336622</div>
                     </div>
                 </div>
             </div>
