@@ -6,7 +6,8 @@ import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
 import { auth } from './Firebase';
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';  // Make sure to import the CSS
 
 
 const Login = () => {
@@ -50,6 +51,7 @@ const Login = () => {
 
   return (
     <div>
+      
       <section>
         <div className='flex justify-center items-center relative pt-28'>
             <div className=' absolute top-0 left-0 right-0 bottom-0 -z-20'>
@@ -58,6 +60,7 @@ const Login = () => {
             <div className=' absolute top-0 left-0 right-0 bottom-0 -z-10'>
                 <img src={blackShade} className=' w-full h-full object-cover' alt="" />
             </div>
+            <ToastContainer/>
             <div className='md:flex justify-center items-center w-full px-6 lg:max-w-[1200px] lg:mx-auto py-10 md:gap-10'>
                 <div className='w-full mb-10'>
                     <div className='text-center mb-5 text-[42px] titleText2 leading-tight text-[#ffffff]'>Login</div>
