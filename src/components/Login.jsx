@@ -68,7 +68,7 @@ const Login = () => {
                         <input type="text" placeholder='Username' required
                         onChange={(e)=>setEmail(e.target.value)}
                         className=' w-full py-3 outline-none border-none rounded-lg InputStyle px-5 bg-[#FF6C00] lg:w-[600px] lg:mx-auto' autoComplete='off'/>
-                        <div className='w-full relative flex flex-col justify-center items-center'>
+                        <div className='w-full relative flex flex-col justify-center items-center lg:max-w-[600px] lg:mx-auto'>
                             <input 
                             type={showPassword ? "text" : "password"} placeholder='Password' className='w-full py-3 outline-none border-none rounded-lg InputStyle px-5 bg-[#FF6C00] lg:mx-auto lg:w-[600px]' autoComplete='off'
                             onChange={(e)=>setPassword(e.target.value)}
