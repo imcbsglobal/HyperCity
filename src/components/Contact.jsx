@@ -161,11 +161,22 @@ const Contact = () => {
       <section>
         <div className='md:grid md:grid-cols-2 md:place-items-center  lg:flex  justify-center items-center md:p-5 w-full gap-10 py-5 px-0'>
     
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.2599629127967!2d76.072938474388!3d11.675979588532787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6759e8c049eb3%3A0x1cce462d7fc5e023!2sHypercity%20Supermarket!5e0!3m2!1sen!2sin!4v1723463596676!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-full h-[500px] rounded-3xl  mb-10 px-2'></iframe>
-    
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.422409909234!2d75.6071217!3d11.7352633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba429d8f5b9584b%3A0x1cfdf7beabe6802e!2sHyper%20City%20Supermarket!5e0!3m2!1sen!2sin!4v1727260027801!5m2!1sen!2sin" width="600" height="450" style={{border:0}}  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-full h-[500px] rounded-3xl  mb-6 px-2'></iframe>
+            <div className=' w-full'>
+              <div className='text-center mb-5 titleText2 text-2xl text-[#FF6C00]'>Hyper City Kamblakkad</div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.2599629127967!2d76.072938474388!3d11.675979588532787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6759e8c049eb3%3A0x1cce462d7fc5e023!2sHypercity%20Supermarket!5e0!3m2!1sen!2sin!4v1723463596676!5m2!1sen!2sin" width="600" height="450" style={{border:0}}  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-full h-[500px] rounded-3xl  mb-6 px-2'></iframe>
+            </div>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.6933557482357!2d76.00212177487263!3d11.786627888430349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5dec6266381d3%3A0xe1768e7afc7da796!2s457%2C%20Calicut%20Rd%2C%20Mananthavady%2C%20Nalloornad%2C%20Kerala%20670645!5e0!3m2!1sen!2sin!4v1727326780032!5m2!1sen!2sin" width="600" height="450" style={{border:0}}  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-full h-[500px] rounded-3xl  mb-6 px-2'></iframe>
+            <div className='w-full'>
+              <div className='text-center mb-5 titleText2 text-2xl text-[#FF6C00]'>Hyper City Manathavady</div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.6933557482357!2d76.00212177487263!3d11.786627888430349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5dec6266381d3%3A0xe1768e7afc7da796!2s457%2C%20Calicut%20Rd%2C%20Mananthavady%2C%20Nalloornad%2C%20Kerala%20670645!5e0!3m2!1sen!2sin!4v1727326780032!5m2!1sen!2sin" width="600" height="450" style={{border:0}}  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-full h-[500px] rounded-3xl  mb-6 px-2'></iframe>
+          </div>
+    
+          <div className='w-full'>
+            <div className='text-center mb-5 titleText2 text-2xl text-[#FF6C00]'>Hyper City Kadavathur</div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.422409909234!2d75.6071217!3d11.7352633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba429d8f5b9584b%3A0x1cfdf7beabe6802e!2sHyper%20City%20Supermarket!5e0!3m2!1sen!2sin!4v1727260027801!5m2!1sen!2sin" width="600" height="450" style={{border:0}}  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-full h-[500px] rounded-3xl  mb-6 px-2'></iframe>
+          </div>
+
+          
 
         </div>
       </section>
