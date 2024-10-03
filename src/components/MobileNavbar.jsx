@@ -28,6 +28,7 @@ const MobileNavbar = ({ handleMenu }) => {
             <li className='drop-shadow-sm'><Link onClick={handleMenu} to='/products'>Products</Link></li>
             <li className='drop-shadow-sm'><Link onClick={handleMenu} to='/branch'>Branch</Link></li>
             <li className='drop-shadow-sm'><Link onClick={handleMenu} to='/gallery'>Gallery</Link></li>
+            <li className='drop-shadow-sm'><Link onClick={handleMenu} to='/career'>Career</Link></li>
             <li className='drop-shadow-sm'><Link onClick={handleMenu} to='/contact'>Contact</Link></li>
           </ul>
         </nav>

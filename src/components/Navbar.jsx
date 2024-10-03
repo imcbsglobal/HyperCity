@@ -78,6 +78,7 @@ const getLinkClassName = (path) => {
                 <li><Link className={getLinkClassName("/branch")} to='/branch'>Branch</Link></li>
                 <li><Link className={getLinkClassName("/products")} to='/products'>Products</Link></li>
                 <li><Link className={getLinkClassName("/gallery")}  to='/gallery'>Gallery</Link></li>
+                <li><Link className={getLinkClassName("/career")}  to='/career'>Career</Link></li>
                 <li><Link className={getLinkClassName("/contact")} to='/contact'>Contact</Link></li>
               </ul>
             </div>

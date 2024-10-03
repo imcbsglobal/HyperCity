@@ -72,6 +72,7 @@ const Footer = () => {
               <div className='titleText2 text-[#ecebeb]'>info@hypercityhypermarket.com</div>
           </div>
         </a>
+        <div className='titleText font-bold mb-3 text-[#ecebeb] mt-3'>OPening Hour - 8am to 10pm</div>
       </div>
 
       {/* Fourth Div Address2 */}
@@ -93,6 +94,7 @@ const Footer = () => {
               <div className='titleText2 text-[#ecebeb]'>info@hypercityhypermarket.com</div>
           </div>
         </a>
+        <div className='titleText font-bold mb-3 text-[#ecebeb] mt-3'>OPening Hour - 8am to 10pm</div>
       </div>
 
       <div className='px-6 mb-10 mx-auto flex flex-col justify-start items-start text-start'>
@@ -113,6 +115,7 @@ const Footer = () => {
               <div className='titleText2 text-[#ecebeb]'>info@hypercityhypermarket.com</div>
           </div>
         </a>
+        <div className='titleText font-bold mb-3 text-[#ecebeb] mt-3'>OPening Hour - 8am to 10pm</div>
       </div>
 
     </div>

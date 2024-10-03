@@ -24,6 +24,7 @@ import NonFood from './components/categoryList/NonFood';
 import DepartmentStore from './components/categoryList/DepartmentStore';
 import FreshFood from './components/categoryList/FreshFood';
 import Food from './components/categoryList/Food';
+import Career from './components/Career';
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
         </Route>
         <Route path='/branch' element={<Branch />} />
         <Route path='/gallery' element={<Gallery />} />
+        <Route path='/career' element={<Career />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/login' element={<Login />} />
       </Routes>

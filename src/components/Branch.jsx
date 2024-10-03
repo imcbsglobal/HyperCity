@@ -88,25 +88,25 @@ const Branch = () => {
             With three thriving branches, we stand as a symbol of quality and affordability. Our flagship store marked the beginning of our journey to deliver exceptional service and value to our customers. Serving Malabar areas in Kerala, we continue to grow while remaining committed to providing the best products at the most competitive prices across all locations.
             </div>
             {/* Branches */}
-            <div className='grid grid-cols-1 md:flex  mb-10 md:gap-10 md:place-items-center'>
-              {/* Box */}
+            {/* <div className='grid grid-cols-1 md:flex  mb-10 md:gap-10 md:place-items-center'>
+             
               <div className=' w-full h-[300px] productBox mb-10 lg:mb-20'>
                 <div className=' w-full h-[300px] md:h-[350px]'>
                   <img src={branch1} className='w-full h-full object-cover productBoxImg' alt="" />
                 </div>
               </div>
-              {/* Content */}
+             
               <div className='md:w-[50%]'>
                 <div>
-                  <div className='titleText2 font-bold text-[32px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center md:text-start'>Kamblakkad, Wayanad</div>
-                  <div className='text-center md:text-start font-semibold flex items-start gap-2'>
+                  <div className='titleText2 font-bold text-[32px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center md:text-end'>Kamblakkad, Wayanad</div>
+                  <div className='text-center md:text-start font-semibold flex items-center md:items-start gap-2'>
                    <div>Hyper City Hypermarket
                     <span className='block'>Kamblakkad, Wayanad, Kerala</span> 
                     <span className='block'>Pin : 673122</span>
                   </div>
                   </div>
                 </div>
-                {/* Contact Details */}
+                
                 <div className=' mt-5'>
                   <div className=' text-center md:text-start'>
                     <div className='font-bold flex justify-center items-center gap-2 md:justify-start'><span className='text-[#FF6C00]'><FaPhoneAlt/></span>Phone : +91 7034173173</div>
@@ -116,6 +116,33 @@ const Branch = () => {
 
               </div>
 
+            </div> */}
+
+            <div className='grid grid-cols-1 mb-10 place-items-center md:flex  md:gap-10'>
+              {/* Box */}
+              <div className=' w-full h-[300px] productBox mb-10'>
+                <div className=' w-full h-[300px] md:h-[350px]'>
+                  <img src={branch1} className='productBoxImg w-full h-full object-cover' alt="" />
+                </div>
+              </div>
+              {/* Content */}
+              <div className='md:w-[50%]'>
+                <div>
+                  <div className='titleText2 font-bold text-[32px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center md:text-start'>Kamblakkad, Wayanad</div>
+                  <div className='text-center md:text-start font-semibold'>
+                    Hyper City Hypermarket
+                    <span className='block'>Kamblakkad, Wayanad, Kerala
+                    <span className='block'>Pin : 673122</span></span> 
+                  </div>
+                </div>
+                 {/* Contact Details */}
+                 <div className=' mt-5'>
+                  <div className=' text-center md:text-start'>
+                  <div className='font-bold flex items-center justify-center gap-2 md:justify-start'><span className='text-[#FF6C00]'><FaPhoneAlt/></span>Phone : +91 7034173173</div>
+                  <div className='font-bold flex items-center gap-2 md:justify-start justify-center'><span className='text-[#FF6C00]'><MdEmail/></span>email : info@hypercityhypermarket.com</div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className='grid grid-cols-1 mb-10 place-items-center md:flex md:flex-row-reverse md:gap-10'>
@@ -145,14 +172,41 @@ const Branch = () => {
               </div>
             </div>
 
-            <div className='grid grid-cols-1 md:flex  mt-20 md:gap-10 md:place-items-center'>
+            <div className='grid grid-cols-1 mb-10 place-items-center md:flex md:gap-10'>
               {/* Box */}
+              <div className=' w-full h-[300px] productBox mb-10'>
+                <div className=' w-full h-[300px] md:h-[350px]'>
+                  <img src={branch1} className='productBoxImg w-full h-full object-cover' alt="" />
+                </div>
+              </div>
+              {/* Content */}
+              <div className='md:w-[50%]'>
+                <div>
+                  <div className='titleText2 font-bold text-[32px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center md:text-start'>Kadavathur, Kannur</div>
+                  <div className='text-center md:text-start font-semibold'>
+                    Hyper City Hypermarket
+                    <span className='block'>Kadavathur, Kannur, Kerala
+                    <span className='block'>Pin : 670676</span></span> 
+                  </div>
+                </div>
+                 {/* Contact Details */}
+                 <div className=' mt-5'>
+                  <div className=' text-center md:text-start'>
+                  <div className='font-bold flex items-center justify-center gap-2 md:justify-start'><span className='text-[#FF6C00]'><FaPhoneAlt/></span>Phone : +91 8078962425</div>
+                  <div className='font-bold flex items-center gap-2 md:justify-start justify-center'><span className='text-[#FF6C00]'><MdEmail/></span>email : info@hypercityhypermarket.com</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* <div className='grid grid-cols-1 md:flex  mt-20 md:gap-10 md:place-items-center'>
+              
               <div className=' w-full h-[300px] productBox mb-10 lg:mb-20'>
                 <div className=' w-full h-[300px] md:h-[350px]'>
                   <img src={branch1} className='w-full h-full object-cover productBoxImg' alt="" />
                 </div>
               </div>
-              {/* Content */}
+              
               <div className='md:w-[50%]'>
                 <div>
                   <div className='titleText2 font-bold text-[32px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center md:text-start'>Kadavathur, Kannur</div>
@@ -163,7 +217,7 @@ const Branch = () => {
                   </div>
                   </div>
                 </div>
-                {/* Contact Details */}
+              
                 <div className=' mt-5'>
                   <div className=' text-center md:text-start'>
                     <div className='font-bold flex justify-center items-center gap-2 md:justify-start'><span className='text-[#FF6C00]'><FaPhoneAlt/></span>Phone : +91 8078962425</div>
@@ -173,7 +227,7 @@ const Branch = () => {
 
               </div>
 
-            </div>
+            </div> */}
 
           </div>
         </div>

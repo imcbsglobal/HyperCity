@@ -19,7 +19,7 @@ const Testimonials = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
-        pauseOnHover: false,
+        pauseOnHover: true,
         arrows: false,
       };
     
@@ -34,9 +34,10 @@ const Testimonials = () => {
                 
                 <div> 
                     <div className='text-center mb-2 italic px-8 lg:px-32 llg:px-56'>
-                    "Shopping at Hypercity Hypermarket is always great. They have lots of top-quality products at affordable prices, and the staff is very helpful. It's my go-to spot for all my shopping needs."
+                    "I recently visited Hypercity and was thoroughly impressed with the overall shopping experience. The store layout is spacious and well-organized, making it incredibly easy to find everything I needed. The shelves were neatly stocked, and I found a great selection of fresh fruits and vegetables, along with variety of grocery items.
+                    "
                     </div>
-                    <div className='text-center font-bold'>Girish Choudary</div>
+                    <div className='text-center font-bold text-lg'>Shahina Aneesh <span className='block text-[#FF6C00] text-sm'>Lecturer</span><span className='block text-[#878282] text-sm'>(Oriental college lakkidi)</span></div>
                 </div>
 
             </div>
