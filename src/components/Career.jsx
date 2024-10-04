@@ -7,6 +7,7 @@ import { IoClose } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdWavingHand } from "react-icons/md";
 import notFound from "../assets/not-found.mp4"
+import Footer from "../components/Footer"
 
 
 const Career = () => {
@@ -73,12 +74,16 @@ const Career = () => {
         </div>
       </section>
 
-      <section className='w-full h-full flex justify-center items-center'>
+      <section className='w-full h-full flex justify-center items-center mb-10'>
         {/* <div className='font-bold text-[#FF6C00]'></div> */}
         <div className=" grid place-items-center md:flex md:items-center md:gap-5 justify-center items-center">
               <video src={notFound} autoPlay loop muted playsInline className=" mix-blend-multiply w-[100px] h-[100px]" type="video/mp4"></video>
               <p className=" font-bold text-center text-[#FF6C00]">Currently, no vacancies available.</p>
             </div>
+      </section>
+
+      <section className='bg-[#FF6C00]'>
+        <Footer/>
       </section>
     </div>
   )

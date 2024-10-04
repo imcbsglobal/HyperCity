@@ -50,9 +50,12 @@ const Testimonials = () => {
               </div>
               <div>
                 <div className='text-center mb-2 italic px-8 lg:px-32 llg:px-56'>
-                  "I have been a loyal customer of Hypercity Hypermarket for years. I always feel that their quality and prices are as good as can be. Their products are great, and their service is excellent too. Household needs will, without a doubt, take one to Hypercity!"
+                  "Hypercity Supermarket provides a great shopping experience with a wide variety of quality products. The store is well-organized and clean, making it easy to navigate. Fresh produce, dairy, and meat are consistently of high quality.Customer service is friendly and helpful, ensuring a pleasant visit. Prices are reasonable, with regular promotions that offer good value.
+                  "
                 </div>
-                <div className='text-center font-bold'>Saniya Jithesh</div>
+                <div className='text-center font-bold text-lg'> Shabna manaf
+                <span className='block text-[#FF6C00] text-sm'>Govt Staff Nurse</span>
+                <span className='block text-[#878282] text-sm'>(Kalpetta)</span></div>
               </div>
             </div>
     
