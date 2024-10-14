@@ -50,6 +50,8 @@ import groceryFood from "../assets/groceryFood.png"
 import nonFood from "../assets/nonFood.png"
 import nonGrocery from "../assets/nonGrocery.png"
 import freshFood from "../assets/butchery.png"
+import carouselBanner from "../assets/banner1copy.jpg"
+
 
 
 const Home = () => {
@@ -181,7 +183,10 @@ const Home = () => {
             {/* Offer Section */}
             <section className=' relative ' id='offerSection'>
                 <div className='mb-5'>
-                    <ProductCarousel className=""/>
+                    {/* <ProductCarousel className=""/> */}
+                    <div className='w-full'>
+                        <img src={carouselBanner} className='w-full h-full' alt="" />
+                    </div>
                 </div>
                 {/* <OfferSection/> */}
                 <div>

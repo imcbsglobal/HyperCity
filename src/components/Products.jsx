@@ -15,6 +15,7 @@ import logo from "../assets/single-logo.png"
 import { IoClose } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdWavingHand } from "react-icons/md";
+import LogoSlider from './LogoSlider';
 
 
 
@@ -86,19 +87,18 @@ const Products = () => {
       )}
 
       {/* Carousel */}
-      <div className=' pt-24 mb-5 llg:mb-10'>
+      {/* <div className=' pt-24 mb-5 llg:mb-10'>
         <ProductCarousel className=""/>
-      </div>
+      </div> */}
 
       {/* Offer Posters */}
 
-      <section>
-        <div></div>
+      <section className='pt-32 llg:mb-10'>
         <OfferPosters/>
       </section>
 
       <section>
-        <div className='pt-10 mb-10 '>
+        <div className='pt-5 mb-10 '>
             <div className=' pt-2  lg:mx-auto dlg:max-w-[1500px]'>
                 <div className='titleText2 font-bold text-[36px] mb-5 leading-tight text-[#0cd50f] drop-shadow-sm text-center px-6'>Our Products</div>
                 <div className='paraText text-center lg:px-56 px-6 mb-5 lg:mb-10'>Discover a wide array of high-quality items at our store, from fresh produce to a variety of essential groceries and more. Each selection is carefully chosen to ensure exceptional quality and reflect our commitment to delivering outstanding customer satisfaction. Built on years of market expertise and trust, our offerings are designed to provide you with convenience and excellence in every purchase. Explore our collection and enjoy a superior shopping experience.
@@ -143,6 +143,18 @@ const Products = () => {
         </div>
         
       </section> */}
+
+      <section className='mb-10 md:px-10 lg:max-w-[1200px] lg:mx-auto'>
+        <div>
+            <div className=''>
+                <div className='mb-5 text-[42px] titleText2 leading-tight text-[#0cd50f] text-center'>Our Brands</div>
+                {/* Brand Logo's */}
+                <div className='mt-10 lg:mt-16 overflow-hidden'>
+                    <LogoSlider/>
+                </div>
+            </div> 
+        </div>
+        </section>        
 
       <section className='bg-[#FF6C00]'>
         <Footer/>
