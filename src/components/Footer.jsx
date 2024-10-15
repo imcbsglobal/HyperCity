@@ -33,7 +33,7 @@ const Footer = () => {
                 {/* Icons */}
                 <a href="https://www.facebook.com/share/gWeumQK6EJRjywHQ/?mibextid=qi2Omg"><div><FaFacebook className='text-3xl cursor-pointer text-[#ecebeb]'/></div></a>
                 <a href="mailto:info@hypercityhypermarket.com"><div><MdEmail className='text-3xl cursor-pointer text-[#ecebeb]'/></div></a>
-                <a href="https://www.instagram.com/hypercitykambalakkad?utm_source=qr&igsh=ZzhpemJuaXNuaHM="><div><AiFillInstagram className='text-3xl cursor-pointer text-[#ecebeb]'/></div></a>
+                <a href="https://www.instagram.com/hypercity_mananthavady/profilecard/?igsh=MTdqbDU3ZzdiaGh2eQ=="><div><AiFillInstagram className='text-3xl cursor-pointer text-[#ecebeb]'/></div></a>
             </div>
         </div>
       </div>
